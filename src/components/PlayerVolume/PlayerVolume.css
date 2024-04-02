@@ -1,0 +1,7 @@
+.player-volume hr {
+  width: 320px;
+  border: none;
+  background-color: #F1BC00;
+  height: 4px;
+  border-radius: 10px;
+}

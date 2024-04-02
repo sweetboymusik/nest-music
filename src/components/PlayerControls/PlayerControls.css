@@ -1,0 +1,49 @@
+.player-controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80px
+}
+
+.player-controls button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.player-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px
+}
+
+.player-timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.player-timeline span {
+  color: #7f7f7f;
+  font-size: 12px;
+}
+
+.player-timeline hr {
+  width: 320px;
+  border: none;
+  background-color: #F1BC00;
+  height: 4px;
+  border-radius: 10px;
+}
+
+.player-play {
+  font-size: 40px;
+  color: #F1BC00;
+}
+
+.player-seek {
+  font-size: 24px;
+  color: #7f7f7f
+}
