@@ -1,1 +1,77 @@
-{}
+[
+    {
+      "name": "Amara",
+      "genre": "R&B",
+      "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04",
+      "liked": true,
+      "releases": [
+        {
+          "title": "Soulful Reverie",
+          "year": 2001,
+          "artwork": "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+          "liked": true,
+          "tracks": [
+            {
+              "title": "Soul's Embrace",
+              "length": "3:15",
+              "liked": true,
+              "added": true,
+              "link": "./src/assets/tracks/amara-soulsembrace.mp3"
+            },
+            {
+              "title": "Midnight Serenade",
+              "length": "3:19",
+              "liked": true,
+              "added": false,
+              "link": "./src/assets/tracks/amara-midnightserenade.mp3"
+            }
+          ]
+        },
+        {
+          "title": "Velvet Essence",
+          "year": 2009,
+          "artwork": "https://images.unsplash.com/photo-1577732214229-e454f3a38aa5",
+          "liked": false,
+          "tracks": [
+            {
+              "title": "Velvet Dreams",
+              "length": "3:28",
+              "liked": false,
+              "added": false,
+              "link": "./src/assets/tracks/amara-velvetdreams.mp3"
+            },
+            {
+              "title": "Heartbeat Harmony",
+              "length": "3:08",
+              "liked": false,
+              "added": true,
+              "link": "./src/assets/tracks/amara-heartbeatharmony.mp3"
+            }
+          ]
+        },
+        {
+          "title": "Eclipse of Emotions",
+          "year": 2020,
+          "artwork": "https://images.unsplash.com/photo-1517436909794-1ad57165f357",
+          "liked": true,
+          "tracks": [
+            {
+              "title": "Eclipse of Love",
+              "length": "3:07",
+              "liked": true,
+              "added": false,
+              "link": "./src/assets/tracks/amara-eclipseoflove.mp3"
+            },
+            {
+              "title": "Rhythm of Desire",
+              "length": "3:24",
+              "liked": false,
+              "added": true,
+              "link": "./src/assets/tracks/amara-rhythmofdesire.mp3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
