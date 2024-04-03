@@ -6,11 +6,16 @@ function PlayerControls() {
   return (
     <div className="player-controls">
       <div className="player-buttons">
-        <IoPlayBack className="player-seek" />
+        <button>
+          <IoPlayBack className="player-seek" />
+        </button>
         <button>
           <FaPlay className="player-play" />
         </button>
-        <IoPlayForward className="player-seek" />
+
+        <button>
+          <IoPlayForward className="player-seek" />
+        </button>
       </div>
 
       <div className="player-timeline">

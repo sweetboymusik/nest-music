@@ -4,9 +4,15 @@ import { FaVolumeUp, FaVolumeOff } from "react-icons/fa";
 function PlayerVolume() {
   return (
     <div className="player-volume">
-      <FaVolumeOff />
+      <button>
+        <FaVolumeOff />
+      </button>
+
       <hr />
-      <FaVolumeUp />
+
+      <button>
+        <FaVolumeUp />
+      </button>
     </div>
   );
 }

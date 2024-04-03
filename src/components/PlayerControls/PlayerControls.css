@@ -3,25 +3,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80px
-}
-
-.player-controls button {
-  border: none;
-  background: none;
-  cursor: pointer;
+  height: 80px;
 }
 
 .player-buttons {
   display: flex;
   align-items: center;
-  gap: 16px
+  gap: 16px;
 }
 
 .player-timeline {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   width: 400px;
 }
 
@@ -33,17 +28,16 @@
 .player-timeline hr {
   width: 320px;
   border: none;
-  background-color: #F1BC00;
+  background-color: #f1bc00;
   height: 4px;
   border-radius: 10px;
 }
 
 .player-play {
   font-size: 40px;
-  color: #F1BC00;
+  color: #f1bc00;
 }
 
 .player-seek {
   font-size: 24px;
-  color: #7f7f7f
 }

@@ -1,4 +1,5 @@
 import "./NavItem.css";
+import { Link } from "react-router-dom";
 
 function NavItem({ text, icon }) {
   function handleOnClick(e) {
@@ -7,10 +8,10 @@ function NavItem({ text, icon }) {
   }
 
   return (
-    <div className="nav-item" onClick={handleOnClick}>
+    <Link to={`/${text.toLowerCase()}`} className="nav-item">
       {icon}
       {text}
-    </div>
+    </Link>
   );
 }
 
