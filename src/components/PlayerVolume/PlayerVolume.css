@@ -6,9 +6,29 @@
 }
 
 .player-volume hr {
-  width: 160px;
   border: none;
-  background-color: #f1bc00;
   height: 4px;
   border-radius: 10px;
+}
+
+.volume-slider {
+  display: grid;
+  cursor: pointer;
+}
+
+.volume-base {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  width: 160px;
+  background-color: #7f7f7f;
+}
+
+.volume-position {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  width: 70%;
+  background-color: #f1bc00;
+  transition: width 0.2s ease;
 }

@@ -1,16 +1,22 @@
 import "./PlayerControls.css";
-import { FaPlay } from "react-icons/fa";
+
+import { FaPlay, FaPause } from "react-icons/fa";
 import { IoPlayBack, IoPlayForward } from "react-icons/io5";
 
-function PlayerControls() {
+function PlayerControls({ playing, togglePlay }) {
   return (
     <div className="player-controls">
       <div className="player-buttons">
         <button>
           <IoPlayBack className="player-seek" />
         </button>
-        <button>
-          <FaPlay className="player-play" />
+
+        <button onClick={togglePlay}>
+          {playing ? (
+            <FaPause className="player-pause" />
+          ) : (
+            <FaPlay className="player-play" />
+          )}
         </button>
 
         <button>

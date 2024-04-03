@@ -38,6 +38,11 @@
   color: #f1bc00;
 }
 
+.player-pause {
+  font-size: 40px;
+  color: #7f7f7f;
+}
+
 .player-seek {
   font-size: 24px;
 }
