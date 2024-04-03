@@ -1,0 +1,28 @@
+.player-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: sticky;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+}
+
+.player-info img {
+  height: 56px;
+  width: 56px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+.player-info-text {
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  justify-content: space-between;
+}
+
+.player-info h4 {
+  font-weight: 300;
+}
