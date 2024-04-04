@@ -25,7 +25,7 @@ function ArtistGrid() {
       .then(response => response.json())
       .then(data => {
         const shuffled = data.sort(() => 0.5 - Math.random());
-        setArtists(shuffled.slice(0, 3)); // get 3 random items
+        setArtists(shuffled.slice(0, 3)); // currently setup to show only 3 random artists
       });
   }, []);
 
