@@ -20,19 +20,6 @@
   width: 400px;
 }
 
-.player-timeline span {
-  color: #7f7f7f;
-  font-size: 12px;
-}
-
-.player-timeline hr {
-  width: 320px;
-  border: none;
-  background-color: #f1bc00;
-  height: 4px;
-  border-radius: 10px;
-}
-
 .player-play {
   font-size: 40px;
   color: #f1bc00;
@@ -45,4 +32,32 @@
 
 .player-seek {
   font-size: 24px;
+}
+
+.position-base {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  width: 320px;
+  height: 4px;
+  background-color: #7f7f7f;
+  border-radius: 10px;
+}
+
+.position-btn-inc {
+  height: 24px;
+  width: 100px;
+}
+
+.position-current {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  width: 70%;
+  background-color: #f1bc00;
+  transition: width 0.1s ease;
+  pointer-events: none;
 }

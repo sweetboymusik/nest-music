@@ -1,14 +1,15 @@
 import "./PlayerControls.css";
+import PlayerPositionButtons from "../PlayerPositionButtons/PlayerPositionButtons";
 
 import { FaPlay, FaPause } from "react-icons/fa";
 import { IoPlayBack, IoPlayForward } from "react-icons/io5";
 
-function PlayerControls({ playing, togglePlay }) {
+function PlayerControls({ playing, togglePlay, changePosition }) {
   return (
     <div className="player-controls">
       <div className="player-buttons">
         <button>
-          <IoPlayBack className="player-seek" />
+          <IoPlayBack className="player-seek seek-start" />
         </button>
 
         <button onClick={togglePlay}>
@@ -20,14 +21,18 @@ function PlayerControls({ playing, togglePlay }) {
         </button>
 
         <button>
-          <IoPlayForward className="player-seek" />
+          <IoPlayForward className="player-seek seek-end" />
         </button>
       </div>
 
       <div className="player-timeline">
-        <span>0:00</span>
-        <hr />
-        <span>3:41</span>
+        <button onClick={changePosition} className="pos-btn-start">
+          0:00
+        </button>
+        <PlayerPositionButtons changePosition={changePosition} />
+        <button onClick={changePosition} className="pos-btn-end">
+          3:41
+        </button>
       </div>
     </div>
   );

@@ -13,16 +13,26 @@
 
 .volume-slider {
   display: grid;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .volume-base {
+  display: flex;
+  gap: 0;
+  align-items: center;
   grid-column: 1;
   grid-row: 1;
   position: relative;
   width: 160px;
+  height: 4px;
   background-color: #7f7f7f;
+  border-radius: 10px;
 }
+
+.volume-btn-inc {
+  height: 24px;
+}
+
 
 .volume-position {
   grid-column: 1;
@@ -30,5 +40,6 @@
   position: relative;
   width: 70%;
   background-color: #f1bc00;
-  transition: width 0.2s ease;
+  transition: width 0.1s ease;
+  pointer-events: none;
 }
