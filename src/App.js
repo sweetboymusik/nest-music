@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 
 import NavBar from "./components/NavBar/NavBar";
 import Player from "./components/Player/Player";
+import PageBrowse from "./components/PageBrowse/PageBrowse";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -29,15 +30,16 @@ function App() {
   function changeVolume(e) {
     if (e.target.classList.contains("volume-btn-min")) {
       setVolume(0);
+      document.querySelector(".volume-base").value = 0;
     }
 
     if (e.target.classList.contains("volume-btn-max")) {
       setVolume(1);
+      document.querySelector(".volume-base").value = 100;
     }
 
-    if (e.target.classList.contains("volume-btn-inc")) {
-      const id = parseInt(e.target.id.split("-")[1]);
-      setVolume(id / 10);
+    if (e.target.classList.contains("volume-base")) {
+      setVolume(parseInt(e.target.value) / 100);
     }
   }
 
@@ -55,6 +57,7 @@ function App() {
 
   useEffect(() => {
     audio.volume = volume;
+    console.log(audio.volume);
   }, [volume]);
 
   // useEffect(() => {
@@ -96,7 +99,8 @@ function App() {
                 </div>
               }
             />
-            <Route path="/browse"></Route>
+
+            <Route path="/browse" element={<PageBrowse />}></Route>
             <Route paty="/library"></Route>
           </Routes>
         </div>
