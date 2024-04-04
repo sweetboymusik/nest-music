@@ -102,7 +102,8 @@ function App() {
             />
 
             <Route path="/browse" element={<PageBrowse />}></Route>
-            <Route paty="/library"></Route>
+            <Route path="/library"></Route>
+            <Route path="/browse-albums" element={<PageBrowseAlbums />}></Route>
           </Routes>
         </div>
 
