@@ -1,6 +1,4 @@
 import "./PageBrowse.css";
-import { Routes, Route } from "react-router-dom";
-import BrowseCard from "../BrowseCard/BrowseCard";
 import GenreGrid from "../GenreGrid/GenreGrid";
 
 function PageBrowse() {

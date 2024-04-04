@@ -1,0 +1,42 @@
+.song-card {
+  display: flex;
+  background-color: #2a2925;
+  color: #eee;
+  height: 48px;
+  width: 600px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  gap: 32px;
+}
+
+.song-text {
+  width: 120px;
+}
+
+.song-info {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+.song-image {
+  height: 32px;
+}
+
+.song-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.song-icon {
+  font-size: 24px;
+  color: #eee;
+}
+
+.song-icons button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
