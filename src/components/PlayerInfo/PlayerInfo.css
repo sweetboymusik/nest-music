@@ -6,8 +6,9 @@
   display: flex;
   gap: 16px;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   color: #eee;
+  width: 240px;
 }
 
 .player-info img {

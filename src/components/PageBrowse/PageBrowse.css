@@ -1,0 +1,18 @@
+.browse-container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 16px; */
+  gap: 32px;
+}
+
+.browse-container hr {
+  border: none;
+  height: 2px;
+  background-color: #2a2925;
+}
+
+.browse-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
