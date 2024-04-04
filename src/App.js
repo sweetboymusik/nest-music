@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import Player from "./components/Player/Player";
 import PageBrowse from "./components/PageBrowse/PageBrowse";
+import SongCard from "./components/SongCard/SongCard";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -95,7 +96,7 @@ function App() {
               path="/home"
               element={
                 <div>
-                  <button onClick={loadTrack}>Load Track</button>
+                  <SongCard />
                 </div>
               }
             />
