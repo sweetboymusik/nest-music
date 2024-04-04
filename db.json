@@ -1,19 +1,21 @@
 {
   "artists": [
     {
-      "id": 1,
+      "id": "a0001",
       "name": "Amara",
       "genre": "R&B",
       "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04",
       "liked": true,
       "releases": [
         {
+          "id": "r0001",
           "title": "Soulful Reverie",
           "year": 2001,
           "artwork": "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
           "liked": true,
           "tracks": [
             {
+              "id": "t0001",
               "title": "Soul's Embrace",
               "length": "3:15",
               "liked": true,
@@ -21,6 +23,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0002",
               "title": "Midnight Serenade",
               "length": "3:19",
               "liked": true,
@@ -30,12 +33,14 @@
           ]
         },
         {
+          "id": "r0002",
           "title": "Velvet Essence",
           "year": 2009,
           "artwork": "https://images.unsplash.com/photo-1577732214229-e454f3a38aa5",
           "liked": false,
           "tracks": [
             {
+              "id": "t0003",
               "title": "Velvet Dreams",
               "length": "3:28",
               "liked": false,
@@ -43,6 +48,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0004",
               "title": "Heartbeat Harmony",
               "length": "3:08",
               "liked": false,
@@ -52,19 +58,22 @@
           ]
         },
         {
+          "id": "r0003",
           "title": "Eclipse of Emotions",
           "year": 2020,
           "artwork": "https://images.unsplash.com/photo-1517436909794-1ad57165f357",
           "liked": true,
           "tracks": [
             {
+              "id": "t0005",
               "title": "Eclipse of Love",
               "length": "3:07",
               "liked": true,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0006",
               "title": "Rhythm of Desire",
               "length": "3:24",
               "liked": false,
@@ -76,19 +85,21 @@
       ]
     },
     {
-      "id": 2,
+      "id": "a0002",
       "name": "Kairo Nova",
       "genre": "R&B",
       "photo": "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
       "liked": false,
       "releases": [
         {
+          "id": "r0004",
           "title": "Urban Echoes",
           "year": 1998,
           "artwork": "https://images.unsplash.com/photo-1525025500848-f00b7d362dec",
           "liked": false,
           "tracks": [
             {
+              "id": "t0007",
               "title": "Urban Echo",
               "length": "3:22",
               "liked": false,
@@ -96,6 +107,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0008",
               "title": "City Rhythm",
               "length": "3:12",
               "liked": true,
@@ -105,12 +117,14 @@
           ]
         },
         {
+          "id": "r0005",
           "title": "Neon Nightscape",
           "year": 2005,
           "artwork": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead",
           "liked": true,
           "tracks": [
             {
+              "id": "t0009",
               "title": "Neon Nights",
               "length": "3:04",
               "liked": true,
@@ -118,6 +132,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0010",
               "title": "Midnight Groove",
               "length": "3:29",
               "liked": true,
@@ -127,12 +142,14 @@
           ]
         },
         {
+          "id": "r0006",
           "title": "Twilight Serenade",
           "year": 2010,
           "artwork": "https://plus.unsplash.com/premium_photo-1661376793823-932e82e553e3",
           "liked": false,
           "tracks": [
             {
+              "id": "t0011",
               "title": "Twilight Serenade",
               "length": "3:18",
               "liked": true,
@@ -140,6 +157,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0012",
               "title": "Neon Dreams",
               "length": "3:06",
               "liked": true,
@@ -151,19 +169,21 @@
       ]
     },
     {
-      "id": 3,
+      "id": "a0003",
       "name": "Remy Bliss",
       "genre": "R&B",
       "photo": "https://images.unsplash.com/photo-1587397845856-e6cf49176c70",
       "liked": true,
       "releases": [
         {
+          "id": "r0007",
           "title": "Rhythmic Rapture",
           "year": 1995,
           "artwork": "https://images.unsplash.com/photo-1543379344-402b42ddbe8a",
           "liked": true,
           "tracks": [
             {
+              "id": "t0013",
               "title": "Rhythmic Bliss",
               "length": "3:10",
               "liked": false,
@@ -171,6 +191,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0014",
               "title": "Soulful Serenade",
               "length": "3:21",
               "liked": true,
@@ -180,12 +201,14 @@
           ]
         },
         {
+          "id": "r0008",
           "title": "Blissful Beats",
           "year": 2001,
           "artwork": "https://plus.unsplash.com/premium_photo-1683133597318-acc59ca4937c",
           "liked": true,
           "tracks": [
             {
+              "id": "t0015",
               "title": "Beats of Harmony",
               "length": "3:25",
               "liked": false,
@@ -193,6 +216,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0016",
               "title": "Harmony's Melody",
               "length": "3:17",
               "liked": false,
@@ -202,12 +226,14 @@
           ]
         },
         {
+          "id": "r0009",
           "title": "Harmony in Motion",
           "year": 2010,
           "artwork": "https://images.unsplash.com/photo-1513682121497-80211f36a7d3",
           "liked": false,
           "tracks": [
             {
+              "id": "t0017",
               "title": "Motion in Love",
               "length": "3:02",
               "liked": true,
@@ -215,6 +241,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0018",
               "title": "Remy's Reverie",
               "length": "3:30",
               "liked": true,
@@ -226,19 +253,21 @@
       ]
     },
     {
-      "id": 4,
+      "id": "a0004",
       "name": "Nova Belle",
       "genre": "Pop",
       "photo": "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda",
       "liked": false,
       "releases": [
         {
+          "id": "r0010",
           "title": "Starlight Symphony",
           "year": 1994,
           "artwork": "https://images.unsplash.com/photo-1495216875107-c6c043eb703f",
           "liked": true,
           "tracks": [
             {
+              "id": "t0019",
               "title": "Starlit Symphony",
               "length": "3:30",
               "liked": true,
@@ -246,6 +275,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0020",
               "title": "Radiant Romance",
               "length": "3:04",
               "liked": false,
@@ -255,12 +285,14 @@
           ]
         },
         {
+          "id": "r0011",
           "title": "Pop Princess Diaries",
           "year": 1998,
           "artwork": "https://plus.unsplash.com/premium_photo-1671718111125-7e9ad86b9e7e",
           "liked": false,
           "tracks": [
             {
+              "id": "t0021",
               "title": "Princess Diaries",
               "length": "3:12",
               "liked": true,
@@ -268,6 +300,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0022",
               "title": "Nova's Dream",
               "length": "3:26",
               "liked": false,
@@ -277,12 +310,14 @@
           ]
         },
         {
+          "id": "r0012",
           "title": "Melodic Mirage",
           "year": 2001,
           "artwork": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833",
           "liked": true,
           "tracks": [
             {
+              "id": "t0023",
               "title": "Mirage Melody",
               "length": "3:20",
               "liked": true,
@@ -290,6 +325,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0024",
               "title": "Pop's Anthem",
               "length": "3:14",
               "liked": true,
@@ -301,19 +337,21 @@
       ]
     },
     {
-      "id": 5,
+      "id": "a0005",
       "name": "Phoenix Rivers",
       "genre": "Pop",
       "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
       "liked": true,
       "releases": [
         {
+          "id": "r0013",
           "title": "Celestial Cadence",
           "year": 1995,
           "artwork": "https://images.unsplash.com/photo-1637848688004-85767c728df2",
           "liked": true,
           "tracks": [
             {
+              "id": "t0025",
               "title": "Celestial Echo",
               "length": "3:08",
               "liked": false,
@@ -321,6 +359,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0026",
               "title": "Phoenix's Flight",
               "length": "3:27",
               "liked": false,
@@ -330,12 +369,14 @@
           ]
         },
         {
+          "id": "r0014",
           "title": "Echoes of Eden",
           "year": 1999,
           "artwork": "https://images.unsplash.com/photo-1519689680058-324335c77eba",
           "liked": true,
           "tracks": [
             {
+              "id": "t0027",
               "title": "Echoes of Eden",
               "length": "3:27",
               "liked": false,
@@ -343,6 +384,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0028",
               "title": "Sunset Serenade",
               "length": "3:11",
               "liked": true,
@@ -352,12 +394,14 @@
           ]
         },
         {
+          "id": "r0015",
           "title": "Riverside Reverie",
           "year": 2002,
           "artwork": "https://images.unsplash.com/photo-1592830107161-79afd67b4ee8",
           "liked": false,
           "tracks": [
             {
+              "id": "t0029",
               "title": "Riverside Serenade",
               "length": "3:05",
               "liked": true,
@@ -365,6 +409,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0030",
               "title": "River's Lament",
               "length": "3:23",
               "liked": true,
@@ -376,19 +421,21 @@
       ]
     },
     {
-      "id": 6,
+      "id": "a0006",
       "name": "Echo Bloom",
       "genre": "Pop",
       "photo": "https://images.unsplash.com/photo-1598201116904-9613ee826e9a",
       "liked": false,
       "releases": [
         {
+          "id": "r0016",
           "title": "Blossoms of Sound",
           "year": 1996,
           "artwork": "https://plus.unsplash.com/premium_photo-1672413698583-133aa559440d",
           "liked": true,
           "tracks": [
             {
+              "id": "t0031",
               "title": "Blossoming Melody",
               "length": "3:16",
               "liked": true,
@@ -396,6 +443,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0032",
               "title": "Echo's Melody",
               "length": "3:15",
               "liked": false,
@@ -405,12 +453,14 @@
           ]
         },
         {
+          "id": "r0017",
           "title": "Radiant Resonance",
           "year": 2000,
           "artwork": "https://plus.unsplash.com/premium_photo-1681487848317-09ae03fc2291",
           "liked": true,
           "tracks": [
             {
+              "id": "t0033",
               "title": "Radiant Reverie",
               "length": "3:29",
               "liked": false,
@@ -418,6 +468,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0034",
               "title": "Dreamy Serenade",
               "length": "3:25",
               "liked": false,
@@ -427,12 +478,14 @@
           ]
         },
         {
+          "id": "r0018",
           "title": "Ethereal Echoes",
           "year": 2003,
           "artwork": "https://images.unsplash.com/photo-1492567291473-fe3dfc175b45",
           "liked": true,
           "tracks": [
             {
+              "id": "t0035",
               "title": "Ethereal Echo",
               "length": "3:14",
               "liked": false,
@@ -440,6 +493,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0036",
               "title": "Bloom's Ballad",
               "length": "3:07",
               "liked": true,
@@ -451,19 +505,21 @@
       ]
     },
     {
-      "id": 7,
+      "id": "a0007",
       "name": "Storm Horizon",
       "genre": "Rock",
       "photo": "https://images.unsplash.com/photo-1461800919507-79b16743b257",
-      "liked": false,
+      "liked": true,
       "releases": [
         {
+          "id": "r0019",
           "title": "Tempest Tunes",
           "year": 1997,
           "artwork": "https://images.unsplash.com/photo-1526662092594-e98c1e356d6a",
           "liked": false,
           "tracks": [
             {
+              "id": "t0037",
               "title": "Tempest's Call",
               "length": "3:03",
               "liked": true,
@@ -471,6 +527,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0038",
               "title": "Horizon's Fury",
               "length": "3:18",
               "liked": false,
@@ -480,12 +537,14 @@
           ]
         },
         {
+          "id": "r0020",
           "title": "Raging Melodies",
           "year": 2001,
           "artwork": "https://images.unsplash.com/photo-1548016193-b9381233058c",
           "liked": false,
           "tracks": [
             {
+              "id": "t0039",
               "title": "Melodies of Rage",
               "length": "3:23",
               "liked": false,
@@ -493,6 +552,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0040",
               "title": "Wild Storm",
               "length": "3:10",
               "liked": false,
@@ -502,12 +562,14 @@
           ]
         },
         {
+          "id": "r0021",
           "title": "Thunderous Triumph",
           "year": 2004,
           "artwork": "https://images.unsplash.com/photo-1618517048008-1cbdfd7ce2af",
           "liked": true,
           "tracks": [
             {
+              "id": "t0041",
               "title": "Thunderous Triumph",
               "length": "3:09",
               "liked": false,
@@ -515,6 +577,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0042",
               "title": "Rebel's Anthem",
               "length": "3:28",
               "liked": true,
@@ -526,19 +589,21 @@
       ]
     },
     {
-      "id": 8,
+      "id": "a0008",
       "name": "Wilder Shade",
       "genre": "Rock",
       "photo": "https://images.unsplash.com/photo-1596075780750-81249df16d19",
-      "liked": false,
+      "liked": true,
       "releases": [
         {
+          "id": "r0022",
           "title": "Shadowed Symphony",
           "year": 1998,
           "artwork": "https://images.unsplash.com/photo-1616923756114-9a17522a1794",
           "liked": false,
           "tracks": [
             {
+              "id": "t0043",
               "title": "Shadowed Symphony",
               "length": "3:26",
               "liked": false,
@@ -546,6 +611,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0044",
               "title": "Wilder's Echo",
               "length": "3:05",
               "liked": true,
@@ -555,12 +621,14 @@
           ]
         },
         {
+          "id": "r0023",
           "title": "Wilder Whispers",
           "year": 2002,
           "artwork": "https://images.unsplash.com/photo-1560343787-b90cb337028e",
           "liked": true,
           "tracks": [
             {
+              "id": "t0045",
               "title": "Whispers of Wild",
               "length": "3:17",
               "liked": true,
@@ -568,6 +636,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0046",
               "title": "Shade's Melody",
               "length": "3:20",
               "liked": true,
@@ -577,19 +646,22 @@
           ]
         },
         {
+          "id": "r0024",
           "title": "Rebel Rhythms",
           "year": 2005,
           "artwork": "https://plus.unsplash.com/premium_photo-1687609112015-23bcdb2385f4",
           "liked": true,
           "tracks": [
             {
+              "id": "t0047",
               "title": "Rebel Rhythm",
               "length": "3:06",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0048",
               "title": "Rock's Rebellion",
               "length": "3:16",
               "liked": true,
@@ -601,19 +673,21 @@
       ]
     },
     {
-      "id": 9,
+      "id": "a0009",
       "name": "Nova Rift",
       "genre": "Rock",
       "photo": "https://images.unsplash.com/photo-1665024435355-e9c5395098b4",
-      "liked": false,
+      "liked": true,
       "releases": [
         {
+          "id": "r0025",
           "title": "Cosmic Collision",
           "year": 1999,
           "artwork": "https://images.unsplash.com/photo-1578831914933-6339766eb29b",
           "liked": false,
           "tracks": [
             {
+              "id": "t0049",
               "title": "Cosmic Collision",
               "length": "3:21",
               "liked": false,
@@ -621,6 +695,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0050",
               "title": "Nova's Nexus",
               "length": "3:22",
               "liked": false,
@@ -630,19 +705,22 @@
           ]
         },
         {
+          "id": "r0026",
           "title": "Rifted Realms",
           "year": 2003,
           "artwork": "https://images.unsplash.com/photo-1576504677634-06b2130bd1f3",
           "liked": true,
           "tracks": [
             {
+              "id": "t0051",
               "title": "Rifted Realms",
               "length": "3:11",
               "liked": true,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0052",
               "title": "Rift's Rhapsody",
               "length": "3:09",
               "liked": true,
@@ -652,12 +730,14 @@
           ]
         },
         {
+          "id": "r0027",
           "title": "Dimensional Discord",
           "year": 2006,
           "artwork": "https://images.unsplash.com/photo-1517849845537-4d257902454a",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
+              "id": "t0053",
               "title": "Discordant Dimension",
               "length": "3:24",
               "liked": true,
@@ -665,6 +745,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0054",
               "title": "Dimensional Dissonance",
               "length": "3:13",
               "liked": false,
@@ -676,19 +757,21 @@
       ]
     },
     {
-      "id": 10,
+      "id": "a0010",
       "name": "Velvet Moon",
       "genre": "Jazz",
       "photo": "https://images.unsplash.com/photo-1510731491328-7363eecd7b2d",
       "liked": true,
       "releases": [
         {
+          "id": "r0028",
           "title": "Moonlit Melodies",
           "year": 2000,
           "artwork": "https://images.unsplash.com/photo-1605595988901-3d06601c38ad",
           "liked": false,
           "tracks": [
             {
+              "id": "t0055",
               "title": "Moonlit Serenade",
               "length": "3:13",
               "liked": false,
@@ -696,6 +779,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0056",
               "title": "Moon's Melody",
               "length": "3:03",
               "liked": false,
@@ -705,12 +789,14 @@
           ]
         },
         {
+          "id": "r0029",
           "title": "Velvet Nightfall",
           "year": 2004,
           "artwork": "https://images.unsplash.com/photo-1493612276216-ee3925520721",
           "liked": true,
           "tracks": [
             {
+              "id": "t0057",
               "title": "Velvet Nightfall",
               "length": "3:19",
               "liked": false,
@@ -718,6 +804,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0058",
               "title": "Midnight Moonlight",
               "length": "3:31",
               "liked": false,
@@ -727,12 +814,14 @@
           ]
         },
         {
+          "id": "r0030",
           "title": "Jazz Under the Stars",
           "year": 2007,
           "artwork": "https://images.unsplash.com/photo-1550151733-f2bc199db8fc?q=80",
           "liked": true,
           "tracks": [
             {
+              "id": "t0059",
               "title": "Jazz Under the Stars",
               "length": "3:01",
               "liked": false,
@@ -740,6 +829,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0060",
               "title": "Velvet's Reverie",
               "length": "3:34",
               "liked": false,
@@ -751,19 +841,21 @@
       ]
     },
     {
-      "id": 11,
+      "id": "a0011",
       "name": "Aurora Swing",
       "genre": "Jazz",
       "photo": "https://plus.unsplash.com/premium_photo-1679415150878-b81dd4fb0233",
       "liked": true,
       "releases": [
         {
+          "id": "r0031",
           "title": "Swingin' Serenity",
           "year": 2001,
           "artwork": "https://images.unsplash.com/photo-1484889176133-94079a66d71a",
           "liked": false,
           "tracks": [
             {
+              "id": "t0061",
               "title": "Swingin' Serenity",
               "length": "3:31",
               "liked": false,
@@ -771,6 +863,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0062",
               "title": "Swing's Symphony",
               "length": "3:37",
               "liked": true,
@@ -780,12 +873,14 @@
           ]
         },
         {
+          "id": "r0032",
           "title": "Dancing Dawn",
           "year": 2005,
           "artwork": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94",
           "liked": false,
           "tracks": [
             {
+              "id": "t0063",
               "title": "Dancing Dawn",
               "length": "3:33",
               "liked": false,
@@ -793,6 +888,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0064",
               "title": "Morning Swing",
               "length": "3:40",
               "liked": true,
@@ -802,12 +898,14 @@
           ]
         },
         {
+          "id": "r0033",
           "title": "Aurora Jazzscape",
           "year": 2008,
           "artwork": "https://plus.unsplash.com/premium_photo-1682308259865-afd772272f60",
           "liked": true,
           "tracks": [
             {
+              "id": "t0065",
               "title": "Aurora's Melody",
               "length": "3:35",
               "liked": true,
@@ -815,6 +913,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0066",
               "title": "Jazz's Joy",
               "length": "3:43",
               "liked": true,
@@ -826,19 +925,21 @@
       ]
     },
     {
-      "id": 12,
+      "id": "a0012",
       "name": "Nightshade Jazz Collective",
       "genre": "Jazz",
       "photo": "https://plus.unsplash.com/premium_photo-1661344259053-23372e601ac6",
       "liked": true,
       "releases": [
         {
+          "id": "r0034",
           "title": "Nocturnal Notes",
           "year": 2002,
           "artwork": "https://plus.unsplash.com/premium_photo-1663050933954-f46c2cdd2a08",
           "liked": false,
           "tracks": [
             {
+              "id": "t0067",
               "title": "Nocturnal Notes",
               "length": "3:37",
               "liked": false,
@@ -846,6 +947,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0068",
               "title": "Nightshade's Night",
               "length": "3:46",
               "liked": false,
@@ -855,12 +957,14 @@
           ]
         },
         {
+          "id": "r0035",
           "title": "Midnight Melange",
           "year": 2006,
           "artwork": "https://images.unsplash.com/flagged/photo-1569231290377-072234d3ee57",
           "liked": false,
           "tracks": [
             {
+              "id": "t0069",
               "title": "Midnight Melange",
               "length": "3:39",
               "liked": true,
@@ -868,6 +972,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0070",
               "title": "Jazz Collective's Groove",
               "length": "3:49",
               "liked": true,
@@ -877,12 +982,14 @@
           ]
         },
         {
+          "id": "r0036",
           "title": "Enigmatic Ensemble",
           "year": 2009,
           "artwork": "https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f",
           "liked": true,
           "tracks": [
             {
+              "id": "t0071",
               "title": "Enigmatic Ensemble",
               "length": "3:41",
               "liked": true,
@@ -890,6 +997,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0072",
               "title": "Melodic Midnight",
               "length": "3:52",
               "liked": false,
@@ -901,19 +1009,21 @@
       ]
     },
     {
-      "id": 13,
+      "id": "a0013",
       "name": "Willow Creek",
       "genre": "Country",
       "photo": "https://images.unsplash.com/photo-1577372570570-fe08f7adc27b",
       "liked": true,
       "releases": [
         {
+          "id": "r0037",
           "title": "Creek Side Serenade",
           "year": 2003,
           "artwork": "https://images.unsplash.com/photo-1597499581969-ef0170b200ee",
           "liked": true,
           "tracks": [
             {
+              "id": "t0073",
               "title": "Creek's Lament",
               "length": "3:43",
               "liked": true,
@@ -921,6 +1031,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0074",
               "title": "Willow's Whispers",
               "length": "3:55",
               "liked": false,
@@ -930,12 +1041,14 @@
           ]
         },
         {
+          "id": "r0038",
           "title": "Country Roads & Moonlight",
           "year": 2007,
           "artwork": "https://images.unsplash.com/photo-1551389267-fb1d08dc6bf6",
-          "liked": false,
+          "liked": true,
           "tracks": [
             {
+              "id": "t0075",
               "title": "Moonlit Roads",
               "length": "3:45",
               "liked": false,
@@ -943,6 +1056,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0076",
               "title": "Country's Calling",
               "length": "3:58",
               "liked": true,
@@ -952,12 +1066,14 @@
           ]
         },
         {
+          "id": "r0039",
           "title": "Whiskey Tales & Willow Winds",
           "year": 2010,
           "artwork": "https://images.unsplash.com/photo-1581714306496-3d2522fc7fc7",
           "liked": false,
           "tracks": [
             {
+              "id": "t0077",
               "title": "Whiskey Tales",
               "length": "3:47",
               "liked": false,
@@ -965,6 +1081,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0078",
               "title": "Creek's Crossing",
               "length": "4:00",
               "liked": true,
@@ -976,19 +1093,21 @@
       ]
     },
     {
-      "id": 14,
+      "id": "a0014",
       "name": "Dusty Trails",
       "genre": "Country",
       "photo": "https://images.unsplash.com/photo-1696236997225-6ef1ca0fd467",
       "liked": true,
       "releases": [
         {
+          "id": "r0040",
           "title": "Trailblazing Troubadour",
           "year": 2004,
           "artwork": "https://images.unsplash.com/photo-1496516348160-24b35a31856f",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
+              "id": "t0079",
               "title": "Trailblazer's Ballad",
               "length": "3:49",
               "liked": true,
@@ -996,6 +1115,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0080",
               "title": "Dusty's Dreams",
               "length": "2:15",
               "liked": true,
@@ -1005,12 +1125,14 @@
           ]
         },
         {
+          "id": "r0041",
           "title": "Dusty Sunset Serenade",
           "year": 2008,
           "artwork": "https://images.unsplash.com/photo-1636708858133-c26b4c34a480",
           "liked": true,
           "tracks": [
             {
+              "id": "t0081",
               "title": "Sunset Serenade",
               "length": "3:51",
               "liked": false,
@@ -1018,6 +1140,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0082",
               "title": "Trail's End",
               "length": "2:18",
               "liked": false,
@@ -1027,12 +1150,14 @@
           ]
         },
         {
+          "id": "r0042",
           "title": "Wanderlust & Whiskey",
           "year": 2011,
           "artwork": "https://images.unsplash.com/photo-1586349781438-39d0350a0c93",
           "liked": false,
           "tracks": [
             {
+              "id": "t0083",
               "title": "Wanderlust Whiskey",
               "length": "3:53",
               "liked": true,
@@ -1040,6 +1165,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0084",
               "title": "Tales of Dust",
               "length": "2:21",
               "liked": true,
@@ -1051,19 +1177,21 @@
       ]
     },
     {
-      "id": 15,
+      "id": "a0015",
       "name": "Sawyer Brooks",
       "genre": "Country",
       "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce",
-      "liked": false,
+      "liked": true,
       "releases": [
         {
+          "id": "r0043",
           "title": "Brooks & Bourbon",
           "year": 2005,
           "artwork": "https://images.unsplash.com/photo-1605814573621-0513c34a0d58",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
+              "id": "t0085",
               "title": "Bourbon's Tale",
               "length": "3:55",
               "liked": false,
@@ -1071,6 +1199,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0086",
               "title": "Southern Sunset",
               "length": "2:24",
               "liked": false,
@@ -1080,12 +1209,14 @@
           ]
         },
         {
+          "id": "r0044",
           "title": "Southern Stories & Sawyer Songs",
           "year": 2009,
           "artwork": "https://images.unsplash.com/photo-1536612461104-405653880f45",
-          "liked": false,
+          "liked": true,
           "tracks": [
             {
+              "id": "t0087",
               "title": "Sawyer's Stories",
               "length": "3:57",
               "liked": true,
@@ -1093,6 +1224,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0088",
               "title": "Brooks' Journey",
               "length": "2:27",
               "liked": true,
@@ -1102,12 +1234,14 @@
           ]
         },
         {
+          "id": "r0045",
           "title": "Backroad Ballads & Barstool Blues",
           "year": 2012,
           "artwork": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9",
           "liked": true,
           "tracks": [
             {
+              "id": "t0089",
               "title": "Backroad Ballads",
               "length": "3:59",
               "liked": true,
@@ -1115,6 +1249,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0090",
               "title": "Sawyer's Serenade",
               "length": "2:30",
               "liked": false,
@@ -1126,19 +1261,21 @@
       ]
     },
     {
-      "id": 16,
+      "id": "a0016",
       "name": "Neon Pulse",
       "genre": "Electronic",
       "photo": "https://images.unsplash.com/photo-1470753323753-3f8091bb0232",
       "liked": true,
       "releases": [
         {
+          "id": "r0046",
           "title": "Pulsating Paradigm",
           "year": 2006,
           "artwork": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968",
           "liked": false,
           "tracks": [
             {
+              "id": "t0091",
               "title": "Pulsating Paradigm",
               "length": "4:00",
               "liked": false,
@@ -1146,6 +1283,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0092",
               "title": "Pulse's Journey",
               "length": "2:33",
               "liked": true,
@@ -1155,12 +1293,14 @@
           ]
         },
         {
+          "id": "r0047",
           "title": "Neon Nightscape",
           "year": 2010,
           "artwork": "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce",
           "liked": true,
           "tracks": [
             {
+              "id": "t0093",
               "title": "Neon Nightscape",
               "length": "2:15",
               "liked": true,
@@ -1168,6 +1308,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0094",
               "title": "Neon's Nexus",
               "length": "2:36",
               "liked": false,
@@ -1177,12 +1318,14 @@
           ]
         },
         {
+          "id": "r0048",
           "title": "Digital Dreamscape",
           "year": 2013,
           "artwork": "https://images.unsplash.com/photo-1505356822725-08ad25f3ffe4",
           "liked": true,
           "tracks": [
             {
+              "id": "t0095",
               "title": "Digital Dreamscape",
               "length": "2:17",
               "liked": false,
@@ -1190,9 +1333,10 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0096",
               "title": "Electronic Euphoria",
               "length": "2:39",
-              "liked": false,
+              "liked": true,
               "added": true,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -1201,19 +1345,21 @@
       ]
     },
     {
-      "id": 17,
+      "id": "a0017",
       "name": "Zenith Beats",
       "genre": "Electronic",
       "photo": "https://images.unsplash.com/photo-1597071058713-6776461d7737",
       "liked": false,
       "releases": [
         {
+          "id": "r0049",
           "title": "Zenith Zephyr",
           "year": 2007,
           "artwork": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47",
           "liked": true,
           "tracks": [
             {
+              "id": "t0097",
               "title": "Zenith's Groove",
               "length": "2:19",
               "liked": false,
@@ -1221,6 +1367,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0098",
               "title": "Zenith's Quest",
               "length": "2:42",
               "liked": true,
@@ -1230,12 +1377,14 @@
           ]
         },
         {
+          "id": "r0050",
           "title": "Beats Beyond Borders",
           "year": 2011,
           "artwork": "https://images.unsplash.com/photo-1485735662814-c4f66e49dbae",
           "liked": true,
           "tracks": [
             {
+              "id": "t0099",
               "title": "Beyond Borders",
               "length": "2:21",
               "liked": true,
@@ -1243,6 +1392,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0100",
               "title": "Pulse of Zenith",
               "length": "2:45",
               "liked": false,
@@ -1252,12 +1402,14 @@
           ]
         },
         {
+          "id": "r0051",
           "title": "Electric Euphoria",
           "year": 2014,
           "artwork": "https://images.unsplash.com/photo-1446776877081-d282a0f896e2",
           "liked": true,
           "tracks": [
             {
+              "id": "t0101",
               "title": "Electric Euphoria",
               "length": "2:23",
               "liked": true,
@@ -1265,6 +1417,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0102",
               "title": "Beats' Evolution",
               "length": "2:48",
               "liked": true,
@@ -1276,19 +1429,29 @@
       ]
     },
     {
-      "id": 18,
+      "id": "a0018",
       "name": "Pixel Groove",
       "genre": "Electronic",
       "photo": "https://plus.unsplash.com/premium_photo-1661720477446-429093480ad7",
       "liked": true,
       "releases": [
         {
+          "id": "r0052",
           "title": "Pixelated Pulse",
           "year": 2008,
           "artwork": "https://images.unsplash.com/photo-1559644705-9d56b56e1380",
           "liked": false,
           "tracks": [
             {
+              "id": "t0103",
+              "title": "Pixelated Pulse",
+              "length": "2:25",
+              "liked": true,
+              "added": false,
+              "link": "./src/assets/tracks/album1track1.mp3"
+            },
+            {
+              "id": "t0104",
               "title": "Pixel's Pulse",
               "length": "2:51",
               "liked": true,
@@ -1298,51 +1461,81 @@
           ]
         },
         {
+          "id": "r0053",
           "title": "Groove Grid",
           "year": 2012,
           "artwork": "https://images.unsplash.com/photo-1549317336-206569e8475c?q=80&w=1974",
           "liked": false,
           "tracks": [
             {
+              "id": "t0105",
+              "title": "Groove Grid",
+              "length": "2:27",
+              "liked": false,
+              "added": false,
+              "link": "./src/assets/tracks/album2track1.mp3"
+            },
+            {
+              "id": "t0106",
               "title": "Groove's Symphony",
               "length": "2:54",
-              "liked": false,
+              "liked": true,
               "added": true,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
         },
         {
+          "id": "r0054",
           "title": "Digital Dancescape",
           "year": 2015,
           "artwork": "https://images.unsplash.com/photo-1503875154399-95d2b151e3b0",
           "liked": true,
           "tracks": [
             {
+              "id": "t0107",
               "title": "Digital Dancescape",
               "length": "2:29",
               "liked": true,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
+            },
+            {
+              "id": "t0108",
+              "title": "Pixel's Path",
+              "length": "2:57",
+              "liked": false,
+              "added": true,
+              "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
         }
       ]
     },
     {
-      "id": 19,
+      "id": "a0019",
       "name": "Autumn Skies",
       "genre": "Folk",
       "photo": "https://images.unsplash.com/photo-1550617749-4ec0d574c429",
       "liked": true,
       "releases": [
         {
+          "id": "r0055",
           "title": "Skies of Gold",
           "year": 2009,
           "artwork": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
           "liked": false,
           "tracks": [
             {
+              "id": "t0109",
+              "title": "Golden Skies",
+              "length": "2:31",
+              "liked": false,
+              "added": false,
+              "link": "./src/assets/tracks/album1track1.mp3"
+            },
+            {
+              "id": "t0110",
               "title": "Whispering Winds",
               "length": "3:00",
               "liked": true,
@@ -1352,27 +1545,39 @@
           ]
         },
         {
+          "id": "r0056",
           "title": "Fireside Folktales",
           "year": 2013,
           "artwork": "https://images.unsplash.com/photo-1627142567138-e2fa4211f0ce",
           "liked": false,
           "tracks": [
             {
+              "id": "t0111",
               "title": "Fireside Tales",
               "length": "2:33",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album2track1.mp3"
+            },
+            {
+              "id": "t0112",
+              "title": "Skies' Serenade",
+              "length": "3:02",
+              "liked": false,
+              "added": false,
+              "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
         },
         {
+          "id": "r0057",
           "title": "Autumn's Melancholy Melodies",
           "year": 2016,
           "artwork": "https://images.unsplash.com/photo-1583441249153-5821d2c99433",
           "liked": true,
           "tracks": [
             {
+              "id": "t0113",
               "title": "Autumn's Melody",
               "length": "2:35",
               "liked": true,
@@ -1380,6 +1585,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0114",
               "title": "Fireside Lullaby",
               "length": "3:05",
               "liked": true,
@@ -1391,19 +1597,29 @@
       ]
     },
     {
-      "id": 20,
+      "id": "a0020",
       "name": "Cedar Ridge",
       "genre": "Folk",
       "photo": "https://images.unsplash.com/photo-1597339037558-4cf7461ca3e3",
       "liked": true,
       "releases": [
         {
+          "id": "r0058",
           "title": "Rustic Reverie",
           "year": 2010,
           "artwork": "https://images.unsplash.com/photo-1496865534669-25ec2a3a0fd3",
           "liked": false,
           "tracks": [
             {
+              "id": "t0115",
+              "title": "Rustic Reverie",
+              "length": "2:37",
+              "liked": true,
+              "added": true,
+              "link": "./src/assets/tracks/album1track1.mp3"
+            },
+            {
+              "id": "t0116",
               "title": "Ridge's Reflection",
               "length": "3:09",
               "liked": false,
@@ -1413,27 +1629,39 @@
           ]
         },
         {
+          "id": "r0059",
           "title": "Cedar Serenade",
           "year": 2014,
           "artwork": "https://images.unsplash.com/photo-1504198266287-1659872e6590",
           "liked": true,
           "tracks": [
             {
+              "id": "t0117",
+              "title": "Cedar Serenade",
+              "length": "2:39",
+              "liked": false,
+              "added": false,
+              "link": "./src/assets/tracks/album2track1.mp3"
+            },
+            {
+              "id": "t0118",
               "title": "Cedar's Song",
               "length": "3:11",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
         },
         {
+          "id": "r0060",
           "title": "Folklore & Firelight",
           "year": 2017,
           "artwork": "https://images.unsplash.com/photo-1564462643556-275f42ce818b",
           "liked": true,
           "tracks": [
             {
+              "id": "t0119",
               "title": "Folklore & Firelight",
               "length": "2:41",
               "liked": true,
@@ -1441,6 +1669,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0120",
               "title": "Rustic Rhapsody",
               "length": "3:14",
               "liked": false,
@@ -1452,19 +1681,54 @@
       ]
     },
     {
-      "id": 21,
+      "id": "a0021",
       "name": "Misty Hollow",
       "genre": "Folk",
       "photo": "https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257",
       "liked": true,
       "releases": [
         {
+          "id": "r0061",
           "title": "Hollow Hymns",
           "year": 2011,
           "artwork": "https://images.unsplash.com/photo-1586830746542-19b25c53497f",
           "liked": false,
           "tracks": [
             {
+              "id": "t0121",
+              "title": "Hollow Hymns",
+              "length": "2:43",
+              "liked": false,
+              "added": false,
+              "link": "./src/assets/tracks/album1track1.mp3"
+            },
+            {
+              "id": "t0122",
+              "title": "Misty's Melody",
+              "length": "3:18",
+              "liked": true,
+              "added": true,
+              "link": "./src/assets/tracks/album1track2.mp3"
+            }
+          ]
+        },
+        {
+          "id": "r0062",
+          "title": "Misty Meadows",
+          "year": 2015,
+          "artwork": "https://images.unsplash.com/photo-1549997719-2422b34490fa",
+          "liked": true,
+          "tracks": [
+            {
+              "id": "t0123",
+              "title": "Misty Meadows",
+              "length": "2:45",
+              "liked": false,
+              "added": false,
+              "link": "./src/assets/tracks/album2track1.mp3"
+            },
+            {
+              "id": "t0124",
               "title": "Hollow's Reverie",
               "length": "3:20",
               "liked": true,
@@ -1474,27 +1738,14 @@
           ]
         },
         {
-          "title": "Misty Meadows",
-          "year": 2015,
-          "artwork": "https://images.unsplash.com/photo-1549997719-2422b34490fa",
-          "liked": true,
-          "tracks": [
-            {
-              "title": "Misty's Melody",
-              "length": "3:18",
-              "liked": false,
-              "added": false,
-              "link": "./src/assets/tracks/album1track2.mp3"
-            }
-          ]
-        },
-        {
+          "id": "r0063",
           "title": "Whispers in the Mist",
           "year": 2018,
           "artwork": "https://images.unsplash.com/photo-1520283818086-3f6dffb019c0",
           "liked": true,
           "tracks": [
             {
+              "id": "t0125",
               "title": "Whispers in the Mist",
               "length": "2:47",
               "liked": true,
@@ -1502,6 +1753,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0126",
               "title": "Meadow's Magic",
               "length": "3:23",
               "liked": true,
@@ -1513,19 +1765,21 @@
       ]
     },
     {
-      "id": 22,
+      "id": "a0022",
       "name": "Orion Symphony",
       "genre": "Classical",
       "photo": "https://images.unsplash.com/flagged/photo-1572372710427-43f08447d837",
       "liked": true,
       "releases": [
         {
+          "id": "r0064",
           "title": "Celestial Sonata",
           "year": 2012,
           "artwork": "https://images.unsplash.com/photo-1526142684086-7ebd69df27a5",
           "liked": false,
           "tracks": [
             {
+              "id": "t0127",
               "title": "Celestial Overture",
               "length": "2:49",
               "liked": true,
@@ -1533,6 +1787,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0128",
               "title": "Orion's Journey",
               "length": "3:26",
               "liked": false,
@@ -1542,12 +1797,14 @@
           ]
         },
         {
+          "id": "r0065",
           "title": "Orchestral Odyssey",
           "year": 2016,
           "artwork": "https://images.unsplash.com/photo-1578301978288-f1edac88d64e",
           "liked": true,
           "tracks": [
             {
+              "id": "t0129",
               "title": "Odyssey's Crescendo",
               "length": "2:51",
               "liked": true,
@@ -1555,6 +1812,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0130",
               "title": "Symphony of Stars",
               "length": "3:29",
               "liked": false,
@@ -1564,23 +1822,26 @@
           ]
         },
         {
+          "id": "r0066",
           "title": "Symphonic Stardust",
           "year": 2019,
           "artwork": "https://images.unsplash.com/photo-1547927168-17021e7ef8c3",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
+              "id": "t0131",
               "title": "Stardust Symphony",
               "length": "2:53",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0132",
               "title": "Celestial Serenade",
               "length": "3:32",
               "liked": false,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1588,19 +1849,21 @@
       ]
     },
     {
-      "id": 23,
+      "id": "a0023",
       "name": "Celestia Grace",
       "genre": "Classical",
       "photo": "https://images.unsplash.com/photo-1491349174775-aaafddd81942",
       "liked": true,
       "releases": [
         {
+          "id": "r0067",
           "title": "Graceful Reverence",
           "year": 2013,
           "artwork": "https://images.unsplash.com/photo-1540968221243-29f5d70540bf",
           "liked": false,
           "tracks": [
             {
+              "id": "t0133",
               "title": "Graceful Reverence",
               "length": "2:55",
               "liked": false,
@@ -1608,6 +1871,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0134",
               "title": "Grace's Symphony",
               "length": "3:35",
               "liked": true,
@@ -1617,12 +1881,14 @@
           ]
         },
         {
+          "id": "r0068",
           "title": "Ethereal Elegance",
           "year": 2017,
           "artwork": "https://images.unsplash.com/photo-1473177104440-ffee2f376098",
           "liked": true,
           "tracks": [
             {
+              "id": "t0135",
               "title": "Ethereal Elegance",
               "length": "2:57",
               "liked": true,
@@ -1630,6 +1896,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0136",
               "title": "Celestia's Melody",
               "length": "3:38",
               "liked": true,
@@ -1639,22 +1906,25 @@
           ]
         },
         {
+          "id": "r0069",
           "title": "Celestial Serenade",
           "year": 2020,
           "artwork": "https://images.unsplash.com/photo-1579449486806-6103f73ea0d5",
-          "liked": false,
+          "liked": true,
           "tracks": [
             {
+              "id": "t0137",
               "title": "Celestial Serenade",
               "length": "2:59",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0138",
               "title": "Elegance's Echo",
               "length": "3:41",
-              "liked": true,
+              "liked": false,
               "added": true,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -1663,19 +1933,21 @@
       ]
     },
     {
-      "id": 24,
+      "id": "a0024",
       "name": "Sterling Virtuoso",
       "genre": "Classical",
       "photo": "https://plus.unsplash.com/premium_photo-1679415150527-8bd2ef794e28",
       "liked": true,
       "releases": [
         {
+          "id": "r0070",
           "title": "Virtuoso's Voyage",
           "year": 2014,
           "artwork": "https://plus.unsplash.com/premium_photo-1672857822411-ad82b8180078",
           "liked": false,
           "tracks": [
             {
+              "id": "t0139",
               "title": "Virtuoso's Journey",
               "length": "4:05",
               "liked": true,
@@ -1683,50 +1955,57 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0140",
               "title": "Sterling's Serenade",
               "length": "3:44",
               "liked": false,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
         },
         {
+          "id": "r0071",
           "title": "Sterling Sonata",
           "year": 2018,
           "artwork": "https://plus.unsplash.com/premium_photo-1682096067532-3e89ab323ebf",
           "liked": false,
           "tracks": [
             {
+              "id": "t0141",
               "title": "Sterling Sonata",
               "length": "3:53",
               "liked": false,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0142",
               "title": "Virtuoso's Symphony",
               "length": "3:47",
               "liked": false,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
         },
         {
+          "id": "r0072",
           "title": "Masterful Melodies",
           "year": 2021,
           "artwork": "https://plus.unsplash.com/premium_photo-1682096116534-7dc8d83b6d72",
           "liked": false,
           "tracks": [
             {
+              "id": "t0143",
               "title": "Masterful Melodies",
               "length": "3:52",
               "liked": false,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0144",
               "title": "Masterpiece's Echo",
               "length": "3:50",
               "liked": true,
@@ -1738,19 +2017,21 @@
       ]
     },
     {
-      "id": 25,
+      "id": "a0025",
       "name": "Violet Dusk",
       "genre": "Alternative",
       "photo": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59",
       "liked": true,
       "releases": [
         {
+          "id": "r0073",
           "title": "Dusk Descendants",
           "year": 2015,
           "artwork": "https://plus.unsplash.com/premium_photo-1673512198690-6439132f3187",
           "liked": false,
           "tracks": [
             {
+              "id": "t0145",
               "title": "Dusk Descendants",
               "length": "4:02",
               "liked": false,
@@ -1758,6 +2039,7 @@
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0146",
               "title": "Violet's Vision",
               "length": "3:53",
               "liked": false,
@@ -1767,45 +2049,51 @@
           ]
         },
         {
+          "id": "r0074",
           "title": "Violet Veil",
           "year": 2019,
           "artwork": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
+              "id": "t0147",
               "title": "Veiled Veil",
               "length": "4:09",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0148",
               "title": "Dusk's Dream",
               "length": "3:56",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
         },
         {
+          "id": "r0075",
           "title": "Shadowed Symphonies",
           "year": 2022,
           "artwork": "https://images.unsplash.com/photo-1605217352585-3a61abcf0eb1",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
+              "id": "t0149",
               "title": "Shadowed Symphonies",
               "length": "3:42",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0150",
               "title": "Descendant's Echo",
               "length": "3:59",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1813,26 +2101,29 @@
       ]
     },
     {
-      "id": 26,
+      "id": "a0026",
       "name": "Shadow Atlas",
       "genre": "Alternative",
       "photo": "https://images.unsplash.com/photo-1542327897-d73f4005b533",
       "liked": true,
       "releases": [
         {
+          "id": "r0076",
           "title": "Atlas of Shadows",
           "year": 2016,
           "artwork": "https://images.unsplash.com/photo-1590364962261-20baeb6262a7",
           "liked": false,
           "tracks": [
             {
+              "id": "t0151",
               "title": "Atlas' Echo",
               "length": "3:54",
               "liked": true,
-              "added": false,
+              "added": true,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0152",
               "title": "Atlas' Shadow",
               "length": "4:11",
               "liked": false,
@@ -1842,19 +2133,22 @@
           ]
         },
         {
+          "id": "r0077",
           "title": "Echoes in the Abyss",
           "year": 2020,
           "artwork": "https://images.unsplash.com/photo-1570158268183-d296b2892211",
           "liked": true,
           "tracks": [
             {
+              "id": "t0153",
               "title": "Echoes Abyss",
               "length": "3:49",
-              "liked": true,
-              "added": false,
+              "liked": false,
+              "added": true,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0154",
               "title": "Echoes' Evolution",
               "length": "3:30",
               "liked": false,
@@ -1864,12 +2158,14 @@
           ]
         },
         {
+          "id": "r0078",
           "title": "Shadowed Soundscapes",
           "year": 2023,
           "artwork": "https://images.unsplash.com/photo-1598387993441-a364f854c3e1",
           "liked": false,
           "tracks": [
             {
+              "id": "t0155",
               "title": "Shadow's Sound",
               "length": "3:50",
               "liked": true,
@@ -1877,6 +2173,7 @@
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0156",
               "title": "Shadow's Symphony",
               "length": "3:45",
               "liked": false,
@@ -1888,26 +2185,29 @@
       ]
     },
     {
-      "id": 27,
+      "id": "a0027",
       "name": "Ember Veil",
       "genre": "Alternative",
       "photo": "https://images.unsplash.com/photo-1598387846419-a2c870ad3ecd",
       "liked": true,
       "releases": [
         {
+          "id": "r0079",
           "title": "Veiled Vibrations",
           "year": 2017,
           "artwork": "https://images.unsplash.com/photo-1522932753915-9ee97e43e3d9",
           "liked": false,
           "tracks": [
             {
+              "id": "t0157",
               "title": "Veiled Vibrations",
               "length": "4:06",
-              "liked": true,
-              "added": false,
+              "liked": false,
+              "added": true,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
+              "id": "t0158",
               "title": "Ember's Embrace",
               "length": "3:36",
               "liked": true,
@@ -1917,12 +2217,14 @@
           ]
         },
         {
+          "id": "r0080",
           "title": "Ember Echoes",
           "year": 2021,
           "artwork": "https://images.unsplash.com/photo-1615592602923-9fb437226763",
           "liked": true,
           "tracks": [
             {
+              "id": "t0159",
               "title": "Ember's Echo",
               "length": "3:41",
               "liked": false,
@@ -1930,6 +2232,7 @@
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
+              "id": "t0160",
               "title": "Veil's Reverie",
               "length": "3:46",
               "liked": true,
@@ -1939,19 +2242,22 @@
           ]
         },
         {
+          "id": "r0081",
           "title": "Reverberations of Ember",
           "year": 2022,
           "artwork": "https://images.unsplash.com/photo-1543384966-a56a575695c9",
           "liked": true,
           "tracks": [
             {
+              "id": "t0161",
               "title": "Reverberations of Ember",
               "length": "3:39",
-              "liked": true,
+              "liked": false,
               "added": true,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
+              "id": "t0162",
               "title": "Vibrant Ember",
               "length": "4:04",
               "liked": false,
@@ -1961,6 +2267,22 @@
           ]
         }
       ]
+    }
+  ],
+  "playlists": [
+    {
+      "id": "p0001",
+      "name": "Liked Songs",
+      "photo": "/assets/band1-cover",
+      "liked": false,
+      "tracks": ["t0001", "t0005", "t0009", "t0011", "t0017", "t0019", "t0021", "t0023", "t0029", "t0031", "t0037", "t0045", "t0047", "t0051", "t0053", "t0065", "t0069", "t0071", "t0073", "t0079", "t0083", "t0087", "t0089", "t0093", "t0099", "t0101", "t0103", "t0107", "t0111", "t0113", "t0115", "t0119", "t0125", "t0127", "t0129", "t0131", "t0135", "t0137", "t0139", "t0147", "t0149", "t0151", "t0155", "t0002", "t0008", "t0010", "t0012", "t0014", "t0018", "t0024", "t0028", "t0030", "t0036", "t0042", "t0044", "t0046", "t0048", "t0052", "t0062", "t0064", "t0066", "t0070", "t0076", "t0078", "t0080", "t0084", "t0088", "t0092", "t0098", "t0102", "t0104", "t0110", "t0114", "t0118", "t0124", "t0126", "t0132", "t0134", "t0136", "t0144", "t0148", "t0150", "t0158", "t0160"]
+    },
+    {
+      "id": "p0002",
+      "name": "My Playlist",
+      "photo": "https://images.unsplash.com/photo-1494232410401-ad00d5433cfa",
+      "liked": false,
+      "tracks": ["t0001","t0007","t0009","t0013","t0015","t0021","t0027","t0031","t0037","t0039","t0041","t0053","t0055","t0057","t0063","t0067","t0071","t0073","t0075","t0079","t0083","t0085","t0089","t0091","t0093","t0097","t0101","t0113","t0115","t0119","t0123","t0125","t0127","t0141","t0145","t0153","t0155","t0157","t0159","t0161","t0004","t0006","t0008","t0014","t0018","t0024","t0028","t0032","t0038","t0046","t0050","t0052","t0058","t0060","t0066","t0068","t0072","t0074","t0076","t0078","t0080","t0086","t0090","t0096","t0098","t0104","t0106","t0108","t0114","t0122","t0124","t0126","t0128","t0130","t0134","t0136","t0138","t0142","t0144","t0146","t0152","t0158"]
     }
   ]
 }
