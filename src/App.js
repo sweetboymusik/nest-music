@@ -12,6 +12,9 @@ import AlbumGrid from "./components/AlbumGrid/AlbumGrid";
 import SongGrid from "./components/SongGrid/SongGrid";
 import PlaylistGrid from "./components/PlaylistGrid/PlaylistGrid";
 import PageHome from "./components/PageHome/PageHome";
+import PageArtists from "./components/PageArtists/PageArtists";
+import PageAlbums from "./components/PageAlbums/PageAlbums";
+import AlbumHeader from "./components/AlbumHeader/AlbumHeader";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -88,6 +91,8 @@ function App() {
   // generate random artist cards
   const shuffled = artists.toSorted(() => 0.5 - Math.random());
   let selected = shuffled.slice(0, 3);
+  const albumShuffled = artists.toSorted(() => 0.5 - Math.random());
+  let albumSelected = albumShuffled.slice(0, 5);
 
   return (
     <Router>
@@ -98,11 +103,15 @@ function App() {
           <Routes>
             <Route
               path="/home"
-              element={<PageHome artists={artists} shuffled={selected} />}
+              element={<PageHome artists={artists} shuffled={selected} albumShuffled={albumSelected} />}
             />
             <Route path="/browse" element={<PageBrowse />}></Route>
             <Route path="/library"></Route>
             <Route path="/browse-albums"></Route>
+            <Route path="/artists" element={<PageArtists artists={artists} />} ></Route>
+            <Route path="/albums" element={<PageAlbums artists={artists} />} ></Route>
+            <Route path="/songs" element={<AlbumHeader/>}></Route>
+
           </Routes>
         </div>
 
