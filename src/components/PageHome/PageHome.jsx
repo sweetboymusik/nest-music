@@ -4,7 +4,7 @@ import ArtistGrid from "../ArtistGrid/ArtistGrid";
 import PlaylistGrid from "../PlaylistGrid/PlaylistGrid";
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 
-function PageHome({ artists, shuffled }) {
+function PageHome({ artists, shuffled, albumShuffled }) {
   return (
     <div className="home-page">
       <div className="home-section">
@@ -22,7 +22,7 @@ function PageHome({ artists, shuffled }) {
       <div className="home-section">
         <h1>Featured Albums</h1>
         <hr className="home-divider" />
-        <AlbumGrid artists={shuffled} />
+        <AlbumGrid artists={albumShuffled} />
       </div>
     </div>
   );
