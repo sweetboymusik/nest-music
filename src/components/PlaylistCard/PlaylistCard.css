@@ -1,0 +1,26 @@
+.playlist-card {
+    position: relative;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+  
+.playlist-card img {
+    height: 200px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+  
+.playlist-card h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 2px 4px black;
+    white-space: nowrap;
+}
