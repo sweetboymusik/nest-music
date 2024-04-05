@@ -1,5 +1,15 @@
 import "./GenreGrid.css";
 import GenreCard from "../GenreCard/GenreCard";
+import artworkRB from '../../assets/images/artwork-r&b.jpg';
+import artworkPop from '../../assets/images/artwork-pop.jpg';
+import artworkRock from '../../assets/images/artwork-rock.jpg';
+import artworkJazz from '../../assets/images/artwork-jazz.jpg';
+import artworkCountry from '../../assets/images/artwork-country.jpg';
+import artworkElectronic from '../../assets/images/artwork-electronic.jpg';
+import artworkFolk from '../../assets/images/artwork-folk.jpg';
+import artworkClassical from '../../assets/images/artwork-classical.jpg';
+import artworkAlternative from '../../assets/images/artwork-alternative.jpg';
+
 
 function GenreGrid() {
   return (
@@ -7,36 +17,44 @@ function GenreGrid() {
       {/* Initial setup just to check if grid is working */}
       <GenreCard
         genre="R&B"
-        imageUrl="https://images.unsplash.com/photo-1574169208507-84376144848b"
+        imageUrl={artworkRB}
       />
       <GenreCard
         genre="Pop"
-        imageUrl="https://images.unsplash.com/photo-1579547621113-e4bb2a19bdd6"
+        imageUrl={artworkPop}
       />
       <GenreCard
         genre="Rock"
-        imageUrl="https://images.unsplash.com/photo-1541661538396-53ba2d051eed"
+        imageUrl={artworkRock}
       />
       <GenreCard
         genre="Jazz"
-        imageUrl="https://images.unsplash.com/photo-1595411425732-e69c1abe2763"
+        imageUrl={artworkJazz}
       />
       <GenreCard
         genre="Country"
-        imageUrl="https://images.unsplash.com/photo-1599496507927-9056debd0f0a"
+        imageUrl={artworkCountry}
       />
       <GenreCard
-        genre="Country"
-        imageUrl="https://images.unsplash.com/photo-1599496507927-9056debd0f0a"
+        genre="Electronic"
+        imageUrl={artworkElectronic}
       />
       <GenreCard
-        genre="Country"
-        imageUrl="https://images.unsplash.com/photo-1599496507927-9056debd0f0a"
+        genre="Folk"
+        imageUrl={artworkFolk}
       />
       <GenreCard
-        genre="Country"
-        imageUrl="https://images.unsplash.com/photo-1599496507927-9056debd0f0a"
+        genre="Classical"
+        imageUrl={artworkClassical}
       />
+      <GenreCard
+        genre="Alternative"
+        imageUrl={artworkAlternative}
+      />      
+      <GenreCard
+      genre="More..."
+      imageUrl=""
+    />
     </div>
   );
 }
