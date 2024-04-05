@@ -9,6 +9,7 @@ import Player from "./components/Player/Player";
 import PageBrowse from "./components/PageBrowse/PageBrowse";
 import SongCard from "./components/SongCard/SongCard";
 import AlbumGrid from "./components/AlbumGrid/AlbumGrid";
+import SongGrid from "./components/SongGrid/SongGrid";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -89,14 +90,7 @@ function App() {
 
         <div className="content-container">
           <Routes>
-            <Route
-              path="/home"
-              element={
-                <div>
-                  <SongCard />
-                </div>
-              }
-            />
+            <Route path="/home" element={<div></div>} />
 
             <Route path="/browse" element={<PageBrowse />}></Route>
             <Route path="/library"></Route>

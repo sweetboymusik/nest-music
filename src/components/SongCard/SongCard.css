@@ -3,7 +3,6 @@
   background-color: #2a2925;
   color: #eee;
   height: 48px;
-  width: 600px;
   justify-content: space-between;
   align-items: center;
   padding: 0 8px;
@@ -11,7 +10,13 @@
 }
 
 .song-text {
-  width: 120px;
+  width: 30%;
+  font-size: 12px;
+}
+
+.song-link {
+  text-decoration: none;
+  color: #eee;
 }
 
 .song-info {
@@ -19,8 +24,12 @@
   gap: 16px;
   flex: 1;
 }
+
 .song-image {
   height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 2px;
 }
 
 .song-icons {
@@ -29,7 +38,7 @@
 }
 
 .song-icon {
-  font-size: 24px;
+  font-size: 16px;
   color: #eee;
 }
 
@@ -43,4 +52,18 @@
 
 .liked {
   color: red;
+}
+
+.song-text-time {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  font-size: 12px;
+}
+
+.song-play {
+  border: none;
+  background: none;
+  height: 32px;
+  cursor: pointer;
 }
