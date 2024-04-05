@@ -1,6 +1,7 @@
 .album-grid {
-  width: 70vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
   gap: 16px;
 }
