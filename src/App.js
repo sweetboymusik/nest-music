@@ -8,6 +8,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Player from "./components/Player/Player";
 import PageBrowse from "./components/PageBrowse/PageBrowse";
 import SongCard from "./components/SongCard/SongCard";
+import AlbumGrid from "./components/AlbumGrid/AlbumGrid";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -61,10 +62,6 @@ function App() {
     console.log(audio.volume);
   }, [volume]);
 
-  // useEffect(() => {
-  //   audio.currentTime = 10;
-  // }, [position]);
-
   useEffect(() => {
     const getArtists = async () => {
       const artistsFromServer = await fetchArtists();
@@ -103,7 +100,7 @@ function App() {
 
             <Route path="/browse" element={<PageBrowse />}></Route>
             <Route path="/library"></Route>
-            <Route path="/browse-albums" element={<PageBrowseAlbums />}></Route>
+            <Route path="/browse-albums"></Route>
           </Routes>
         </div>
 

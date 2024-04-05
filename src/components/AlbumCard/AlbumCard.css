@@ -1,22 +1,31 @@
-
 .AlbumCard {
-    width: 190px;
-    height: 240px;
-    border-style: solid;
+  width: 180px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  color: #2a2925;
+  gap: 4px;
 }
 
-.AlbumGrid {
-    display: grid;
-    grid-auto-flow: column;
-    border-style: solid;
+.AlbumCard-Link {
+  text-decoration: none;
+  color: #2a2925;
 }
 
-.AlbumCardHolder {
-    display: flex;
-    width: 1000px;
-    height: 480px;
-    border-style: solid;
-    align-items: center;
-    align-self: right;
-    
+.AlbumCard-Image {
+  object-fit: cover;
+  height: 180px;
+  width: 180px;
+  border-radius: 2px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.AlbumCard-Text {
+  display: flex;
+  flex-direction: column;
+  font-size: 10pt;
+}
+
+.AlbumCard-Text-Title {
+  font-weight: bold;
 }

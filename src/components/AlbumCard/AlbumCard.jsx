@@ -1,11 +1,26 @@
 import "./AlbumCard.css";
+import { Link } from "react-router-dom";
 
-function AlbumCard(album_name, artist, url) {
+function AlbumCard({ artist, release }) {
   return (
-    <div class="AlbumCard">
-      <img src={url} alt="Album" />
-      <h2> {album_name} </h2>
-      <h3> {artist} - 2022 </h3>
+    <div className="AlbumCard">
+      <Link
+        className="AlbumCard-Link"
+        to={`artists/${artist.name}/${release.title}}`}
+      >
+        <img src={release.artwork} alt="Album" className="AlbumCard-Image" />
+      </Link>
+      <div className="AlbumCard-Text">
+        <Link
+          className="AlbumCard-Link"
+          to={`artists/${artist.name}/${release.title}}`}
+        >
+          <span className="AlbumCard-Text-Title">{release.title}</span>
+        </Link>
+        <Link className="AlbumCard-Link" to={`artists/${artist.name}`}>
+          <span>{artist.name}</span>
+        </Link>
+      </div>
     </div>
   );
 }
