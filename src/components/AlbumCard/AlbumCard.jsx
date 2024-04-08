@@ -9,7 +9,7 @@ function AlbumCard({ artist, release }) {
         to={`artists/${artist.name}/${release.title}}`}
       >
         <img
-          src={require(`../../assets/images/artwork/autumn_skies-autumns_melancholy_melodies.jpg`)}
+          src={require(`../../assets/images/artwork/${release.artwork}`)}
           alt="Album"
           className="AlbumCard-Image"
         />

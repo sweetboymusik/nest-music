@@ -256,14 +256,14 @@
       "id": "a0004",
       "name": "Nova Belle",
       "genre": "Pop",
-      "photo": "nova_bell.jpg",
+      "photo": "nova_belle.jpg",
       "liked": false,
       "releases": [
         {
           "id": "r0010",
           "title": "Starlight Symphony",
           "year": 1994,
-          "artwork": "nova_bell-starlight_symphony.jpg",
+          "artwork": "nova_belle-starlight_symphony.jpg",
           "liked": true,
           "tracks": [
             {
@@ -288,7 +288,7 @@
           "id": "r0011",
           "title": "Pop Princess Diaries",
           "year": 1998,
-          "artwork": "nova_bell-pop_princess_diaries.jpg",
+          "artwork": "nova_belle-pop_princess_diaries.jpg",
           "liked": false,
           "tracks": [
             {
@@ -313,7 +313,7 @@
           "id": "r0012",
           "title": "Melodic Mirage",
           "year": 2001,
-          "artwork": "nova_bell-melodic_mirage.jpg",
+          "artwork": "nova_belle-melodic_mirage.jpg",
           "liked": true,
           "tracks": [
             {
@@ -347,7 +347,7 @@
           "id": "r0013",
           "title": "Celestial Cadence",
           "year": 1995,
-          "artwork": "pheonix_rivers-celestial_cadence.jpg",
+          "artwork": "phoenix_rivers-celestial_cadence.jpg",
           "liked": true,
           "tracks": [
             {
@@ -372,7 +372,7 @@
           "id": "r0014",
           "title": "Echoes of Eden",
           "year": 1999,
-          "artwork": "pheonix_rivers-echoes_of_eden.jpg",
+          "artwork": "phoenix_rivers-echoes_of_eden.jpg",
           "liked": true,
           "tracks": [
             {
@@ -397,7 +397,7 @@
           "id": "r0015",
           "title": "Riverside Reverie",
           "year": 2002,
-          "artwork": "pheonix_rivers-riverside_reverie.jpg",
+          "artwork": "phoenix_rivers-riverside_reverie.jpg",
           "liked": false,
           "tracks": [
             {
@@ -817,7 +817,7 @@
           "id": "r0030",
           "title": "Jazz Under the Stars",
           "year": 2007,
-          "artwork": "velvet_moon-jass_under_the_stars.jpg",
+          "artwork": "velvet_moon-jazz_under_the_stars.jpg",
           "liked": true,
           "tracks": [
             {
@@ -876,7 +876,7 @@
           "id": "r0032",
           "title": "Dancing Dawn",
           "year": 2005,
-          "artwork": "aurora_swing-dancing_down.jpg",
+          "artwork": "aurora_swing-dancing_dawn.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1523,7 +1523,7 @@
           "id": "r0055",
           "title": "Skies of Gold",
           "year": 2009,
-          "artwork": "autumn_skies-skiesofgold.jpg",
+          "artwork": "autumn_skies-skies_of_gold.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1768,7 +1768,7 @@
       "id": "a0022",
       "name": "Orion Symphony",
       "genre": "Classical",
-      "photo": "orion_sypmhony.jpg",
+      "photo": "orion_symphony.jpg",
       "liked": true,
       "releases": [
         {
