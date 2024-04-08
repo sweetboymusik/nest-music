@@ -1,0 +1,33 @@
+.song-section-container {
+  display: flex;
+  width: 100%;
+  height: 200px;
+}
+
+.song-section-text {
+  display: flex;
+  color: white;
+  background-color: #1b0505;
+  border-radius: 2px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-section-text h1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px; 
+  justify-content: center;
+}
+
+.song-section-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: #7f7f7f;
+  border-radius: 2px;
+  overflow: hidden;
+  width: calc(100vw - 300px);
+
+}
