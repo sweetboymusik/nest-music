@@ -92,6 +92,20 @@ function App() {
   const albumShuffled = artists.toSorted(() => 0.5 - Math.random());
   let albumSelected = albumShuffled.slice(0, 5);
 
+  // gets artist for PageArtist
+  let [artist, setArtist] = useState();
+  function GetArtist(name) {
+    let result = artists.filter((artist) => artist.name === name);
+    setArtist(result);
+    console.log(artist);
+  }
+  useState(() => {
+    GetArtist("Amara");
+  }, [artists]);
+  useState(() => {
+    console.log("hello");
+  }, [artist]);
+
   return (
     <Router>
       <div className="app">
