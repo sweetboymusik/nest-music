@@ -2273,7 +2273,7 @@
     {
       "id": "p0001",
       "name": "Liked Songs",
-      "photo": "https://images.unsplash.com/photo-1505751104546-4b63c93054b1",
+      "photo": "photo-liked_songs.jpg",
       "liked": false,
       "tracks": [
         "t0001",
@@ -2365,7 +2365,7 @@
     {
       "id": "p0002",
       "name": "My Playlist",
-      "photo": "https://images.unsplash.com/photo-1494232410401-ad00d5433cfa",
+      "photo": "photo-my_playlist.jpg",
       "liked": false,
       "tracks": [
         "t0001",
@@ -2455,7 +2455,7 @@
     {
       "id": "p0003",
       "name": "Roadtrip Mix",
-      "photo": "https://images.unsplash.com/photo-1534540378968-85a7b8fde19f",
+      "photo": "photo-roadtrip_mix.jpg",
       "liked": false,
       "tracks": [
         "t0001",
@@ -2547,7 +2547,7 @@
     {
       "id": "p0004",
       "name": "Office Beats",
-      "photo": "https://images.unsplash.com/photo-1512844484773-b3412be25763",
+      "photo": "photo-office_beats.jpg",
       "liked": false,
       "tracks": [
         "t0001",
@@ -2637,7 +2637,7 @@
     {
       "id": "p0005",
       "name": "Zen Zone",
-      "photo": "https://images.unsplash.com/photo-1546552616-57cd402a61e8",
+      "photo": "photo-zen_zone.jpg",
       "liked": false,
       "tracks": [
         "t0001",
