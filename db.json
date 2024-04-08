@@ -1516,14 +1516,14 @@
       "id": "a0019",
       "name": "Autumn Skies",
       "genre": "Folk",
-      "photo": "https://images.unsplash.com/photo-1550617749-4ec0d574c429",
+      "photo": "autumn_skies.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0055",
           "title": "Skies of Gold",
           "year": 2009,
-          "artwork": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e",
+          "artwork": "autumn_skies-skiesofgold.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1548,7 +1548,7 @@
           "id": "r0056",
           "title": "Fireside Folktales",
           "year": 2013,
-          "artwork": "https://images.unsplash.com/photo-1627142567138-e2fa4211f0ce",
+          "artwork": "autumn_skies-fireside_folktales.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1573,7 +1573,7 @@
           "id": "r0057",
           "title": "Autumn's Melancholy Melodies",
           "year": 2016,
-          "artwork": "https://images.unsplash.com/photo-1583441249153-5821d2c99433",
+          "artwork": "autumn_skies-autumns_melancholy_melodies.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1600,14 +1600,14 @@
       "id": "a0020",
       "name": "Cedar Ridge",
       "genre": "Folk",
-      "photo": "https://images.unsplash.com/photo-1597339037558-4cf7461ca3e3",
+      "photo": "cedar_ridge.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0058",
           "title": "Rustic Reverie",
           "year": 2010,
-          "artwork": "https://images.unsplash.com/photo-1496865534669-25ec2a3a0fd3",
+          "artwork": "cedar_ridge-rustic_reverie.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1632,7 +1632,7 @@
           "id": "r0059",
           "title": "Cedar Serenade",
           "year": 2014,
-          "artwork": "https://images.unsplash.com/photo-1504198266287-1659872e6590",
+          "artwork": "cedar_ridge-cedar_serenade.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1657,7 +1657,7 @@
           "id": "r0060",
           "title": "Folklore & Firelight",
           "year": 2017,
-          "artwork": "https://images.unsplash.com/photo-1564462643556-275f42ce818b",
+          "artwork": "cedar_ridge-folklore_and_firelight.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1684,14 +1684,14 @@
       "id": "a0021",
       "name": "Misty Hollow",
       "genre": "Folk",
-      "photo": "https://images.unsplash.com/photo-1581403341630-a6e0b9d2d257",
+      "photo": "misty_hollow.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0061",
           "title": "Hollow Hymns",
           "year": 2011,
-          "artwork": "https://images.unsplash.com/photo-1586830746542-19b25c53497f",
+          "artwork": "misty_hollow-hollow_hymns.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1716,7 +1716,7 @@
           "id": "r0062",
           "title": "Misty Meadows",
           "year": 2015,
-          "artwork": "https://images.unsplash.com/photo-1549997719-2422b34490fa",
+          "artwork": "misty_hollow-misty_meadows.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1741,7 +1741,7 @@
           "id": "r0063",
           "title": "Whispers in the Mist",
           "year": 2018,
-          "artwork": "https://images.unsplash.com/photo-1520283818086-3f6dffb019c0",
+          "artwork": "misty_hollow-whispers_in_the_mist.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1768,14 +1768,14 @@
       "id": "a0022",
       "name": "Orion Symphony",
       "genre": "Classical",
-      "photo": "https://images.unsplash.com/flagged/photo-1572372710427-43f08447d837",
+      "photo": "orion_sypmhony.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0064",
           "title": "Celestial Sonata",
           "year": 2012,
-          "artwork": "https://images.unsplash.com/photo-1526142684086-7ebd69df27a5",
+          "artwork": "orion_symphony-celestial_sonata.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1800,7 +1800,7 @@
           "id": "r0065",
           "title": "Orchestral Odyssey",
           "year": 2016,
-          "artwork": "https://images.unsplash.com/photo-1578301978288-f1edac88d64e",
+          "artwork": "orion_symphony-orchestral_odyssey.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1825,7 +1825,7 @@
           "id": "r0066",
           "title": "Symphonic Stardust",
           "year": 2019,
-          "artwork": "https://images.unsplash.com/photo-1547927168-17021e7ef8c3",
+          "artwork": "orion_symphony-symphonic_stardust.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1852,14 +1852,14 @@
       "id": "a0023",
       "name": "Celestia Grace",
       "genre": "Classical",
-      "photo": "https://images.unsplash.com/photo-1491349174775-aaafddd81942",
+      "photo": "celestial_grace.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0067",
           "title": "Graceful Reverence",
           "year": 2013,
-          "artwork": "https://images.unsplash.com/photo-1540968221243-29f5d70540bf",
+          "artwork": "celestial_grace-graceful_reverence.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1884,7 +1884,7 @@
           "id": "r0068",
           "title": "Ethereal Elegance",
           "year": 2017,
-          "artwork": "https://images.unsplash.com/photo-1473177104440-ffee2f376098",
+          "artwork": "celestial_grace-ethereal_elegance.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1909,7 +1909,7 @@
           "id": "r0069",
           "title": "Celestial Serenade",
           "year": 2020,
-          "artwork": "https://images.unsplash.com/photo-1579449486806-6103f73ea0d5",
+          "artwork": "celestial_grace-celestial_serenade.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1936,14 +1936,14 @@
       "id": "a0024",
       "name": "Sterling Virtuoso",
       "genre": "Classical",
-      "photo": "https://plus.unsplash.com/premium_photo-1679415150527-8bd2ef794e28",
+      "photo": "sterling_virtuoso.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0070",
           "title": "Virtuoso's Voyage",
           "year": 2014,
-          "artwork": "https://plus.unsplash.com/premium_photo-1672857822411-ad82b8180078",
+          "artwork": "sterling_virtuoso-virtuosos_voyage.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1968,7 +1968,7 @@
           "id": "r0071",
           "title": "Sterling Sonata",
           "year": 2018,
-          "artwork": "https://plus.unsplash.com/premium_photo-1682096067532-3e89ab323ebf",
+          "artwork": "sterling_virtuoso-sterling_sonata.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1993,7 +1993,7 @@
           "id": "r0072",
           "title": "Masterful Melodies",
           "year": 2021,
-          "artwork": "https://plus.unsplash.com/premium_photo-1682096116534-7dc8d83b6d72",
+          "artwork": "sterling_virtuoso-masterful_melodies.jpg",
           "liked": false,
           "tracks": [
             {
@@ -2020,14 +2020,14 @@
       "id": "a0025",
       "name": "Violet Dusk",
       "genre": "Alternative",
-      "photo": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59",
+      "photo": "violet_dusk.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0073",
           "title": "Dusk Descendants",
           "year": 2015,
-          "artwork": "https://plus.unsplash.com/premium_photo-1673512198690-6439132f3187",
+          "artwork": "violet_dusk-dusk_descendants.jpg",
           "liked": false,
           "tracks": [
             {
@@ -2052,7 +2052,7 @@
           "id": "r0074",
           "title": "Violet Veil",
           "year": 2019,
-          "artwork": "https://images.unsplash.com/photo-1490578474895-699cd4e2cf59",
+          "artwork": "violet_dusk-violet_veil.jpg",
           "liked": false,
           "tracks": [
             {
@@ -2077,7 +2077,7 @@
           "id": "r0075",
           "title": "Shadowed Symphonies",
           "year": 2022,
-          "artwork": "https://images.unsplash.com/photo-1605217352585-3a61abcf0eb1",
+          "artwork": "violet_dusk-shadowed_symphonies.jpg",
           "liked": false,
           "tracks": [
             {
@@ -2104,14 +2104,14 @@
       "id": "a0026",
       "name": "Shadow Atlas",
       "genre": "Alternative",
-      "photo": "https://images.unsplash.com/photo-1542327897-d73f4005b533",
+      "photo": "shadow_atlas.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0076",
           "title": "Atlas of Shadows",
           "year": 2016,
-          "artwork": "https://images.unsplash.com/photo-1590364962261-20baeb6262a7",
+          "artwork": "shadow_atlas-atlas_of_shadows.jpg",
           "liked": false,
           "tracks": [
             {
@@ -2136,7 +2136,7 @@
           "id": "r0077",
           "title": "Echoes in the Abyss",
           "year": 2020,
-          "artwork": "https://images.unsplash.com/photo-1570158268183-d296b2892211",
+          "artwork": "shadow_atlas-echoes_in_the_abyss.jpg",
           "liked": true,
           "tracks": [
             {
@@ -2161,7 +2161,7 @@
           "id": "r0078",
           "title": "Shadowed Soundscapes",
           "year": 2023,
-          "artwork": "https://images.unsplash.com/photo-1598387993441-a364f854c3e1",
+          "artwork": "shadow_atlas-shadowed_soundscapes.jpg",
           "liked": false,
           "tracks": [
             {
@@ -2188,14 +2188,14 @@
       "id": "a0027",
       "name": "Ember Veil",
       "genre": "Alternative",
-      "photo": "https://images.unsplash.com/photo-1598387846419-a2c870ad3ecd",
+      "photo": "ember_veil.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0079",
           "title": "Veiled Vibrations",
           "year": 2017,
-          "artwork": "https://images.unsplash.com/photo-1522932753915-9ee97e43e3d9",
+          "artwork": "ember_veil-veiled_vibrations.jpg",
           "liked": false,
           "tracks": [
             {
@@ -2220,7 +2220,7 @@
           "id": "r0080",
           "title": "Ember Echoes",
           "year": 2021,
-          "artwork": "https://images.unsplash.com/photo-1615592602923-9fb437226763",
+          "artwork": "ember_veil-ember_echoes.jpg",
           "liked": true,
           "tracks": [
             {
@@ -2245,7 +2245,7 @@
           "id": "r0081",
           "title": "Reverberations of Ember",
           "year": 2022,
-          "artwork": "https://images.unsplash.com/photo-1543384966-a56a575695c9",
+          "artwork": "ember_veil-reverberations_of_ember.jpg",
           "liked": true,
           "tracks": [
             {

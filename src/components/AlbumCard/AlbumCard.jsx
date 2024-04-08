@@ -8,7 +8,11 @@ function AlbumCard({ artist, release }) {
         className="AlbumCard-Link"
         to={`artists/${artist.name}/${release.title}}`}
       >
-        <img src={release.artwork} alt="Album" className="AlbumCard-Image" />
+        <img
+          src={require(`../../assets/images/artwork/autumn_skies-autumns_melancholy_melodies.jpg`)}
+          alt="Album"
+          className="AlbumCard-Image"
+        />
       </Link>
       <div className="AlbumCard-Text">
         <Link
@@ -24,5 +28,4 @@ function AlbumCard({ artist, release }) {
     </div>
   );
 }
-
 export default AlbumCard;
