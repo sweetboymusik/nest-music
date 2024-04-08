@@ -6,7 +6,7 @@ function AlbumCard({ artist, release }) {
     <div className="AlbumCard">
       <Link
         className="AlbumCard-Link"
-        to={`artists/${artist.name}/${release.title}}`}
+        to={`../../artist/${artist.name}/${release.title}}`}
       >
         <img
           src={require(`../../assets/images/artwork/${release.artwork}`)}

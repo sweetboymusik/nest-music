@@ -7,14 +7,11 @@ import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import Player from "./components/Player/Player";
 import PageBrowse from "./components/PageBrowse/PageBrowse";
-import SongCard from "./components/SongCard/SongCard";
-import AlbumGrid from "./components/AlbumGrid/AlbumGrid";
-import SongGrid from "./components/SongGrid/SongGrid";
-import PlaylistGrid from "./components/PlaylistGrid/PlaylistGrid";
 import PageHome from "./components/PageHome/PageHome";
 import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
 import AlbumHeader from "./components/AlbumHeader/AlbumHeader";
+import PageArtist from "./components/PageArtist/PageArtist";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -112,18 +109,30 @@ function App() {
               }
             />
             <Route path="/browse" element={<PageBrowse />}></Route>
-            <Route path="/library"></Route>
-            <Route path="/browse-albums"></Route>
-            <Route path=""></Route>
+            <Route path="/artist/:artist"></Route>
+            <Route path="/artist/:artists/:album"></Route>
+
             <Route
-              path="/artists"
+              path="/library/artists"
               element={<PageArtists artists={artists} />}
             ></Route>
             <Route
-              path="/albums"
+              path="/library/albums"
               element={<PageAlbums artists={artists} />}
             ></Route>
+            <Route
+              path="/library/songs"
+              element={<SongSection artists={artists} />}
+            ></Route>
+            <Route
+              path="/library/playlist"
+              element={<SongSection artists={artists} />}
+            ></Route>
             <Route path="/songs" element={<AlbumHeader />}></Route>
+            <Route
+              path="/playlist"
+              element={<PageArtist artists={artists} name="Amara" />}
+            ></Route>
           </Routes>
         </div>
 
