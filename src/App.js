@@ -15,6 +15,7 @@ import PageHome from "./components/PageHome/PageHome";
 import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
 import AlbumHeader from "./components/AlbumHeader/AlbumHeader";
+import PageArtist from "./components/PageArtist/PageArtist";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -124,6 +125,7 @@ function App() {
               element={<PageAlbums artists={artists} />}
             ></Route>
             <Route path="/songs" element={<AlbumHeader />}></Route>
+            <Route path="/playlist" element={<PageArtist artists={artists} name="Amara" />}></Route>
           </Routes>
         </div>
 
