@@ -1,5 +1,5 @@
 import "./PlayerInfo.css";
-import albumPlaceholder from "../../assets/images/album_placeholder.png";
+import albumPlaceholder from "../../assets/images/other/album_placeholder.png";
 
 function PlayerInfo({ info }) {
   return (

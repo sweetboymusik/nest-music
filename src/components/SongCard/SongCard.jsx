@@ -3,7 +3,7 @@ import "./SongCard.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { FaPlus, FaHeart, FaRegHeart } from "react-icons/fa";
-import tempImage from "../../assets/images/album_placeholder.png";
+import tempImage from "../../assets/images/other/album_placeholder.png";
 
 function SongCard({ artist, release, track }) {
   const [isHovered, setIsHovered] = useState(false);

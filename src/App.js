@@ -114,6 +114,7 @@ function App() {
             <Route path="/browse" element={<PageBrowse />}></Route>
             <Route path="/library"></Route>
             <Route path="/browse-albums"></Route>
+            <Route path=""></Route>
             <Route
               path="/artists"
               element={<PageArtists artists={artists} />}
