@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function ArtistCard({ artist, imageUrl }) {
   return (
-    <Link to={`../artists/${artist}`}>
+    <Link to={`../../artist/${artist}`}>
       <div className="artist-card">
         <img
           src={require(`../../assets/images/artists/${imageUrl}`)}

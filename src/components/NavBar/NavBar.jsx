@@ -16,14 +16,18 @@ function NavBar() {
       <NavLogo />
       <br />
       <h2>Catalog</h2>
-      <NavItem text="Home" icon={<FaHouseChimney />} />
-      <NavItem text="Browse" icon={<BsFillGrid1X2Fill />} />
+      <NavItem text="Home" icon={<FaHouseChimney />} path={"home"} />
+      <NavItem text="Browse" icon={<BsFillGrid1X2Fill />} path={"browse"} />
       <hr />
       <h2>Library</h2>
-      <NavItem text="Artists" icon={<FaUser />} />
-      <NavItem text="Albums" icon={<FaRecordVinyl />} />
-      <NavItem text="Songs" icon={<FaMusic />} />
-      <NavItem text="Playlist" icon={<FaHeadphones />} />
+      <NavItem text="Artists" icon={<FaUser />} path={"library/artists"} />
+      <NavItem text="Albums" icon={<FaRecordVinyl />} path={"library/albums"} />
+      <NavItem text="Songs" icon={<FaMusic />} path={"library/songs"} />
+      <NavItem
+        text="Playlist"
+        icon={<FaHeadphones />}
+        path={"library/playlist"}
+      />
     </nav>
   );
 }
