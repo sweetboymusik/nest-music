@@ -2,9 +2,9 @@ import React from 'react'
 
 import ArtistGrid from '../ArtistGrid/ArtistGrid'
 
-function PageArtists({artists}) {
+function PageArtists({artists, GetArtist}) {
   return (
-    <div><ArtistGrid artists={artists}/></div>
+    <div><ArtistGrid artists={artists} GetArtist={GetArtist}/></div>
   )
 }
 
