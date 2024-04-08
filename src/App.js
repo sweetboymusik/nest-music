@@ -10,7 +10,8 @@ import PageBrowse from "./components/PageBrowse/PageBrowse";
 import PageHome from "./components/PageHome/PageHome";
 import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
-import SongSection from "./components/SongSection/SongSection";
+import AlbumHeader from "./components/AlbumHeader/AlbumHeader";
+import PageArtist from "./components/PageArtist/PageArtist";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -126,6 +127,11 @@ function App() {
             <Route
               path="/library/playlist"
               element={<SongSection artists={artists} />}
+            ></Route>
+            <Route path="/songs" element={<AlbumHeader />}></Route>
+            <Route
+              path="/playlist"
+              element={<PageArtist artists={artists} name="Amara" />}
             ></Route>
           </Routes>
         </div>
