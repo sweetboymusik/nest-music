@@ -103,15 +103,26 @@ function App() {
           <Routes>
             <Route
               path="/home"
-              element={<PageHome artists={artists} shuffled={selected} albumShuffled={albumSelected} />}
+              element={
+                <PageHome
+                  artists={artists}
+                  shuffled={selected}
+                  albumShuffled={albumSelected}
+                />
+              }
             />
             <Route path="/browse" element={<PageBrowse />}></Route>
             <Route path="/library"></Route>
             <Route path="/browse-albums"></Route>
-            <Route path="/artists" element={<PageArtists artists={artists} />} ></Route>
-            <Route path="/albums" element={<PageAlbums artists={artists} />} ></Route>
-            <Route path="/songs" element={<AlbumHeader/>}></Route>
-
+            <Route
+              path="/artists"
+              element={<PageArtists artists={artists} />}
+            ></Route>
+            <Route
+              path="/albums"
+              element={<PageAlbums artists={artists} />}
+            ></Route>
+            <Route path="/songs" element={<AlbumHeader />}></Route>
           </Routes>
         </div>
 

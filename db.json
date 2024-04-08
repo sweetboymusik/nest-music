@@ -4,14 +4,14 @@
       "id": "a0001",
       "name": "Amara",
       "genre": "R&B",
-      "photo": "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04",
+      "photo": "amara.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0001",
           "title": "Soulful Reverie",
           "year": 2001,
-          "artwork": "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+          "artwork": "amara-soulful_reverie.jpg",
           "liked": true,
           "tracks": [
             {
@@ -36,7 +36,7 @@
           "id": "r0002",
           "title": "Velvet Essence",
           "year": 2009,
-          "artwork": "https://images.unsplash.com/photo-1577732214229-e454f3a38aa5",
+          "artwork": "amara-velvet_essence.jpg",
           "liked": false,
           "tracks": [
             {
@@ -61,7 +61,7 @@
           "id": "r0003",
           "title": "Eclipse of Emotions",
           "year": 2020,
-          "artwork": "https://images.unsplash.com/photo-1517436909794-1ad57165f357",
+          "artwork": "amara-eclipse_of_emotions.jpg",
           "liked": true,
           "tracks": [
             {
@@ -88,14 +88,14 @@
       "id": "a0002",
       "name": "Kairo Nova",
       "genre": "R&B",
-      "photo": "https://images.unsplash.com/photo-1531384441138-2736e62e0919",
+      "photo": "kairo_nova.jpg",
       "liked": false,
       "releases": [
         {
           "id": "r0004",
           "title": "Urban Echoes",
           "year": 1998,
-          "artwork": "https://images.unsplash.com/photo-1525025500848-f00b7d362dec",
+          "artwork": "kairo_nova-urban_echoes.jpg",
           "liked": false,
           "tracks": [
             {
@@ -120,7 +120,7 @@
           "id": "r0005",
           "title": "Neon Nightscape",
           "year": 2005,
-          "artwork": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead",
+          "artwork": "kairo_nova-neon_nightscape.jpg",
           "liked": true,
           "tracks": [
             {
@@ -145,7 +145,7 @@
           "id": "r0006",
           "title": "Twilight Serenade",
           "year": 2010,
-          "artwork": "https://plus.unsplash.com/premium_photo-1661376793823-932e82e553e3",
+          "artwork": "kairo_nova-twilight_serenade.jpg",
           "liked": false,
           "tracks": [
             {
@@ -172,14 +172,14 @@
       "id": "a0003",
       "name": "Remy Bliss",
       "genre": "R&B",
-      "photo": "https://images.unsplash.com/photo-1587397845856-e6cf49176c70",
+      "photo": "remy_bliss.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0007",
           "title": "Rhythmic Rapture",
           "year": 1995,
-          "artwork": "https://images.unsplash.com/photo-1543379344-402b42ddbe8a",
+          "artwork": "remy_bliss-rhythmic_rapture.jpg",
           "liked": true,
           "tracks": [
             {
@@ -204,7 +204,7 @@
           "id": "r0008",
           "title": "Blissful Beats",
           "year": 2001,
-          "artwork": "https://plus.unsplash.com/premium_photo-1683133597318-acc59ca4937c",
+          "artwork": "remy_bliss-blissful_beats.jpg",
           "liked": true,
           "tracks": [
             {
@@ -229,7 +229,7 @@
           "id": "r0009",
           "title": "Harmony in Motion",
           "year": 2010,
-          "artwork": "https://images.unsplash.com/photo-1513682121497-80211f36a7d3",
+          "artwork": "remy_bliss-harmony_in_motion.jpg",
           "liked": false,
           "tracks": [
             {
@@ -256,14 +256,14 @@
       "id": "a0004",
       "name": "Nova Belle",
       "genre": "Pop",
-      "photo": "https://images.unsplash.com/photo-1609505848912-b7c3b8b4beda",
+      "photo": "nova_bell.jpg",
       "liked": false,
       "releases": [
         {
           "id": "r0010",
           "title": "Starlight Symphony",
           "year": 1994,
-          "artwork": "https://images.unsplash.com/photo-1495216875107-c6c043eb703f",
+          "artwork": "nova_bell-starlight_symphony.jpg",
           "liked": true,
           "tracks": [
             {
@@ -288,7 +288,7 @@
           "id": "r0011",
           "title": "Pop Princess Diaries",
           "year": 1998,
-          "artwork": "https://plus.unsplash.com/premium_photo-1671718111125-7e9ad86b9e7e",
+          "artwork": "nova_bell-pop_princess_diaries.jpg",
           "liked": false,
           "tracks": [
             {
@@ -313,7 +313,7 @@
           "id": "r0012",
           "title": "Melodic Mirage",
           "year": 2001,
-          "artwork": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833",
+          "artwork": "nova_bell-melodic_mirage.jpg",
           "liked": true,
           "tracks": [
             {
@@ -340,14 +340,14 @@
       "id": "a0005",
       "name": "Phoenix Rivers",
       "genre": "Pop",
-      "photo": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
+      "photo": "phoenix_rivers.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0013",
           "title": "Celestial Cadence",
           "year": 1995,
-          "artwork": "https://images.unsplash.com/photo-1637848688004-85767c728df2",
+          "artwork": "pheonix_rivers-celestial_cadence.jpg",
           "liked": true,
           "tracks": [
             {
@@ -372,7 +372,7 @@
           "id": "r0014",
           "title": "Echoes of Eden",
           "year": 1999,
-          "artwork": "https://images.unsplash.com/photo-1519689680058-324335c77eba",
+          "artwork": "pheonix_rivers-echoes_of_eden.jpg",
           "liked": true,
           "tracks": [
             {
@@ -397,7 +397,7 @@
           "id": "r0015",
           "title": "Riverside Reverie",
           "year": 2002,
-          "artwork": "https://images.unsplash.com/photo-1592830107161-79afd67b4ee8",
+          "artwork": "pheonix_rivers-riverside_reverie.jpg",
           "liked": false,
           "tracks": [
             {
@@ -424,14 +424,14 @@
       "id": "a0006",
       "name": "Echo Bloom",
       "genre": "Pop",
-      "photo": "https://images.unsplash.com/photo-1598201116904-9613ee826e9a",
+      "photo": "echo_bloom.jpg",
       "liked": false,
       "releases": [
         {
           "id": "r0016",
           "title": "Blossoms of Sound",
           "year": 1996,
-          "artwork": "https://plus.unsplash.com/premium_photo-1672413698583-133aa559440d",
+          "artwork": "echo_bloom-blossoms_of_sound.jpg",
           "liked": true,
           "tracks": [
             {
@@ -456,7 +456,7 @@
           "id": "r0017",
           "title": "Radiant Resonance",
           "year": 2000,
-          "artwork": "https://plus.unsplash.com/premium_photo-1681487848317-09ae03fc2291",
+          "artwork": "echo_bloom-radiant_resonance.jpg",
           "liked": true,
           "tracks": [
             {
@@ -481,7 +481,7 @@
           "id": "r0018",
           "title": "Ethereal Echoes",
           "year": 2003,
-          "artwork": "https://images.unsplash.com/photo-1492567291473-fe3dfc175b45",
+          "artwork": "echo_bloom-ethereal_echoes.jpg",
           "liked": true,
           "tracks": [
             {
@@ -508,14 +508,14 @@
       "id": "a0007",
       "name": "Storm Horizon",
       "genre": "Rock",
-      "photo": "https://images.unsplash.com/photo-1461800919507-79b16743b257",
+      "photo": "storm_horizon.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0019",
           "title": "Tempest Tunes",
           "year": 1997,
-          "artwork": "https://images.unsplash.com/photo-1526662092594-e98c1e356d6a",
+          "artwork": "storm_horizon-tempest_tunes.jpg",
           "liked": false,
           "tracks": [
             {
@@ -540,7 +540,7 @@
           "id": "r0020",
           "title": "Raging Melodies",
           "year": 2001,
-          "artwork": "https://images.unsplash.com/photo-1548016193-b9381233058c",
+          "artwork": "storm_horizon-raging_melodies.jpg",
           "liked": false,
           "tracks": [
             {
@@ -565,7 +565,7 @@
           "id": "r0021",
           "title": "Thunderous Triumph",
           "year": 2004,
-          "artwork": "https://images.unsplash.com/photo-1618517048008-1cbdfd7ce2af",
+          "artwork": "storm_horizon-thunderous_triumph.jpg",
           "liked": true,
           "tracks": [
             {
@@ -592,14 +592,14 @@
       "id": "a0008",
       "name": "Wilder Shade",
       "genre": "Rock",
-      "photo": "https://images.unsplash.com/photo-1596075780750-81249df16d19",
+      "photo": "wilder_shade.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0022",
           "title": "Shadowed Symphony",
           "year": 1998,
-          "artwork": "https://images.unsplash.com/photo-1616923756114-9a17522a1794",
+          "artwork": "wilder_shade-shadowed_symphony.jpg",
           "liked": false,
           "tracks": [
             {
@@ -624,7 +624,7 @@
           "id": "r0023",
           "title": "Wilder Whispers",
           "year": 2002,
-          "artwork": "https://images.unsplash.com/photo-1560343787-b90cb337028e",
+          "artwork": "wilder_shade-wilder_whispers.jpg",
           "liked": true,
           "tracks": [
             {
@@ -649,7 +649,7 @@
           "id": "r0024",
           "title": "Rebel Rhythms",
           "year": 2005,
-          "artwork": "https://plus.unsplash.com/premium_photo-1687609112015-23bcdb2385f4",
+          "artwork": "wilder_shade-rebel_rhythms.jpg",
           "liked": true,
           "tracks": [
             {
@@ -676,14 +676,14 @@
       "id": "a0009",
       "name": "Nova Rift",
       "genre": "Rock",
-      "photo": "https://images.unsplash.com/photo-1665024435355-e9c5395098b4",
+      "photo": "nova_rift.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0025",
           "title": "Cosmic Collision",
           "year": 1999,
-          "artwork": "https://images.unsplash.com/photo-1578831914933-6339766eb29b",
+          "artwork": "nova_rift-cosmic_collision.jpg",
           "liked": false,
           "tracks": [
             {
@@ -708,7 +708,7 @@
           "id": "r0026",
           "title": "Rifted Realms",
           "year": 2003,
-          "artwork": "https://images.unsplash.com/photo-1576504677634-06b2130bd1f3",
+          "artwork": "nova_rift-rifted_realms.jpg",
           "liked": true,
           "tracks": [
             {
@@ -733,7 +733,7 @@
           "id": "r0027",
           "title": "Dimensional Discord",
           "year": 2006,
-          "artwork": "https://images.unsplash.com/photo-1517849845537-4d257902454a",
+          "artwork": "nova_rift-dimensional_discord.jpg",
           "liked": false,
           "tracks": [
             {
@@ -760,14 +760,14 @@
       "id": "a0010",
       "name": "Velvet Moon",
       "genre": "Jazz",
-      "photo": "https://images.unsplash.com/photo-1510731491328-7363eecd7b2d",
+      "photo": "velvet_moon.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0028",
           "title": "Moonlit Melodies",
           "year": 2000,
-          "artwork": "https://images.unsplash.com/photo-1605595988901-3d06601c38ad",
+          "artwork": "velvet_moon-moonlit_melodies.jpg",
           "liked": false,
           "tracks": [
             {
@@ -792,7 +792,7 @@
           "id": "r0029",
           "title": "Velvet Nightfall",
           "year": 2004,
-          "artwork": "https://images.unsplash.com/photo-1493612276216-ee3925520721",
+          "artwork": "velvet_moon-velvet_nightfall.jpg",
           "liked": true,
           "tracks": [
             {
@@ -817,7 +817,7 @@
           "id": "r0030",
           "title": "Jazz Under the Stars",
           "year": 2007,
-          "artwork": "https://images.unsplash.com/photo-1550151733-f2bc199db8fc?q=80",
+          "artwork": "velvet_moon-jass_under_the_stars.jpg",
           "liked": true,
           "tracks": [
             {
@@ -844,14 +844,14 @@
       "id": "a0011",
       "name": "Aurora Swing",
       "genre": "Jazz",
-      "photo": "https://plus.unsplash.com/premium_photo-1679415150878-b81dd4fb0233",
+      "photo": "aurora_swing.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0031",
           "title": "Swingin' Serenity",
           "year": 2001,
-          "artwork": "https://images.unsplash.com/photo-1484889176133-94079a66d71a",
+          "artwork": "aurora_swing-swingin_serenity.jpg",
           "liked": false,
           "tracks": [
             {
@@ -876,7 +876,7 @@
           "id": "r0032",
           "title": "Dancing Dawn",
           "year": 2005,
-          "artwork": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94",
+          "artwork": "aurora_swing-dancing_down.jpg",
           "liked": false,
           "tracks": [
             {
@@ -901,7 +901,7 @@
           "id": "r0033",
           "title": "Aurora Jazzscape",
           "year": 2008,
-          "artwork": "https://plus.unsplash.com/premium_photo-1682308259865-afd772272f60",
+          "artwork": "aurora_swing-aurora_jazzscape.jpg",
           "liked": true,
           "tracks": [
             {
@@ -928,14 +928,14 @@
       "id": "a0012",
       "name": "Nightshade Jazz Collective",
       "genre": "Jazz",
-      "photo": "https://plus.unsplash.com/premium_photo-1661344259053-23372e601ac6",
+      "photo": "nightshade_jazz_collective.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0034",
           "title": "Nocturnal Notes",
           "year": 2002,
-          "artwork": "https://plus.unsplash.com/premium_photo-1663050933954-f46c2cdd2a08",
+          "artwork": "nightshade_jazz_collective-nocturnal_notes.jpg",
           "liked": false,
           "tracks": [
             {
@@ -960,7 +960,7 @@
           "id": "r0035",
           "title": "Midnight Melange",
           "year": 2006,
-          "artwork": "https://images.unsplash.com/flagged/photo-1569231290377-072234d3ee57",
+          "artwork": "nightshade_jazz_collective-midnight_melange.jpg",
           "liked": false,
           "tracks": [
             {
@@ -985,7 +985,7 @@
           "id": "r0036",
           "title": "Enigmatic Ensemble",
           "year": 2009,
-          "artwork": "https://images.unsplash.com/photo-1622542796254-5b9c46ab0d2f",
+          "artwork": "nightshade_jazz_collective-enigmatic_ensemble.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1012,14 +1012,14 @@
       "id": "a0013",
       "name": "Willow Creek",
       "genre": "Country",
-      "photo": "https://images.unsplash.com/photo-1577372570570-fe08f7adc27b",
+      "photo": "willow_creek.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0037",
           "title": "Creek Side Serenade",
           "year": 2003,
-          "artwork": "https://images.unsplash.com/photo-1597499581969-ef0170b200ee",
+          "artwork": "willow_creek-creek_side_serenade.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1044,7 +1044,7 @@
           "id": "r0038",
           "title": "Country Roads & Moonlight",
           "year": 2007,
-          "artwork": "https://images.unsplash.com/photo-1551389267-fb1d08dc6bf6",
+          "artwork": "willow_creek-country_roads_&_moonlight.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1069,7 +1069,7 @@
           "id": "r0039",
           "title": "Whiskey Tales & Willow Winds",
           "year": 2010,
-          "artwork": "https://images.unsplash.com/photo-1581714306496-3d2522fc7fc7",
+          "artwork": "willow_creek-whiskey_tales_&_willow_winds.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1096,14 +1096,14 @@
       "id": "a0014",
       "name": "Dusty Trails",
       "genre": "Country",
-      "photo": "https://images.unsplash.com/photo-1696236997225-6ef1ca0fd467",
+      "photo": "dusty_trails.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0040",
           "title": "Trailblazing Troubadour",
           "year": 2004,
-          "artwork": "https://images.unsplash.com/photo-1496516348160-24b35a31856f",
+          "artwork": "dusty_trails-trailblazing_troubadour.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1128,7 +1128,7 @@
           "id": "r0041",
           "title": "Dusty Sunset Serenade",
           "year": 2008,
-          "artwork": "https://images.unsplash.com/photo-1636708858133-c26b4c34a480",
+          "artwork": "dusty_trails-dusty_sunset_serenade.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1153,7 +1153,7 @@
           "id": "r0042",
           "title": "Wanderlust & Whiskey",
           "year": 2011,
-          "artwork": "https://images.unsplash.com/photo-1586349781438-39d0350a0c93",
+          "artwork": "dusty_trails-wanderlust_&_whiskey.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1180,14 +1180,14 @@
       "id": "a0015",
       "name": "Sawyer Brooks",
       "genre": "Country",
-      "photo": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce",
+      "photo": "sawyer_brooks.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0043",
           "title": "Brooks & Bourbon",
           "year": 2005,
-          "artwork": "https://images.unsplash.com/photo-1605814573621-0513c34a0d58",
+          "artwork": "sawyer_brooks-brooks_&_bourbon.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1212,7 +1212,7 @@
           "id": "r0044",
           "title": "Southern Stories & Sawyer Songs",
           "year": 2009,
-          "artwork": "https://images.unsplash.com/photo-1536612461104-405653880f45",
+          "artwork": "sawyer_brooks-southern_stories_&_sawyer_songs.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1237,7 +1237,7 @@
           "id": "r0045",
           "title": "Backroad Ballads & Barstool Blues",
           "year": 2012,
-          "artwork": "https://images.unsplash.com/photo-1586348943529-beaae6c28db9",
+          "artwork": "sawyer_brooks-backroad_ballads_&_barstool_blues.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1264,14 +1264,14 @@
       "id": "a0016",
       "name": "Neon Pulse",
       "genre": "Electronic",
-      "photo": "https://images.unsplash.com/photo-1470753323753-3f8091bb0232",
+      "photo": "neon_pulse.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0046",
           "title": "Pulsating Paradigm",
           "year": 2006,
-          "artwork": "https://images.unsplash.com/photo-1547891654-e66ed7ebb968",
+          "artwork": "neon_pulse-pulsating_paradigm.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1296,7 +1296,7 @@
           "id": "r0047",
           "title": "Neon Nightscape",
           "year": 2010,
-          "artwork": "https://images.unsplash.com/photo-1527066579998-dbbae57f45ce",
+          "artwork": "neon_pulse-neon_nightscape.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1321,7 +1321,7 @@
           "id": "r0048",
           "title": "Digital Dreamscape",
           "year": 2013,
-          "artwork": "https://images.unsplash.com/photo-1505356822725-08ad25f3ffe4",
+          "artwork": "neon_pulse-digital_dreamscape.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1348,14 +1348,14 @@
       "id": "a0017",
       "name": "Zenith Beats",
       "genre": "Electronic",
-      "photo": "https://images.unsplash.com/photo-1597071058713-6776461d7737",
+      "photo": "zenith_beats.jpg",
       "liked": false,
       "releases": [
         {
           "id": "r0049",
           "title": "Zenith Zephyr",
           "year": 2007,
-          "artwork": "https://images.unsplash.com/photo-1538370965046-79c0d6907d47",
+          "artwork": "zenith_beats-zenith_zephyr.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1380,7 +1380,7 @@
           "id": "r0050",
           "title": "Beats Beyond Borders",
           "year": 2011,
-          "artwork": "https://images.unsplash.com/photo-1485735662814-c4f66e49dbae",
+          "artwork": "zenith_beats-beats_beyond_borders.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1405,7 +1405,7 @@
           "id": "r0051",
           "title": "Electric Euphoria",
           "year": 2014,
-          "artwork": "https://images.unsplash.com/photo-1446776877081-d282a0f896e2",
+          "artwork": "zenith_beats-electric_euphoria.jpg",
           "liked": true,
           "tracks": [
             {
@@ -1432,14 +1432,14 @@
       "id": "a0018",
       "name": "Pixel Groove",
       "genre": "Electronic",
-      "photo": "https://plus.unsplash.com/premium_photo-1661720477446-429093480ad7",
+      "photo": "pixel_groove.jpg",
       "liked": true,
       "releases": [
         {
           "id": "r0052",
           "title": "Pixelated Pulse",
           "year": 2008,
-          "artwork": "https://images.unsplash.com/photo-1559644705-9d56b56e1380",
+          "artwork": "pixel_groove-pixelated_pulse.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1464,7 +1464,7 @@
           "id": "r0053",
           "title": "Groove Grid",
           "year": 2012,
-          "artwork": "https://images.unsplash.com/photo-1549317336-206569e8475c?q=80&w=1974",
+          "artwork": "pixel_groove-groove_grid.jpg",
           "liked": false,
           "tracks": [
             {
@@ -1489,7 +1489,7 @@
           "id": "r0054",
           "title": "Digital Dancescape",
           "year": 2015,
-          "artwork": "https://images.unsplash.com/photo-1503875154399-95d2b151e3b0",
+          "artwork": "pixel_groove-digital_dancescape.jpg",
           "liked": true,
           "tracks": [
             {
