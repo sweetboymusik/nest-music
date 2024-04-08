@@ -12,6 +12,7 @@ import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
 import AlbumHeader from "./components/AlbumHeader/AlbumHeader";
 import PageArtist from "./components/PageArtist/PageArtist";
+import SongSection from "./components/SongSection/SongSection";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -109,7 +110,10 @@ function App() {
               }
             />
             <Route path="/browse" element={<PageBrowse />}></Route>
-            <Route path="/artist/:artist"></Route>
+            <Route
+              path="/artist/:artist"
+              element={<PageArtist artists={artists} name="Amara" />}
+            ></Route>
             <Route path="/artist/:artists/:album"></Route>
 
             <Route
@@ -125,12 +129,7 @@ function App() {
               element={<SongSection artists={artists} />}
             ></Route>
             <Route
-              path="/library/playlist"
-              element={<SongSection artists={artists} />}
-            ></Route>
-            <Route path="/songs" element={<AlbumHeader />}></Route>
-            <Route
-              path="/playlist"
+              path="library/playlist"
               element={<PageArtist artists={artists} name="Amara" />}
             ></Route>
           </Routes>
