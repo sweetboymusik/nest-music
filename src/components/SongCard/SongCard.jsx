@@ -12,7 +12,11 @@ function SongCard({ artist, release, track }) {
   return (
     <div className="song-card">
       <button className="song-play">
-        <img src={require(`../../assets/images/artwork/${release.artwork}`)} alt="album artwork" className="song-image" />
+        <img
+          src={require(`../../assets/images/artwork/${release.artwork}`)}
+          alt="album artwork"
+          className="song-image"
+        />
       </button>
 
       <div className="song-info">
