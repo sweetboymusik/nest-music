@@ -186,7 +186,6 @@ function App() {
 
             <Route
               path="library/playlist"
-              element={<PageArtist currentArtist={currentArtist} />}
             ></Route>
           </Routes>
         </div>
