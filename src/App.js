@@ -12,6 +12,7 @@ import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
 import PageArtist from "./components/PageArtist/PageArtist";
 import SongSection from "./components/SongSection/SongSection";
+import PageAlbum from "./components/PageAlbum/PageAlbum";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -21,6 +22,12 @@ function App() {
 
   let [artists, setArtists] = useState([]);
   let [currentArtist, setCurrentArtist] = useState([]);
+  let [currentRelease, setCurrentRelease] = useState();
+  let [currentTrack, setCurrentTrack] = useState({
+    title: "-",
+    artist: "-",
+    artwork: "album_placeholder.png",
+  });
 
   async function fetchArtists() {
     let res = await fetch("http://localhost:4999/artists");
@@ -39,7 +46,14 @@ function App() {
     setCurrentArtist([res]);
   }
 
-  function loadTrack() {
+  function loadTrack(artist, release, track) {
+    setCurrentTrack({
+      artist: artist[0].name,
+      artwork: release.artwork,
+      title: track.title,
+      length: track.length,
+    });
+
     audio.src = testSound;
     togglePlay();
   }
@@ -118,6 +132,8 @@ function App() {
                   artists={artists}
                   shuffled={selected}
                   albumShuffled={albumSelected}
+                  setCurrentRelease={setCurrentRelease}
+                  loadTrack={loadTrack}
                 />
               }
             />
@@ -130,6 +146,7 @@ function App() {
                 <PageArtist
                   currentArtist={currentArtist}
                   getArtist={getArtist}
+                  setCurrentRelease={setCurrentRelease}
                 />
               }
             ></Route>
@@ -137,9 +154,11 @@ function App() {
             <Route
               path="/artist/:artists/:album"
               element={
-                <PageArtist
+                <PageAlbum
                   currentArtist={currentArtist}
                   getArtist={getArtist}
+                  currentRelease={currentRelease}
+                  loadTrack={loadTrack}
                 />
               }
             ></Route>
@@ -151,7 +170,13 @@ function App() {
 
             <Route
               path="/library/albums"
-              element={<PageAlbums artists={artists} getArtist={getArtist} />}
+              element={
+                <PageAlbums
+                  artists={artists}
+                  getArtist={getArtist}
+                  setCurrentRelease={setCurrentRelease}
+                />
+              }
             ></Route>
 
             <Route
@@ -171,6 +196,7 @@ function App() {
           changeVolume={changeVolume}
           changePosition={changePosition}
           togglePlay={togglePlay}
+          currentTrack={currentTrack}
         />
       </div>
     </Router>

@@ -5,14 +5,22 @@ import PlayerControls from "../PlayerControls/PlayerControls";
 import PlayerVolume from "../PlayerVolume/PlayerVolume";
 import PlayerInfo from "../PlayerInfo/PlayerInfo";
 
-function Player({ playing, volume, changeVolume, changePosition, togglePlay }) {
+function Player({
+  playing,
+  volume,
+  changeVolume,
+  changePosition,
+  togglePlay,
+  currentTrack,
+}) {
   return (
     <footer className="player">
-      <PlayerInfo />
+      <PlayerInfo info={currentTrack} />
       <PlayerControls
         playing={playing}
         togglePlay={togglePlay}
         changePosition={changePosition}
+        currentTrack={currentTrack}
       />
       <PlayerVolume volume={volume} changeVolume={changeVolume} />
     </footer>

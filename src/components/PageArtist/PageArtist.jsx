@@ -2,27 +2,31 @@ import React from "react";
 import { useState, useEffect } from "react";
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 
-import "./PageArtist.css"
+import "./PageArtist.css";
 
-function PageArtist({ currentArtist, getArtist }) {
+function PageArtist({ currentArtist, getArtist, setCurrentRelease }) {
   return (
     <div className="artist-main">
       <div className="artist-header">
-        {currentArtist.map((artist) => 
-
-          <img className="artist-header-img"
-           src={require(`../../assets/images/artists/${artist.photo}`)}
-           alt="artist image"/>
-        )}
-        {currentArtist.map((artist) => 
+        {currentArtist.map((artist) => (
+          <img
+            className="artist-header-img"
+            src={require(`../../assets/images/artists/${artist.photo}`)}
+            alt="artist image"
+          />
+        ))}
+        {currentArtist.map((artist) => (
           <div className="artist-header-text">{artist.name}</div>
-        )}
-        
-      </div> 
-    
+        ))}
+      </div>
+
       <div className="artist-body">
         Discography
-        <AlbumGrid artists={currentArtist} getArtist={getArtist} />
+        <AlbumGrid
+          artists={currentArtist}
+          getArtist={getArtist}
+          setCurrentRelease={setCurrentRelease}
+        />
       </div>
     </div>
   );

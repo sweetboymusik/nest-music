@@ -1,7 +1,7 @@
 import "./AlbumGrid.css";
 import AlbumCard from "../AlbumCard/AlbumCard";
 
-function AlbumGrid({ artists, getArtist }) {
+function AlbumGrid({ artists, getArtist, setCurrentRelease, loadTrack }) {
   return (
     <div className="album-grid">
       {artists.map((artist) =>
@@ -11,6 +11,8 @@ function AlbumGrid({ artists, getArtist }) {
             artist={artist}
             release={release}
             getArtist={getArtist}
+            setCurrentRelease={setCurrentRelease}
+            loadTrack={loadTrack}
           />
         ))
       )}

@@ -4,7 +4,7 @@ import PlayerPositionButtons from "../PlayerPositionButtons/PlayerPositionButton
 import { FaPlay, FaPause } from "react-icons/fa";
 import { IoPlayBack, IoPlayForward } from "react-icons/io5";
 
-function PlayerControls({ playing, togglePlay, changePosition }) {
+function PlayerControls({ playing, togglePlay, changePosition, currentTrack }) {
   return (
     <div className="player-controls">
       <div className="player-buttons">
@@ -31,7 +31,7 @@ function PlayerControls({ playing, togglePlay, changePosition }) {
         </button>
         <PlayerPositionButtons changePosition={changePosition} />
         <button onClick={changePosition} className="pos-btn-end">
-          3:41
+          {currentTrack.length}
         </button>
       </div>
     </div>

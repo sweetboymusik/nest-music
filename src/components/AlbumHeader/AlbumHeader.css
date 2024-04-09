@@ -1,41 +1,40 @@
-
 .AlbumHeaderImg {
-    height: 280px;
-    width: 280px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  height: 280px;
+  width: 280px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
 }
 
 .AlbumHeader {
-    display: flex;
-    align-items: flex-end;
-    height: 280px;
-    gap: 24px;
+  display: flex;
+  align-items: flex-end;
+  height: 280px;
+  gap: 24px;
 }
 
 .AlbumHeaderContent {
-   display: flex;
-   gap: 8px;
-   flex-direction: column;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
 }
 
-
 .AlbumHeaderTitle {
-    font-size: 80pt;
+  font-size: 72pt;
 }
 
 .AlbumHeaderArtist {
-    font-size: 34pt;
-    font-weight: 400;
+  font-size: 28pt;
+  font-weight: 400;
 }
 
 .AlbumHeaderDetails {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .AlbumHeaderIcons {
-    display: flex;
-    gap: 10px;
-    font-size: 24px;
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
 }
