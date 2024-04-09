@@ -1,10 +1,12 @@
 import React from "react";
 import { useState, useEffect } from "react";
+
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
+import SongGrid from "../SongGrid/SongGrid";
 
 import "./PageArtist.css";
 
-function PageArtist({ currentArtist, getArtist, setCurrentRelease }) {
+function PageArtist({ currentArtist, getArtist, setCurrentRelease, currentRelease, loadTrack }) {
   return (
     <div className="artist-main">
       <div className="artist-header">
@@ -24,6 +26,13 @@ function PageArtist({ currentArtist, getArtist, setCurrentRelease }) {
       </div>
 
       <div className="artist-body">
+        <div>
+          <SongGrid
+            currentArtist={currentArtist}
+            currentRelease={currentRelease}
+            loadTrack={loadTrack}
+          />
+        </div>
         Discography
         <AlbumGrid
           artists={currentArtist}

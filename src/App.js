@@ -175,6 +175,8 @@ function App() {
                   currentArtist={currentArtist}
                   getArtist={getArtist}
                   setCurrentRelease={setCurrentRelease}
+                  currentRelease={currentRelease}
+                  loadTrack={loadTrack}
                 />
               }
             ></Route>
