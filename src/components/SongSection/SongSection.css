@@ -20,14 +20,3 @@
   width: 150px; 
   justify-content: center;
 }
-
-.song-section-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  background-color: #7f7f7f;
-  border-radius: 2px;
-  overflow: hidden;
-  width: calc(100vw - 300px);
-
-}
