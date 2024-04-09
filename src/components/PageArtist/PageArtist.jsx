@@ -2,10 +2,10 @@ import React from "react";
 import { useState, useEffect } from "react";
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 
-function PageArtist({ artist }) {
+function PageArtist({ currentArtist, getArtist }) {
   return (
     <div>
-      <AlbumGrid artists={artist} />
+      <AlbumGrid artists={currentArtist} getArtist={getArtist} />
     </div>
   );
 }

@@ -1,10 +1,12 @@
-import React from 'react'
-import AlbumGrid from '../AlbumGrid/AlbumGrid'
+import React from "react";
+import AlbumGrid from "../AlbumGrid/AlbumGrid";
 
-function PageAlbums({artists}) {
+function PageAlbums({ artists, getArtist }) {
   return (
-    <div><AlbumGrid artists={artists}/></div>
-  )
+    <div>
+      <AlbumGrid artists={artists} getArtist={getArtist} />
+    </div>
+  );
 }
 
-export default PageAlbums
+export default PageAlbums;

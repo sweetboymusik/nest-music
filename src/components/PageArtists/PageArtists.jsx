@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import ArtistGrid from '../ArtistGrid/ArtistGrid'
+import ArtistGrid from "../ArtistGrid/ArtistGrid";
 
-function PageArtists({artists, GetArtist}) {
+function PageArtists({ artists, getArtist }) {
   return (
-    <div><ArtistGrid artists={artists} GetArtist={GetArtist}/></div>
-  )
+    <div>
+      <ArtistGrid artists={artists} getArtist={getArtist} />
+    </div>
+  );
 }
 
-export default PageArtists
+export default PageArtists;

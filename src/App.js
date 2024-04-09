@@ -10,7 +10,6 @@ import PageBrowse from "./components/PageBrowse/PageBrowse";
 import PageHome from "./components/PageHome/PageHome";
 import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
-import AlbumHeader from "./components/AlbumHeader/AlbumHeader";
 import PageArtist from "./components/PageArtist/PageArtist";
 import SongSection from "./components/SongSection/SongSection";
 
@@ -21,11 +20,23 @@ function App() {
   let [position, setPosition] = useState();
 
   let [artists, setArtists] = useState([]);
+  let [currentArtist, setCurrentArtist] = useState([]);
 
   async function fetchArtists() {
     let res = await fetch("http://localhost:4999/artists");
     let data = await res.json();
     return data;
+  }
+
+  async function fetchArtist(id) {
+    let res = await fetch(`http://localhost:4999/artists/${id}`);
+    let data = await res.json();
+    return data;
+  }
+
+  async function getArtist(id) {
+    let res = await fetchArtist(id);
+    setCurrentArtist([res]);
   }
 
   function loadTrack() {
@@ -92,20 +103,6 @@ function App() {
   const albumShuffled = artists.toSorted(() => 0.5 - Math.random());
   let albumSelected = albumShuffled.slice(0, 5);
 
-  // gets artist for PageArtist
-  let [artist, setArtist] = useState();
-  function GetArtist(name) {
-    let result = artists.filter((artist) => artist.name === name);
-    setArtist(result);
-    console.log(artist);
-  }
-  useState(() => {
-    GetArtist("Amara");
-  }, [artists]);
-  useState(() => {
-    console.log("hello");
-  }, [artist]);
-
   return (
     <Router>
       <div className="app">
@@ -117,34 +114,54 @@ function App() {
               path="/home"
               element={
                 <PageHome
+                  getArtist={getArtist}
                   artists={artists}
                   shuffled={selected}
                   albumShuffled={albumSelected}
                 />
               }
             />
+
             <Route path="/browse" element={<PageBrowse />}></Route>
+
             <Route
               path="/artist/:artist"
-              element={<PageArtist artists={artists} name="Amara" />}
+              element={
+                <PageArtist
+                  currentArtist={currentArtist}
+                  getArtist={getArtist}
+                />
+              }
             ></Route>
-            <Route path="/artist/:artists/:album"></Route>
+
+            <Route
+              path="/artist/:artists/:album"
+              element={
+                <PageArtist
+                  currentArtist={currentArtist}
+                  getArtist={getArtist}
+                />
+              }
+            ></Route>
 
             <Route
               path="/library/artists"
-              element={<PageArtists artists={artists} />}
+              element={<PageArtists artists={artists} getArtist={getArtist} />}
             ></Route>
+
             <Route
               path="/library/albums"
-              element={<PageAlbums artists={artists} />}
+              element={<PageAlbums artists={artists} getArtist={getArtist} />}
             ></Route>
+
             <Route
               path="/library/songs"
               element={<SongSection artists={artists} />}
             ></Route>
+
             <Route
               path="library/playlist"
-              element={<PageArtist artists={artists} name="Amara" />}
+              element={<PageArtist currentArtist={currentArtist} />}
             ></Route>
           </Routes>
         </div>

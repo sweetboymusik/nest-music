@@ -1,12 +1,15 @@
 import "./AlbumCard.css";
 import { Link } from "react-router-dom";
 
-function AlbumCard({ artist, release }) {
+function AlbumCard({ artist, release, getArtist }) {
   return (
     <div className="AlbumCard">
       <Link
+        onClick={() => {
+          getArtist(artist.id);
+        }}
         className="AlbumCard-Link"
-        to={`../../artist/${artist.name}/${release.title}}`}
+        to={`../../../artist/${artist.name}/${release.title}}`}
       >
         <img
           src={require(`../../assets/images/artwork/${release.artwork}`)}
@@ -16,12 +19,21 @@ function AlbumCard({ artist, release }) {
       </Link>
       <div className="AlbumCard-Text">
         <Link
+          onClick={() => {
+            getArtist(artist.id);
+          }}
           className="AlbumCard-Link"
-          to={`artists/${artist.name}/${release.title}}`}
+          to={`../../../artist/${artist.name}/${release.title}}`}
         >
           <span className="AlbumCard-Text-Title">{release.title}</span>
         </Link>
-        <Link className="AlbumCard-Link" to={`artists/${artist.name}`}>
+        <Link
+          onClick={() => {
+            getArtist(artist.id);
+          }}
+          className="AlbumCard-Link"
+          to={`../../../artist/${artist.name}`}
+        >
           <span>{artist.name}</span>
         </Link>
       </div>
