@@ -24,6 +24,7 @@ function PageArtist({ currentArtist, getArtist, setCurrentRelease }) {
       </div>
 
       <div className="artist-body">
+        Discography
         <AlbumGrid
           artists={currentArtist}
           getArtist={getArtist}
