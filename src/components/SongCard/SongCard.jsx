@@ -5,7 +5,14 @@ import { useState } from "react";
 import { FaPlus, FaHeart, FaRegHeart } from "react-icons/fa";
 import tempImage from "../../assets/images/other/album_placeholder.png";
 
-function SongCard({ artist, release, track, loadTrack }) {
+function SongCard({
+  artist,
+  release,
+  track,
+  loadTrack,
+  getArtist,
+  setCurrentRelease,
+}) {
   const [isHovered, setIsHovered] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
 
@@ -32,6 +39,7 @@ function SongCard({ artist, release, track, loadTrack }) {
         <div className="song-text">
           {artist.map((artist, index) => (
             <Link
+              onClick={() => getArtist(artist.id)}
               key={index}
               className="song-link"
               to={`../../../artist/${artist.name}`}
@@ -44,6 +52,10 @@ function SongCard({ artist, release, track, loadTrack }) {
         <div className="song-text">
           {artist.map((artist, index) => (
             <Link
+              onClick={() => {
+                getArtist(artist.id);
+                setCurrentRelease(release.id);
+              }}
               key={index}
               className="song-link"
               to={`../../../artist/${artist.name}/${release.title}}`}

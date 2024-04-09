@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 import NavBar from "./components/NavBar/NavBar";
 import Player from "./components/Player/Player";
-import PageBrowse from "./components/PageBrowse/PageBrowse";
+import BrowseGenre from "./components/BrowseGenre/BrowseGenre";
 import PageHome from "./components/PageHome/PageHome";
 import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
@@ -14,6 +14,7 @@ import PageArtist from "./components/PageArtist/PageArtist";
 import SongSection from "./components/SongSection/SongSection";
 import PageAlbum from "./components/PageAlbum/PageAlbum";
 import FeaturedSongs from "./components/FeaturedSongs/FeaturedSongs";
+import PageBrowseGenre from "./components/PageBrowseGenre/PageBrowseGenre";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -30,6 +31,12 @@ function App() {
     artist: "-",
     artwork: "album_placeholder.png",
   });
+  let [filteredArtists, setFilteredArtists] = useState([]);
+
+  function filterArtists(genre) {
+    let filtered = artists.filter((artist) => artist.genre === genre);
+    setFilteredArtists(filtered);
+  }
 
   async function fetchArtists() {
     let res = await fetch("http://localhost:4999/artists");
@@ -166,7 +173,23 @@ function App() {
               }
             />
 
-            <Route path="/browse" element={<PageBrowse />}></Route>
+            <Route
+              path="/browse"
+              element={<BrowseGenre filterArtists={filterArtists} />}
+            ></Route>
+
+            <Route
+              path="/browse/:genre"
+              element={
+                <PageBrowseGenre
+                  artists={filteredArtists}
+                  getArtist={getArtist}
+                  setCurrentRelease={setCurrentRelease}
+                  loadTrack={loadTrack}
+                  featured={featured}
+                />
+              }
+            ></Route>
 
             <Route
               path="/artist/:artist"
@@ -187,6 +210,7 @@ function App() {
                   getArtist={getArtist}
                   currentRelease={currentRelease}
                   loadTrack={loadTrack}
+                  setCurrentRelease={setCurrentRelease}
                 />
               }
             ></Route>
@@ -210,7 +234,13 @@ function App() {
             <Route
               path="/library/songs"
               element={
-                <FeaturedSongs featured={featured} loadTrack={loadTrack} />
+                <PageBrowseGenre
+                  artists={artists}
+                  getArtist={getArtist}
+                  setCurrentRelease={setCurrentRelease}
+                  loadTrack={loadTrack}
+                  featured={featured}
+                />
               }
             ></Route>
 

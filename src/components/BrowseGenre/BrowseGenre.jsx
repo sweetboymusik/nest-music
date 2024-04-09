@@ -1,16 +1,16 @@
-import "./PageBrowse.css";
+import "./BrowseGenre.css";
 import GenreGrid from "../GenreGrid/GenreGrid";
 
-function PageBrowse() {
+function BrowseGenre({ filterArtists }) {
   return (
     <div className="browse-container">
       <div className="browse-header">
         <h2>Browse by Genre</h2>
         <hr />
       </div>
-      <GenreGrid />
+      <GenreGrid filterArtists={filterArtists} />
     </div>
   );
 }
 
-export default PageBrowse;
+export default BrowseGenre;

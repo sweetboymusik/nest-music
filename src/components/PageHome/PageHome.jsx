@@ -17,7 +17,11 @@ function PageHome({
       <div className="home-section">
         <h1>Featured Artists</h1>
         <hr className="home-divider" />
-        <ArtistGrid artists={shuffled} getArtist={getArtist} />
+        <ArtistGrid
+          artists={shuffled}
+          getArtist={getArtist}
+          setCurrentRelease={setCurrentRelease}
+        />
       </div>
 
       <div className="home-section">
