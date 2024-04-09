@@ -7,11 +7,12 @@ import albumPlaceholder from "../../assets/images/other/album_placeholder.png";
 function AlbumHeader({ currentArtist, currentRelease }) {
   return (
     <div className="AlbumHeader">
-      {currentArtist.map((artist) =>
+      {currentArtist.map((artist, index) =>
         artist.releases.map(
           (release) =>
             release.id === currentRelease && (
               <img
+                key={index}
                 className="AlbumHeaderImg"
                 src={require(`../../assets/images/artwork/${release.artwork}`)}
               ></img>
@@ -20,15 +21,19 @@ function AlbumHeader({ currentArtist, currentRelease }) {
       )}
 
       <div className="AlbumHeaderContent">
-        {currentArtist.map((artist) => (
-          <h3 className="AlbumHeaderArtist">{artist.name}</h3>
+        {currentArtist.map((artist, index) => (
+          <h3 key={index} className="AlbumHeaderArtist">
+            {artist.name}
+          </h3>
         ))}
 
-        {currentArtist.map((artist) =>
+        {currentArtist.map((artist, index) =>
           artist.releases.map(
             (release) =>
               release.id === currentRelease && (
-                <h1 className="AlbumHeaderTitle">{release.title}</h1>
+                <h1 key={index} className="AlbumHeaderTitle">
+                  {release.title}
+                </h1>
               )
           )
         )}
@@ -36,9 +41,9 @@ function AlbumHeader({ currentArtist, currentRelease }) {
         <div className="AlbumHeaderDetails">
           {currentArtist.map((artist) =>
             artist.releases.map(
-              (release) =>
+              (release, index) =>
                 release.id === currentRelease && (
-                  <span>
+                  <span key={index}>
                     <b>{release.tracks.length} tracks</b>
                   </span>
                 )

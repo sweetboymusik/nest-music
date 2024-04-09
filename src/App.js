@@ -13,6 +13,7 @@ import PageAlbums from "./components/PageAlbums/PageAlbums";
 import PageArtist from "./components/PageArtist/PageArtist";
 import SongSection from "./components/SongSection/SongSection";
 import PageAlbum from "./components/PageAlbum/PageAlbum";
+import FeaturedSongs from "./components/FeaturedSongs/FeaturedSongs";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -21,6 +22,7 @@ function App() {
   let [position, setPosition] = useState();
 
   let [artists, setArtists] = useState([]);
+  let [featured, setFeatured] = useState([]);
   let [currentArtist, setCurrentArtist] = useState([]);
   let [currentRelease, setCurrentRelease] = useState();
   let [currentTrack, setCurrentTrack] = useState({
@@ -44,6 +46,23 @@ function App() {
   async function getArtist(id) {
     let res = await fetchArtist(id);
     setCurrentArtist([res]);
+  }
+
+  async function fetchFeatured(genre) {
+    let res = await fetchArtists();
+    let filtered = res.filter((artist) => artist.genre === genre);
+
+    let featured = filtered.map((artist) => {
+      let obj = {
+        artist: [artist],
+        release: artist.releases[0],
+        track: artist.releases[0].tracks[0],
+      };
+
+      return obj;
+    });
+
+    return featured;
   }
 
   function loadTrack(artist, release, track) {
@@ -98,6 +117,15 @@ function App() {
     };
 
     getArtists();
+  }, []);
+
+  useEffect(() => {
+    async function getFeatured() {
+      let res = await fetchFeatured("Pop");
+      setFeatured(res);
+    }
+
+    getFeatured();
   }, []);
 
   function togglePlay() {
@@ -181,12 +209,12 @@ function App() {
 
             <Route
               path="/library/songs"
-              element={<SongSection artists={artists} />}
+              element={
+                <FeaturedSongs featured={featured} loadTrack={loadTrack} />
+              }
             ></Route>
 
-            <Route
-              path="library/playlist"
-            ></Route>
+            <Route path="library/playlist"></Route>
           </Routes>
         </div>
 

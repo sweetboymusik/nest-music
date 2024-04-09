@@ -23,6 +23,7 @@ function AlbumCard({ artist, release, getArtist, setCurrentRelease }) {
         <Link
           onClick={() => {
             getArtist(artist.id);
+            setCurrentRelease(release.id);
           }}
           className="AlbumCard-Link"
           to={`../../../artist/${artist.name}/${release.title}}`}

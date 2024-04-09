@@ -30,16 +30,21 @@ function SongCard({ artist, release, track, loadTrack }) {
         </span>
 
         <div className="song-text">
-          {artist.map((artist) => (
-            <Link className="song-link" to={`../../../artist/${artist.name}`}>
+          {artist.map((artist, index) => (
+            <Link
+              key={index}
+              className="song-link"
+              to={`../../../artist/${artist.name}`}
+            >
               <>{artist.name}</>
             </Link>
           ))}
         </div>
 
         <div className="song-text">
-          {artist.map((artist) => (
+          {artist.map((artist, index) => (
             <Link
+              key={index}
               className="song-link"
               to={`../../../artist/${artist.name}/${release.title}}`}
             >
