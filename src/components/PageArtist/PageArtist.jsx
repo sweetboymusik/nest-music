@@ -21,7 +21,11 @@ function PageArtist({ currentArtist, getArtist, setCurrentRelease }) {
       </div>
 
       <div className="artist-body">
-        <AlbumGrid artists={currentArtist} getArtist={getArtist} />
+        <AlbumGrid
+          artists={currentArtist}
+          getArtist={getArtist}
+          setCurrentRelease={setCurrentRelease}
+        />
       </div>
     </div>
   );
