@@ -1,6 +1,11 @@
 import SongCard from "../SongCard/SongCard";
 
-function FeaturedSongsGrid({ featured, loadTrack }) {
+function FeaturedSongsGrid({
+  featured,
+  loadTrack,
+  getArtist,
+  setCurrentRelease,
+}) {
   return (
     <div>
       {featured.map((item, index) => (
@@ -10,6 +15,8 @@ function FeaturedSongsGrid({ featured, loadTrack }) {
           release={item.release}
           track={item.track}
           loadTrack={loadTrack}
+          getArtist={getArtist}
+          setCurrentRelease={setCurrentRelease}
         />
       ))}
     </div>

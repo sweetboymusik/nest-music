@@ -2,9 +2,15 @@ import React from "react";
 import "./GenreCard.css";
 import { Link } from "react-router-dom";
 
-function GenreCard({ genre, imageUrl }) {
+function GenreCard({ genre, imageUrl, filterArtists }) {
   return (
-    <Link className="genre-card" to={`genre/${genre.toLowerCase()}`}>
+    <Link
+      onClick={() => {
+        filterArtists(genre);
+      }}
+      className="genre-card"
+      to={`/browse/${genre.toLowerCase()}`}
+    >
       <img src={imageUrl} alt={genre} />
       <h2>{genre}</h2>
     </Link>

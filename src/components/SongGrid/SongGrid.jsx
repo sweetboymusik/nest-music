@@ -1,7 +1,14 @@
 import "./SongGrid.css";
 import SongCard from "../SongCard/SongCard";
 
-function SongGrid({ width, currentArtist, currentRelease, loadTrack }) {
+function SongGrid({
+  width,
+  currentArtist,
+  currentRelease,
+  loadTrack,
+  getArtist,
+  setCurrentRelease,
+}) {
   return (
     <div className="song-grid" style={{ width: width }}>
       {currentArtist.map((artist) =>
@@ -15,6 +22,8 @@ function SongGrid({ width, currentArtist, currentRelease, loadTrack }) {
                 release={release}
                 track={track}
                 loadTrack={loadTrack}
+                getArtist={getArtist}
+                setCurrentRelease={setCurrentRelease}
               />
             ))
         )
