@@ -1,20 +1,22 @@
 import "./SongGrid.css";
 import SongCard from "../SongCard/SongCard";
 
-function SongGrid({ artists, width }) {
+function SongGrid({ width, currentArtist, currentRelease, loadTrack }) {
   return (
     <div className="song-grid" style={{ width: width }}>
-      {artists.map((artist) =>
-        artist.releases.map((release) =>
-          release.tracks.map((track) => (
-            <SongCard
-              width={""}
-              key={track.id}
-              artist={artist}
-              release={release}
-              track={track}
-            />
-          ))
+      {currentArtist.map((artist) =>
+        artist.releases.map(
+          (release) =>
+            release.id === currentRelease &&
+            release.tracks.map((track) => (
+              <SongCard
+                key={track.id}
+                artist={currentArtist}
+                release={release}
+                track={track}
+                loadTrack={loadTrack}
+              />
+            ))
         )
       )}
     </div>

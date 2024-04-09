@@ -5,13 +5,18 @@ import { useState } from "react";
 import { FaPlus, FaHeart, FaRegHeart } from "react-icons/fa";
 import tempImage from "../../assets/images/other/album_placeholder.png";
 
-function SongCard({ artist, release, track }) {
+function SongCard({ artist, release, track, loadTrack }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
 
   return (
     <div className="song-card">
-      <button className="song-play">
+      <button
+        className="song-play"
+        onClick={() => {
+          loadTrack(artist, release, track);
+        }}
+      >
         <img
           src={require(`../../assets/images/artwork/${release.artwork}`)}
           alt="album artwork"
@@ -25,18 +30,22 @@ function SongCard({ artist, release, track }) {
         </span>
 
         <div className="song-text">
-          <Link className="song-link" to={`artists/${artist.name}`}>
-            {artist.name}
-          </Link>
+          {artist.map((artist) => (
+            <Link className="song-link" to={`../../../artist/${artist.name}`}>
+              <>{artist.name}</>
+            </Link>
+          ))}
         </div>
 
         <div className="song-text">
-          <Link
-            className="song-link"
-            to={`artists/${artist.name}/${release.title}}`}
-          >
-            {release.title}
-          </Link>
+          {artist.map((artist) => (
+            <Link
+              className="song-link"
+              to={`../../../artist/${artist.name}/${release.title}}`}
+            >
+              {release.title}
+            </Link>
+          ))}
         </div>
       </div>
       <div className="song-icons">
