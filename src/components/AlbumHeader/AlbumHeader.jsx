@@ -21,30 +21,35 @@ function AlbumHeader({ currentArtist, currentRelease, addAlbum, removeAlbum }) {
         )
       )}
 
-      {currentArtist.map((artist, i) => (
-        <span key={i}>
-          {artist.releases[0].liked ? (
-            <button
-              onClick={() => {
-                removeAlbum(currentArtist[0].id, currentRelease);
-              }}
-            >
-              UNLIKE
-            </button>
-          ) : (
-            <button
-              onClick={() => {
-                addAlbum({
-                  artist: currentArtist[0].id,
-                  album: currentRelease,
-                });
-              }}
-            >
-              LIKE
-            </button>
-          )}
-        </span>
-      ))}
+      {currentArtist.map((artist) =>
+        artist.releases.map(
+          (release, i) =>
+            release.id === currentRelease && (
+              <span key={i}>
+                {release.liked ? (
+                  <button
+                    onClick={() => {
+                      removeAlbum(currentArtist[0].id, currentRelease);
+                    }}
+                  >
+                    UNLIKE
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => {
+                      addAlbum({
+                        artist: currentArtist[0].id,
+                        album: currentRelease,
+                      });
+                    }}
+                  >
+                    LIKE
+                  </button>
+                )}
+              </span>
+            )
+        )
+      )}
 
       {/* <button
         onClick={() => {

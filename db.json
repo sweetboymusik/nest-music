@@ -593,7 +593,7 @@
       "name": "Wilder Shade",
       "genre": "Rock",
       "photo": "wilder_shade.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0022",
@@ -677,14 +677,14 @@
       "name": "Nova Rift",
       "genre": "Rock",
       "photo": "nova_rift.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0025",
           "title": "Cosmic Collision",
           "year": 1999,
           "artwork": "nova_rift-cosmic_collision.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0049",
@@ -709,7 +709,7 @@
           "title": "Rifted Realms",
           "year": 2003,
           "artwork": "nova_rift-rifted_realms.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0051",
@@ -1045,7 +1045,7 @@
           "title": "Country Roads & Moonlight",
           "year": 2007,
           "artwork": "willow_creek-country_roads_&_moonlight.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0075",
@@ -1181,7 +1181,7 @@
       "name": "Sawyer Brooks",
       "genre": "Country",
       "photo": "sawyer_brooks.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0043",
@@ -1601,7 +1601,7 @@
       "name": "Cedar Ridge",
       "genre": "Folk",
       "photo": "cedar_ridge.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0058",
@@ -1937,7 +1937,7 @@
       "name": "Sterling Virtuoso",
       "genre": "Classical",
       "photo": "sterling_virtuoso.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0070",
@@ -2246,7 +2246,7 @@
           "title": "Reverberations of Ember",
           "year": 2022,
           "artwork": "ember_veil-reverberations_of_ember.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0161",
@@ -2727,121 +2727,7 @@
       ]
     }
   ],
-  "userArtists": [
-    {
-      "id": "1b62",
-      "artist": "a0024"
-    },
-    {
-      "id": "0a06",
-      "artist": "a0008"
-    },
-    {
-      "id": "3878",
-      "artist": "a0015"
-    },
-    {
-      "id": "c21e",
-      "artist": "a0015"
-    },
-    {
-      "id": "efde",
-      "artist": "a0015"
-    },
-    {
-      "id": "6757",
-      "artist": "a0015"
-    },
-    {
-      "id": "ccee",
-      "artist": "a0015"
-    },
-    {
-      "id": "a6ad",
-      "artist": "a0015"
-    },
-    {
-      "id": "85f6",
-      "artist": "a0015"
-    },
-    {
-      "id": "0cc9",
-      "artist": "a0015"
-    },
-    {
-      "id": "1fc5",
-      "artist": "a0015"
-    },
-    {
-      "id": "9b66",
-      "artist": "a0015"
-    },
-    {
-      "id": "d7ed",
-      "artist": "a0015"
-    },
-    {
-      "id": "6f85",
-      "artist": "a0009"
-    },
-    {
-      "id": "76d8",
-      "artist": "a0020"
-    },
-    {
-      "id": "ba07",
-      "artist": "a0020"
-    },
-    {
-      "id": "f458",
-      "artist": "a0020"
-    },
-    {
-      "id": "eba4",
-      "artist": "a0020"
-    }
-  ],
-  "userAlbums": [
-    {
-      "id": "a670",
-      "artist": "a0014",
-      "album": "r0041"
-    },
-    {
-      "id": "98b4",
-      "artist": "a0024",
-      "album": "r0071"
-    },
-    {
-      "id": "4e4c",
-      "artist": "a0003",
-      "album": "r0008"
-    },
-    {
-      "id": "d3d7",
-      "artist": "a0003",
-      "album": "r0009"
-    },
-    {
-      "id": "766b",
-      "artist": "a0013",
-      "album": "r0038"
-    },
-    {
-      "id": "91ca",
-      "artist": "a0009",
-      "album": "r0026"
-    },
-    {
-      "id": "7234",
-      "artist": "a0009",
-      "album": "r0025"
-    },
-    {
-      "id": "7607",
-      "artist": "a0027",
-      "album": "r0081"
-    }
-  ],
+  "userArtists": [],
+  "userAlbums": [],
   "userTracks": []
 }

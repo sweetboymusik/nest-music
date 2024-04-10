@@ -90,7 +90,6 @@ function App() {
 
     const data = await res.json();
     setUserArtists([...userArtists, data]);
-    console.log(userArtists);
   }
 
   async function removeArtist(id) {
@@ -192,7 +191,6 @@ function App() {
     let filtered = [];
 
     userArtists.forEach(async (entry) => {
-      console.log(entry);
       let result = await fetchArtist(entry.artist);
       filtered.push(result);
     });
@@ -214,7 +212,6 @@ function App() {
       filtered.push(obj);
     });
 
-    console.log(filtered);
     setFilteredUserAlbums(filtered);
   }
 
@@ -294,7 +291,6 @@ function App() {
 
   useEffect(() => {
     audio.volume = volume;
-    console.log(audio.volume);
   }, [volume]);
 
   useEffect(() => {
