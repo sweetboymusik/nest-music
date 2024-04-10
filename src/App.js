@@ -115,6 +115,21 @@ function App() {
   }
 
   async function addAlbum(album) {
+    const artistInfo = await fetchArtist(album.artist);
+    artistInfo.releases.forEach((release) => {
+      if (release.id === album.album) {
+        release.liked = true;
+      }
+    });
+    await fetch(`http://localhost:4999/artists/${album.artist}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(artistInfo),
+    });
+
+    let newData = await fetchArtists();
+    setArtists(newData);
+
     const res = await fetch(`http://localhost:4999/userAlbums`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -126,16 +141,20 @@ function App() {
   }
 
   async function removeAlbum(artist, album) {
-    // const artistInfo = await fetchArtist(album.artist);
+    const artistInfo = await fetchArtist(artist);
+    artistInfo.releases.forEach((release) => {
+      if (release.id === album) {
+        release.liked = false;
+      }
+    });
+    await fetch(`http://localhost:4999/artists/${artist}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(artistInfo),
+    });
 
-    // await fetch(`http://localhost:4999/artists/${album.artist}`, {
-    //   method: "PUT",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify(artistInfo),
-    // });
-
-    // let newData = await fetchArtists();
-    // setArtists(newData);
+    let newData = await fetchArtists();
+    setArtists(newData);
 
     let newID = userAlbums.filter((entry) => entry.album === album)[0].id;
 
