@@ -27,10 +27,12 @@ function PageArtist({ currentArtist, getArtist, setCurrentRelease, currentReleas
 
       <div className="artist-body">
         <div>
+          Top Songs
           <SongGrid
             currentArtist={currentArtist}
             currentRelease={currentRelease}
             loadTrack={loadTrack}
+            width={"1000px"}
           />
         </div>
         Discography
