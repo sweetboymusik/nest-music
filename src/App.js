@@ -15,6 +15,7 @@ import SongSection from "./components/SongSection/SongSection";
 import PageAlbum from "./components/PageAlbum/PageAlbum";
 import FeaturedSongs from "./components/FeaturedSongs/FeaturedSongs";
 import PageBrowseGenre from "./components/PageBrowseGenre/PageBrowseGenre";
+import { BiUpsideDown } from "react-icons/bi";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -32,6 +33,75 @@ function App() {
     artwork: "album_placeholder.png",
   });
   let [filteredArtists, setFilteredArtists] = useState([]);
+
+  let [userArtists, setUserArtists] = useState();
+  let [userAlbums, setUserAlbums] = useState();
+  let [userTracks, setUserTracks] = useState();
+
+  useEffect(() => {
+    async function getUserArtists() {
+      const res = await fetchUserArtists();
+      setUserArtists(res);
+    }
+
+    async function getUserAlbums() {
+      const res = await fetchUserAlbums();
+      setUserAlbums();
+    }
+
+    async function getUserTracks() {
+      const res = await fetchUserTracks();
+      setUserTracks();
+    }
+
+    getUserArtists();
+    getUserAlbums();
+    getUserTracks();
+  }, []);
+
+  async function addArtist(artist) {
+    const res = await fetch(`http://localhost:4999/userArtists`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(artist),
+    });
+
+    const data = await res.json();
+    setUserArtists([...userArtists, data]);
+    console.log(userArtists);
+  }
+
+  async function removeArtist(id) {
+    setUserArtists(userArtists.filter((item) => item.artist !== id));
+    console.log(userArtists);
+    await updateUserArtists(userArtists);
+  }
+
+  async function updateUserArtists(list) {
+    const res = await fetch(`http://localhost:4999/userArtists/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(list),
+    });
+  }
+
+  async function fetchUserArtists() {
+    const res = await fetch("http://localhost:4999/userArtists");
+    const data = await res.json();
+    return data;
+  }
+
+  async function fetchUserAlbums() {
+    const res = await fetch("http://localhost:4999/userAlbums");
+    const data = await res.json();
+    return data;
+  }
+
+  async function fetchUserTracks() {
+    const res = await fetch("http://localhost:4999/userTracks");
+    const data = await res.json();
+    return data;
+  }
 
   function filterArtists(genre) {
     let filtered = artists.filter((artist) => artist.genre === genre);
@@ -169,6 +239,8 @@ function App() {
                   albumShuffled={albumSelected}
                   setCurrentRelease={setCurrentRelease}
                   loadTrack={loadTrack}
+                  addArtist={addArtist}
+                  removeArtist={removeArtist}
                 />
               }
             />
