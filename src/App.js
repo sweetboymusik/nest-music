@@ -15,7 +15,6 @@ import SongSection from "./components/SongSection/SongSection";
 import PageAlbum from "./components/PageAlbum/PageAlbum";
 import FeaturedSongs from "./components/FeaturedSongs/FeaturedSongs";
 import PageBrowseGenre from "./components/PageBrowseGenre/PageBrowseGenre";
-import { BiUpsideDown } from "react-icons/bi";
 
 function App() {
   let [audio, setAudio] = useState(document.createElement("audio"));
@@ -34,9 +33,12 @@ function App() {
   });
   let [filteredArtists, setFilteredArtists] = useState([]);
 
-  let [userArtists, setUserArtists] = useState();
-  let [userAlbums, setUserAlbums] = useState();
-  let [userTracks, setUserTracks] = useState();
+  let [userArtists, setUserArtists] = useState([]);
+  let [userAlbums, setUserAlbums] = useState([]);
+  let [userTracks, setUserTracks] = useState([]);
+
+  let [filteredUserArtists, setFilteredUserArtists] = useState([]);
+  let [filteredUserAlbums, setFilteredUserAlbums] = useState([]);
 
   useEffect(() => {
     async function getUserArtists() {
@@ -46,12 +48,12 @@ function App() {
 
     async function getUserAlbums() {
       const res = await fetchUserAlbums();
-      setUserAlbums();
+      setUserAlbums(res);
     }
 
     async function getUserTracks() {
       const res = await fetchUserTracks();
-      setUserTracks();
+      setUserTracks(res);
     }
 
     getUserArtists();
@@ -59,7 +61,27 @@ function App() {
     getUserTracks();
   }, []);
 
+  useEffect(() => {
+    filterUserArtists();
+  }, [userArtists]);
+
+  useEffect(() => {
+    filterUserAlbums();
+  }, [userAlbums]);
+
   async function addArtist(artist) {
+    const artistInfo = await fetchArtist(artist.artist);
+    artistInfo.liked = true;
+
+    await fetch(`http://localhost:4999/artists/${artist.artist}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(artistInfo),
+    });
+
+    let newData = await fetchArtists();
+    setArtists(newData);
+
     const res = await fetch(`http://localhost:4999/userArtists`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -72,17 +94,56 @@ function App() {
   }
 
   async function removeArtist(id) {
-    setUserArtists(userArtists.filter((item) => item.artist !== id));
-    console.log(userArtists);
-    await updateUserArtists(userArtists);
+    const artistInfo = await fetchArtist(id);
+    artistInfo.liked = false;
+
+    await fetch(`http://localhost:4999/artists/${id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(artistInfo),
+    });
+
+    let newData = await fetchArtists();
+    setArtists(newData);
+
+    let newID = userArtists.filter((entry) => entry.artist === id)[0].id;
+
+    await fetch(`http://localhost:4999/userArtists/${newID}`, {
+      method: "DELETE",
+    });
+    setUserArtists(userArtists.filter((item) => item.id !== newID));
   }
 
-  async function updateUserArtists(list) {
-    const res = await fetch(`http://localhost:4999/userArtists/`, {
+  async function addAlbum(album) {
+    const res = await fetch(`http://localhost:4999/userAlbums`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(list),
+      body: JSON.stringify(album),
     });
+
+    const data = await res.json();
+    setUserAlbums([...userAlbums, data]);
+  }
+
+  async function removeAlbum(artist, album) {
+    // const artistInfo = await fetchArtist(album.artist);
+
+    // await fetch(`http://localhost:4999/artists/${album.artist}`, {
+    //   method: "PUT",
+    //   headers: { "Content-Type": "application/json" },
+    //   body: JSON.stringify(artistInfo),
+    // });
+
+    // let newData = await fetchArtists();
+    // setArtists(newData);
+
+    let newID = userAlbums.filter((entry) => entry.album === album)[0].id;
+
+    await fetch(`http://localhost:4999/userAlbums/${newID}`, {
+      method: "DELETE",
+    });
+
+    setUserAlbums(userAlbums.filter((item) => item.id !== newID));
   }
 
   async function fetchUserArtists() {
@@ -106,6 +167,36 @@ function App() {
   function filterArtists(genre) {
     let filtered = artists.filter((artist) => artist.genre === genre);
     setFilteredArtists(filtered);
+  }
+
+  async function filterUserArtists() {
+    let filtered = [];
+
+    userArtists.forEach(async (entry) => {
+      console.log(entry);
+      let result = await fetchArtist(entry.artist);
+      filtered.push(result);
+    });
+
+    setFilteredUserArtists(filtered);
+  }
+
+  async function filterUserAlbums() {
+    const filtered = [];
+
+    userAlbums.forEach(async (entry) => {
+      const artist = await fetchArtist(entry.artist);
+      const release = await artist.releases.filter(
+        (release) => release.id === entry.album
+      );
+
+      let obj = { artist: artist, release: release[0] };
+
+      filtered.push(obj);
+    });
+
+    console.log(filtered);
+    setFilteredUserAlbums(filtered);
   }
 
   async function fetchArtists() {
@@ -270,8 +361,8 @@ function App() {
                   currentArtist={currentArtist}
                   getArtist={getArtist}
                   setCurrentRelease={setCurrentRelease}
-                  currentRelease={currentRelease}
-                  loadTrack={loadTrack}
+                  addArtist={addArtist}
+                  removeArtist={removeArtist}
                 />
               }
             ></Route>
@@ -285,20 +376,27 @@ function App() {
                   currentRelease={currentRelease}
                   loadTrack={loadTrack}
                   setCurrentRelease={setCurrentRelease}
+                  addAlbum={addAlbum}
+                  removeAlbum={removeAlbum}
                 />
               }
             ></Route>
 
             <Route
               path="/library/artists"
-              element={<PageArtists artists={artists} getArtist={getArtist} />}
+              element={
+                <PageArtists
+                  artists={filteredUserArtists}
+                  getArtist={getArtist}
+                />
+              }
             ></Route>
 
             <Route
               path="/library/albums"
               element={
                 <PageAlbums
-                  artists={artists}
+                  userAlbums={filteredUserAlbums}
                   getArtist={getArtist}
                   setCurrentRelease={setCurrentRelease}
                 />

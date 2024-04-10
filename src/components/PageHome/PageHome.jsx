@@ -23,13 +23,6 @@ function PageHome({
       >
         add
       </button>
-      <button
-        onClick={() => {
-          removeArtist("a0001");
-        }}
-      >
-        delete
-      </button>
       <div className="home-section">
         <h1>Featured Artists</h1>
         <hr className="home-divider" />
@@ -37,6 +30,7 @@ function PageHome({
           artists={shuffled}
           getArtist={getArtist}
           setCurrentRelease={setCurrentRelease}
+          addArtist={addArtist}
         />
       </div>
 

@@ -4,7 +4,7 @@ import "./AlbumHeader.css";
 import { FaPlus, FaHeart, FaRegHeart } from "react-icons/fa";
 import albumPlaceholder from "../../assets/images/other/album_placeholder.png";
 
-function AlbumHeader({ currentArtist, currentRelease }) {
+function AlbumHeader({ currentArtist, currentRelease, addAlbum, removeAlbum }) {
   return (
     <div className="AlbumHeader">
       {currentArtist.map((artist, index) =>
@@ -19,6 +19,22 @@ function AlbumHeader({ currentArtist, currentRelease }) {
             )
         )
       )}
+
+      <button
+        onClick={() => {
+          addAlbum({ artist: currentArtist[0].id, album: currentRelease });
+        }}
+      >
+        ADD
+      </button>
+
+      <button
+        onClick={() => {
+          removeAlbum(currentArtist[0].id, currentRelease);
+        }}
+      >
+        REMOVE
+      </button>
 
       <div className="AlbumHeaderContent">
         {currentArtist.map((artist, index) => (

@@ -10,7 +10,7 @@ import { FaMusic } from "react-icons/fa";
 import { FaHeadphones } from "react-icons/fa";
 import { BsFillGrid1X2Fill } from "react-icons/bs";
 
-function NavBar() {
+function NavBar({ filterUserArtists }) {
   return (
     <nav>
       <NavLogo />
@@ -20,7 +20,12 @@ function NavBar() {
       <NavItem text="Browse" icon={<BsFillGrid1X2Fill />} path={"browse"} />
       <hr />
       <h2>Library</h2>
-      <NavItem text="Artists" icon={<FaUser />} path={"library/artists"} />
+      <NavItem
+        filter={filterUserArtists}
+        text="Artists"
+        icon={<FaUser />}
+        path={"library/artists"}
+      />
       <NavItem text="Albums" icon={<FaRecordVinyl />} path={"library/albums"} />
       <NavItem text="Songs" icon={<FaMusic />} path={"library/songs"} />
       <NavItem

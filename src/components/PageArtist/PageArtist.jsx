@@ -1,12 +1,20 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 import SongGrid from "../SongGrid/SongGrid";
 
 import "./PageArtist.css";
 
-function PageArtist({ currentArtist, getArtist, setCurrentRelease, currentRelease, loadTrack }) {
+function PageArtist({
+  currentArtist,
+  getArtist,
+  setCurrentRelease,
+  currentRelease,
+  loadTrack,
+  addArtist,
+  removeArtist,
+}) {
   return (
     <div className="artist-main">
       <div className="artist-header">
@@ -24,6 +32,28 @@ function PageArtist({ currentArtist, getArtist, setCurrentRelease, currentReleas
           </div>
         ))}
       </div>
+
+      {currentArtist.map((artist, index) => (
+        <span key={index}>
+          {artist.liked ? (
+            <button
+              onClick={() => {
+                removeArtist(currentArtist[0].id);
+              }}
+            >
+              UNLIKE
+            </button>
+          ) : (
+            <button
+              onClick={() => {
+                addArtist({ artist: currentArtist[0].id });
+              }}
+            >
+              LIKE
+            </button>
+          )}
+        </span>
+      ))}
 
       <div className="artist-body">
         <div>

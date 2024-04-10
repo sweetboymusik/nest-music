@@ -8,12 +8,16 @@ function PageAlbum({
   loadTrack,
   getArtist,
   setCurrentRelease,
+  addAlbum,
+  removeAlbum,
 }) {
   return (
     <div className="page-album">
       <AlbumHeader
         currentArtist={currentArtist}
         currentRelease={currentRelease}
+        addAlbum={addAlbum}
+        removeAlbum={removeAlbum}
       />
       <SongGrid
         currentArtist={currentArtist}

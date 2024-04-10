@@ -1,11 +1,12 @@
 import React from "react";
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
+import UserAlbumGrid from "../UserAlbumsGrid/UserAlbumGrid";
 
-function PageAlbums({ artists, getArtist, setCurrentRelease }) {
+function PageAlbums({ userAlbums, getArtist, setCurrentRelease }) {
   return (
     <div>
-      <AlbumGrid
-        artists={artists}
+      <UserAlbumGrid
+        userAlbums={userAlbums}
         getArtist={getArtist}
         setCurrentRelease={setCurrentRelease}
       />

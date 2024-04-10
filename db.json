@@ -5,28 +5,28 @@
       "name": "Amara",
       "genre": "R&B",
       "photo": "amara.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0001",
           "title": "Soulful Reverie",
           "year": 2001,
           "artwork": "amara-soulful_reverie.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0001",
               "title": "Soul's Embrace",
               "length": "3:15",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0002",
               "title": "Midnight Serenade",
               "length": "3:19",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
@@ -52,7 +52,7 @@
               "title": "Heartbeat Harmony",
               "length": "3:08",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -62,13 +62,13 @@
           "title": "Eclipse of Emotions",
           "year": 2020,
           "artwork": "amara-eclipse_of_emotions.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0005",
               "title": "Eclipse of Love",
               "length": "3:07",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -77,7 +77,7 @@
               "title": "Rhythm of Desire",
               "length": "3:24",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -103,15 +103,15 @@
               "title": "Urban Echo",
               "length": "3:22",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0008",
               "title": "City Rhythm",
               "length": "3:12",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -121,21 +121,21 @@
           "title": "Neon Nightscape",
           "year": 2005,
           "artwork": "kairo_nova-neon_nightscape.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0009",
               "title": "Neon Nights",
               "length": "3:04",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
               "id": "t0010",
               "title": "Midnight Groove",
               "length": "3:29",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
@@ -152,7 +152,7 @@
               "id": "t0011",
               "title": "Twilight Serenade",
               "length": "3:18",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -160,7 +160,7 @@
               "id": "t0012",
               "title": "Neon Dreams",
               "length": "3:06",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -173,29 +173,29 @@
       "name": "Remy Bliss",
       "genre": "R&B",
       "photo": "remy_bliss.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0007",
           "title": "Rhythmic Rapture",
           "year": 1995,
           "artwork": "remy_bliss-rhythmic_rapture.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0013",
               "title": "Rhythmic Bliss",
               "length": "3:10",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0014",
               "title": "Soulful Serenade",
               "length": "3:21",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -205,14 +205,14 @@
           "title": "Blissful Beats",
           "year": 2001,
           "artwork": "remy_bliss-blissful_beats.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0015",
               "title": "Beats of Harmony",
               "length": "3:25",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -236,7 +236,7 @@
               "id": "t0017",
               "title": "Motion in Love",
               "length": "3:02",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -244,8 +244,8 @@
               "id": "t0018",
               "title": "Remy's Reverie",
               "length": "3:30",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -264,13 +264,13 @@
           "title": "Starlight Symphony",
           "year": 1994,
           "artwork": "nova_belle-starlight_symphony.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0019",
               "title": "Starlit Symphony",
               "length": "3:30",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
@@ -295,8 +295,8 @@
               "id": "t0021",
               "title": "Princess Diaries",
               "length": "3:12",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -314,13 +314,13 @@
           "title": "Melodic Mirage",
           "year": 2001,
           "artwork": "nova_belle-melodic_mirage.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0023",
               "title": "Mirage Melody",
               "length": "3:20",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -328,8 +328,8 @@
               "id": "t0024",
               "title": "Pop's Anthem",
               "length": "3:14",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -341,14 +341,14 @@
       "name": "Phoenix Rivers",
       "genre": "Pop",
       "photo": "phoenix_rivers.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0013",
           "title": "Celestial Cadence",
           "year": 1995,
           "artwork": "phoenix_rivers-celestial_cadence.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0025",
@@ -373,22 +373,22 @@
           "title": "Echoes of Eden",
           "year": 1999,
           "artwork": "phoenix_rivers-echoes_of_eden.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0027",
               "title": "Echoes of Eden",
               "length": "3:27",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
               "id": "t0028",
               "title": "Sunset Serenade",
               "length": "3:11",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -404,7 +404,7 @@
               "id": "t0029",
               "title": "Riverside Serenade",
               "length": "3:05",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -412,7 +412,7 @@
               "id": "t0030",
               "title": "River's Lament",
               "length": "3:23",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -432,14 +432,14 @@
           "title": "Blossoms of Sound",
           "year": 1996,
           "artwork": "echo_bloom-blossoms_of_sound.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0031",
               "title": "Blossoming Melody",
               "length": "3:16",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -447,7 +447,7 @@
               "title": "Echo's Melody",
               "length": "3:15",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -457,7 +457,7 @@
           "title": "Radiant Resonance",
           "year": 2000,
           "artwork": "echo_bloom-radiant_resonance.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0033",
@@ -482,7 +482,7 @@
           "title": "Ethereal Echoes",
           "year": 2003,
           "artwork": "echo_bloom-ethereal_echoes.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0035",
@@ -496,7 +496,7 @@
               "id": "t0036",
               "title": "Bloom's Ballad",
               "length": "3:07",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -509,7 +509,7 @@
       "name": "Storm Horizon",
       "genre": "Rock",
       "photo": "storm_horizon.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0019",
@@ -522,8 +522,8 @@
               "id": "t0037",
               "title": "Tempest's Call",
               "length": "3:03",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -531,7 +531,7 @@
               "title": "Horizon's Fury",
               "length": "3:18",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -548,7 +548,7 @@
               "title": "Melodies of Rage",
               "length": "3:23",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -566,21 +566,21 @@
           "title": "Thunderous Triumph",
           "year": 2004,
           "artwork": "storm_horizon-thunderous_triumph.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0041",
               "title": "Thunderous Triumph",
               "length": "3:09",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0042",
               "title": "Rebel's Anthem",
               "length": "3:28",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -614,7 +614,7 @@
               "id": "t0044",
               "title": "Wilder's Echo",
               "length": "3:05",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
@@ -625,13 +625,13 @@
           "title": "Wilder Whispers",
           "year": 2002,
           "artwork": "wilder_shade-wilder_whispers.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0045",
               "title": "Whispers of Wild",
               "length": "3:17",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
@@ -639,8 +639,8 @@
               "id": "t0046",
               "title": "Shade's Melody",
               "length": "3:20",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -650,21 +650,21 @@
           "title": "Rebel Rhythms",
           "year": 2005,
           "artwork": "wilder_shade-rebel_rhythms.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0047",
               "title": "Rebel Rhythm",
               "length": "3:06",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0048",
               "title": "Rock's Rebellion",
               "length": "3:16",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -677,7 +677,7 @@
       "name": "Nova Rift",
       "genre": "Rock",
       "photo": "nova_rift.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0025",
@@ -699,7 +699,7 @@
               "title": "Nova's Nexus",
               "length": "3:22",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -709,13 +709,13 @@
           "title": "Rifted Realms",
           "year": 2003,
           "artwork": "nova_rift-rifted_realms.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0051",
               "title": "Rifted Realms",
               "length": "3:11",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
@@ -723,8 +723,8 @@
               "id": "t0052",
               "title": "Rift's Rhapsody",
               "length": "3:09",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -740,8 +740,8 @@
               "id": "t0053",
               "title": "Discordant Dimension",
               "length": "3:24",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -761,7 +761,7 @@
       "name": "Velvet Moon",
       "genre": "Jazz",
       "photo": "velvet_moon.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0028",
@@ -775,7 +775,7 @@
               "title": "Moonlit Serenade",
               "length": "3:13",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -793,14 +793,14 @@
           "title": "Velvet Nightfall",
           "year": 2004,
           "artwork": "velvet_moon-velvet_nightfall.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0057",
               "title": "Velvet Nightfall",
               "length": "3:19",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -808,7 +808,7 @@
               "title": "Midnight Moonlight",
               "length": "3:31",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -818,7 +818,7 @@
           "title": "Jazz Under the Stars",
           "year": 2007,
           "artwork": "velvet_moon-jazz_under_stars.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0059",
@@ -833,7 +833,7 @@
               "title": "Velvet's Reverie",
               "length": "3:34",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -845,7 +845,7 @@
       "name": "Aurora Swing",
       "genre": "Jazz",
       "photo": "aurora_swing.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0031",
@@ -866,7 +866,7 @@
               "id": "t0062",
               "title": "Swing's Symphony",
               "length": "3:37",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
@@ -884,14 +884,14 @@
               "title": "Dancing Dawn",
               "length": "3:33",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
               "id": "t0064",
               "title": "Morning Swing",
               "length": "3:40",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
@@ -902,13 +902,13 @@
           "title": "Aurora Jazzscape",
           "year": 2008,
           "artwork": "aurora_swing-aurora_jazzscape.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0065",
               "title": "Aurora's Melody",
               "length": "3:35",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -916,8 +916,8 @@
               "id": "t0066",
               "title": "Jazz's Joy",
               "length": "3:43",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -929,7 +929,7 @@
       "name": "Nightshade Jazz Collective",
       "genre": "Jazz",
       "photo": "nightshade_jazz_collective.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0034",
@@ -943,7 +943,7 @@
               "title": "Nocturnal Notes",
               "length": "3:37",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -951,7 +951,7 @@
               "title": "Nightshade's Night",
               "length": "3:46",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -967,7 +967,7 @@
               "id": "t0069",
               "title": "Midnight Melange",
               "length": "3:39",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
@@ -975,7 +975,7 @@
               "id": "t0070",
               "title": "Jazz Collective's Groove",
               "length": "3:49",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
@@ -986,14 +986,14 @@
           "title": "Enigmatic Ensemble",
           "year": 2009,
           "artwork": "nightshade_jazz_collective-enigmatic_ensemble.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0071",
               "title": "Enigmatic Ensemble",
               "length": "3:41",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -1001,7 +1001,7 @@
               "title": "Melodic Midnight",
               "length": "3:52",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1013,21 +1013,21 @@
       "name": "Willow Creek",
       "genre": "Country",
       "photo": "willow_creek.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0037",
           "title": "Creek Side Serenade",
           "year": 2003,
           "artwork": "willow_creek-creek_side_serenade.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0073",
               "title": "Creek's Lament",
               "length": "3:43",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -1035,7 +1035,7 @@
               "title": "Willow's Whispers",
               "length": "3:55",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1045,22 +1045,22 @@
           "title": "Country Roads & Moonlight",
           "year": 2007,
           "artwork": "willow_creek-country_roads_&_moonlight.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0075",
               "title": "Moonlit Roads",
               "length": "3:45",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
               "id": "t0076",
               "title": "Country's Calling",
               "length": "3:58",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -1084,8 +1084,8 @@
               "id": "t0078",
               "title": "Creek's Crossing",
               "length": "4:00",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1097,7 +1097,7 @@
       "name": "Dusty Trails",
       "genre": "Country",
       "photo": "dusty_trails.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0040",
@@ -1110,16 +1110,16 @@
               "id": "t0079",
               "title": "Trailblazer's Ballad",
               "length": "3:49",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0080",
               "title": "Dusty's Dreams",
               "length": "2:15",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1129,7 +1129,7 @@
           "title": "Dusty Sunset Serenade",
           "year": 2008,
           "artwork": "dusty_trails-dusty_sunset_serenade.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0081",
@@ -1160,15 +1160,15 @@
               "id": "t0083",
               "title": "Wanderlust Whiskey",
               "length": "3:53",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0084",
               "title": "Tales of Dust",
               "length": "2:21",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -1181,7 +1181,7 @@
       "name": "Sawyer Brooks",
       "genre": "Country",
       "photo": "sawyer_brooks.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0043",
@@ -1195,7 +1195,7 @@
               "title": "Bourbon's Tale",
               "length": "3:55",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -1203,7 +1203,7 @@
               "title": "Southern Sunset",
               "length": "2:24",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1213,13 +1213,13 @@
           "title": "Southern Stories & Sawyer Songs",
           "year": 2009,
           "artwork": "sawyer_brooks-southern_stories_&_sawyer_songs.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0087",
               "title": "Sawyer's Stories",
               "length": "3:57",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
@@ -1227,7 +1227,7 @@
               "id": "t0088",
               "title": "Brooks' Journey",
               "length": "2:27",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
@@ -1238,14 +1238,14 @@
           "title": "Backroad Ballads & Barstool Blues",
           "year": 2012,
           "artwork": "sawyer_brooks-backroad_ballads_&_barstool_blues.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0089",
               "title": "Backroad Ballads",
               "length": "3:59",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -1253,7 +1253,7 @@
               "title": "Sawyer's Serenade",
               "length": "2:30",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1265,7 +1265,7 @@
       "name": "Neon Pulse",
       "genre": "Electronic",
       "photo": "neon_pulse.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0046",
@@ -1279,14 +1279,14 @@
               "title": "Pulsating Paradigm",
               "length": "4:00",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0092",
               "title": "Pulse's Journey",
               "length": "2:33",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
@@ -1297,14 +1297,14 @@
           "title": "Neon Nightscape",
           "year": 2010,
           "artwork": "neon_pulse-neon_nightscape.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0093",
               "title": "Neon Nightscape",
               "length": "2:15",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -1322,7 +1322,7 @@
           "title": "Digital Dreamscape",
           "year": 2013,
           "artwork": "neon_pulse-digital_dreamscape.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0095",
@@ -1336,8 +1336,8 @@
               "id": "t0096",
               "title": "Electronic Euphoria",
               "length": "2:39",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1356,22 +1356,22 @@
           "title": "Zenith Zephyr",
           "year": 2007,
           "artwork": "zenith_beats-zenith_zephyr.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0097",
               "title": "Zenith's Groove",
               "length": "2:19",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0098",
               "title": "Zenith's Quest",
               "length": "2:42",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1381,13 +1381,13 @@
           "title": "Beats Beyond Borders",
           "year": 2011,
           "artwork": "zenith_beats-beats_beyond_borders.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0099",
               "title": "Beyond Borders",
               "length": "2:21",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
@@ -1406,21 +1406,21 @@
           "title": "Electric Euphoria",
           "year": 2014,
           "artwork": "zenith_beats-electric_euphoria.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0101",
               "title": "Electric Euphoria",
               "length": "2:23",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0102",
               "title": "Beats' Evolution",
               "length": "2:48",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -1433,7 +1433,7 @@
       "name": "Pixel Groove",
       "genre": "Electronic",
       "photo": "pixel_groove.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0052",
@@ -1446,7 +1446,7 @@
               "id": "t0103",
               "title": "Pixelated Pulse",
               "length": "2:25",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
@@ -1454,8 +1454,8 @@
               "id": "t0104",
               "title": "Pixel's Pulse",
               "length": "2:51",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1479,8 +1479,8 @@
               "id": "t0106",
               "title": "Groove's Symphony",
               "length": "2:54",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -1490,13 +1490,13 @@
           "title": "Digital Dancescape",
           "year": 2015,
           "artwork": "pixel_groove-digital_dancescape.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0107",
               "title": "Digital Dancescape",
               "length": "2:29",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -1505,7 +1505,7 @@
               "title": "Pixel's Path",
               "length": "2:57",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1517,7 +1517,7 @@
       "name": "Autumn Skies",
       "genre": "Folk",
       "photo": "autumn_skies.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0055",
@@ -1538,7 +1538,7 @@
               "id": "t0110",
               "title": "Whispering Winds",
               "length": "3:00",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
@@ -1555,8 +1555,8 @@
               "id": "t0111",
               "title": "Fireside Tales",
               "length": "2:33",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -1574,22 +1574,22 @@
           "title": "Autumn's Melancholy Melodies",
           "year": 2016,
           "artwork": "autumn_skies-autumns_melancholy_melodies.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0113",
               "title": "Autumn's Melody",
               "length": "2:35",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0114",
               "title": "Fireside Lullaby",
               "length": "3:05",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1601,7 +1601,7 @@
       "name": "Cedar Ridge",
       "genre": "Folk",
       "photo": "cedar_ridge.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0058",
@@ -1614,8 +1614,8 @@
               "id": "t0115",
               "title": "Rustic Reverie",
               "length": "2:37",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -1633,7 +1633,7 @@
           "title": "Cedar Serenade",
           "year": 2014,
           "artwork": "cedar_ridge-cedar_serenade.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0117",
@@ -1647,8 +1647,8 @@
               "id": "t0118",
               "title": "Cedar's Song",
               "length": "3:11",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -1658,14 +1658,14 @@
           "title": "Folklore & Firelight",
           "year": 2017,
           "artwork": "cedar_ridge-folklore_and_firelight.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0119",
               "title": "Folklore & Firelight",
               "length": "2:41",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -1685,7 +1685,7 @@
       "name": "Misty Hollow",
       "genre": "Folk",
       "photo": "misty_hollow.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0061",
@@ -1706,8 +1706,8 @@
               "id": "t0122",
               "title": "Misty's Melody",
               "length": "3:18",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1717,7 +1717,7 @@
           "title": "Misty Meadows",
           "year": 2015,
           "artwork": "misty_hollow-misty_meadows.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0123",
@@ -1731,8 +1731,8 @@
               "id": "t0124",
               "title": "Hollow's Reverie",
               "length": "3:20",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -1742,22 +1742,22 @@
           "title": "Whispers in the Mist",
           "year": 2018,
           "artwork": "misty_hollow-whispers_in_the_mist.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0125",
               "title": "Whispers in the Mist",
               "length": "2:47",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0126",
               "title": "Meadow's Magic",
               "length": "3:23",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1769,7 +1769,7 @@
       "name": "Orion Symphony",
       "genre": "Classical",
       "photo": "orion_symphony.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0064",
@@ -1782,8 +1782,8 @@
               "id": "t0127",
               "title": "Celestial Overture",
               "length": "2:49",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -1791,7 +1791,7 @@
               "title": "Orion's Journey",
               "length": "3:26",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1801,14 +1801,14 @@
           "title": "Orchestral Odyssey",
           "year": 2016,
           "artwork": "orion_symphony-orchestral_odyssey.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0129",
               "title": "Odyssey's Crescendo",
               "length": "2:51",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -1816,7 +1816,7 @@
               "title": "Symphony of Stars",
               "length": "3:29",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -1832,8 +1832,8 @@
               "id": "t0131",
               "title": "Stardust Symphony",
               "length": "2:53",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -1841,7 +1841,7 @@
               "title": "Celestial Serenade",
               "length": "3:32",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1853,7 +1853,7 @@
       "name": "Celestia Grace",
       "genre": "Classical",
       "photo": "celestial_grace.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0067",
@@ -1867,15 +1867,15 @@
               "title": "Graceful Reverence",
               "length": "2:55",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0134",
               "title": "Grace's Symphony",
               "length": "3:35",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1885,22 +1885,22 @@
           "title": "Ethereal Elegance",
           "year": 2017,
           "artwork": "celestial_grace-ethereal_elegance.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0135",
               "title": "Ethereal Elegance",
               "length": "2:57",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
               "id": "t0136",
               "title": "Celestia's Melody",
               "length": "3:38",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -1910,14 +1910,14 @@
           "title": "Celestial Serenade",
           "year": 2020,
           "artwork": "celestial_grace-celestial_serenade.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0137",
               "title": "Celestial Serenade",
               "length": "2:59",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -1925,7 +1925,7 @@
               "title": "Elegance's Echo",
               "length": "3:41",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -1950,8 +1950,8 @@
               "id": "t0139",
               "title": "Virtuoso's Journey",
               "length": "4:05",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -1959,7 +1959,7 @@
               "title": "Sterling's Serenade",
               "length": "3:44",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -1976,7 +1976,7 @@
               "title": "Sterling Sonata",
               "length": "3:53",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -1984,7 +1984,7 @@
               "title": "Virtuoso's Symphony",
               "length": "3:47",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -2001,15 +2001,15 @@
               "title": "Masterful Melodies",
               "length": "3:52",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0144",
               "title": "Masterpiece's Echo",
               "length": "3:50",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -2021,7 +2021,7 @@
       "name": "Violet Dusk",
       "genre": "Alternative",
       "photo": "violet_dusk.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0073",
@@ -2035,7 +2035,7 @@
               "title": "Dusk Descendants",
               "length": "4:02",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -2043,7 +2043,7 @@
               "title": "Violet's Vision",
               "length": "3:53",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -2059,16 +2059,16 @@
               "id": "t0147",
               "title": "Veiled Veil",
               "length": "4:09",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
               "id": "t0148",
               "title": "Dusk's Dream",
               "length": "3:56",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
           ]
@@ -2084,16 +2084,16 @@
               "id": "t0149",
               "title": "Shadowed Symphonies",
               "length": "3:42",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
               "id": "t0150",
               "title": "Descendant's Echo",
               "length": "3:59",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -2105,7 +2105,7 @@
       "name": "Shadow Atlas",
       "genre": "Alternative",
       "photo": "shadow_atlas.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0076",
@@ -2118,8 +2118,8 @@
               "id": "t0151",
               "title": "Atlas' Echo",
               "length": "3:54",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
@@ -2127,7 +2127,7 @@
               "title": "Atlas' Shadow",
               "length": "4:11",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -2137,14 +2137,14 @@
           "title": "Echoes in the Abyss",
           "year": 2020,
           "artwork": "shadow_atlas-echoes_in_the_abyss.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0153",
               "title": "Echoes Abyss",
               "length": "3:49",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
@@ -2168,8 +2168,8 @@
               "id": "t0155",
               "title": "Shadow's Sound",
               "length": "3:50",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -2189,7 +2189,7 @@
       "name": "Ember Veil",
       "genre": "Alternative",
       "photo": "ember_veil.jpg",
-      "liked": true,
+      "liked": false,
       "releases": [
         {
           "id": "r0079",
@@ -2203,15 +2203,15 @@
               "title": "Veiled Vibrations",
               "length": "4:06",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
             {
               "id": "t0158",
               "title": "Ember's Embrace",
               "length": "3:36",
-              "liked": true,
-              "added": true,
+              "liked": false,
+              "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
           ]
@@ -2221,21 +2221,21 @@
           "title": "Ember Echoes",
           "year": 2021,
           "artwork": "ember_veil-ember_echoes.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0159",
               "title": "Ember's Echo",
               "length": "3:41",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
             {
               "id": "t0160",
               "title": "Veil's Reverie",
               "length": "3:46",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track2.mp3"
             }
@@ -2246,14 +2246,14 @@
           "title": "Reverberations of Ember",
           "year": 2022,
           "artwork": "ember_veil-reverberations_of_ember.jpg",
-          "liked": true,
+          "liked": false,
           "tracks": [
             {
               "id": "t0161",
               "title": "Reverberations of Ember",
               "length": "3:39",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -2727,7 +2727,37 @@
       ]
     }
   ],
-  "userArtists": [],
-  "userAlbums": [],
+  "userArtists": [
+    {
+      "id": "1b62",
+      "artist": "a0024"
+    },
+    {
+      "id": "0a06",
+      "artist": "a0008"
+    }
+  ],
+  "userAlbums": [
+    {
+      "id": "a670",
+      "artist": "a0014",
+      "album": "r0041"
+    },
+    {
+      "id": "98b4",
+      "artist": "a0024",
+      "album": "r0071"
+    },
+    {
+      "id": "4e4c",
+      "artist": "a0003",
+      "album": "r0008"
+    },
+    {
+      "id": "d3d7",
+      "artist": "a0003",
+      "album": "r0009"
+    }
+  ],
   "userTracks": []
 }
