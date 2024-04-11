@@ -11,6 +11,7 @@ function PageHome({
   setCurrentRelease,
   loadTrack,
   addArtist,
+  getPlaylist,
 }) {
   return (
     <div className="home-page">
@@ -28,7 +29,7 @@ function PageHome({
       <div className="home-section">
         <h1>Playlists</h1>
         <hr className="home-divider" />
-        <PlaylistGrid />
+        <PlaylistGrid getPlaylist={getPlaylist} />
       </div>
 
       <div className="home-section">
