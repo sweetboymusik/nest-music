@@ -1,11 +1,18 @@
 import React from "react";
 import "./AlbumHeader.css";
 
-import { FaPlus, FaHeart, FaRegHeart } from "react-icons/fa";
-import albumPlaceholder from "../../assets/images/other/album_placeholder.png";
+import { Link } from "react-router-dom";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 
-function AlbumHeader({ currentArtist, currentRelease, addAlbum, removeAlbum }) {
+function AlbumHeader({
+  currentArtist,
+  currentRelease,
+  addAlbum,
+  removeAlbum,
+  getArtist,
+  setCurrentRelease,
+}) {
   const isMounted = useRef(false);
 
   let [liked, setLiked] = useState();
@@ -46,43 +53,16 @@ function AlbumHeader({ currentArtist, currentRelease, addAlbum, removeAlbum }) {
           )
         )}
 
-        {currentArtist.map((artist) =>
-          artist.releases.map(
-            (release, i) =>
-              release.id === currentRelease && (
-                <span key={i}>
-                  {liked ? (
-                    <button
-                      onClick={() => {
-                        setLiked(!liked);
-                        removeAlbum(currentArtist[0].id, currentRelease);
-                      }}
-                    >
-                      UNLIKE
-                    </button>
-                  ) : (
-                    <button
-                      onClick={() => {
-                        setLiked(!liked);
-                        addAlbum({
-                          artist: currentArtist[0].id,
-                          album: currentRelease,
-                        });
-                      }}
-                    >
-                      LIKE
-                    </button>
-                  )}
-                </span>
-              )
-          )
-        )}
-
         <div className="AlbumHeaderContent">
           {currentArtist.map((artist, index) => (
-            <h3 key={index} className="AlbumHeaderArtist">
-              {artist.name}
-            </h3>
+            <Link
+              className="AlbumHeader-Link"
+              onClick={() => getArtist(artist.id)}
+              key={index}
+              to={`../../../artist/${artist.name}`}
+            >
+              <h3 className="AlbumHeaderArtist">{artist.name}</h3>
+            </Link>
           ))}
 
           {currentArtist.map((artist, index) =>
@@ -109,8 +89,39 @@ function AlbumHeader({ currentArtist, currentRelease, addAlbum, removeAlbum }) {
             )}
 
             <div className="AlbumHeaderIcons">
-              <FaHeart />
-              <FaPlus />
+              {currentArtist.map((artist) =>
+                artist.releases.map(
+                  (release, i) =>
+                    release.id === currentRelease && (
+                      <span key={i}>
+                        {liked ? (
+                          <button
+                            className="AlbumHeader-Btn"
+                            onClick={() => {
+                              setLiked(!liked);
+                              removeAlbum(currentArtist[0].id, currentRelease);
+                            }}
+                          >
+                            <FaHeart className="AlbumHeader-Heart-Full" />
+                          </button>
+                        ) : (
+                          <button
+                            className="AlbumHeader-Btn"
+                            onClick={() => {
+                              setLiked(!liked);
+                              addAlbum({
+                                artist: currentArtist[0].id,
+                                album: currentRelease,
+                              });
+                            }}
+                          >
+                            <FaRegHeart className="AlbumHeader-Heart-Empty" />
+                          </button>
+                        )}
+                      </span>
+                    )
+                )
+              )}
             </div>
           </div>
         </div>

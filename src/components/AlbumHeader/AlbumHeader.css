@@ -12,6 +12,11 @@
   gap: 24px;
 }
 
+.AlbumHeader-Link {
+  text-decoration: none;
+  color: #333;
+}
+
 .AlbumHeaderContent {
   display: flex;
   gap: 8px;
@@ -37,4 +42,18 @@
   display: flex;
   gap: 10px;
   font-size: 24px;
+}
+
+.AlbumHeader-Btn {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.AlbumHeader-Heart-Empty {
+}
+
+.AlbumHeader-Heart-Full {
+  color: #f1bc00;
 }

@@ -20,6 +20,8 @@ function PageAlbum({
         currentRelease={currentRelease}
         addAlbum={addAlbum}
         removeAlbum={removeAlbum}
+        getArtist={getArtist}
+        setCurrentRelease={setCurrentRelease}
       />
       <SongGrid
         currentArtist={currentArtist}
