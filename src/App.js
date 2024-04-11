@@ -13,6 +13,7 @@ import PageAlbums from "./components/PageAlbums/PageAlbums";
 import PageArtist from "./components/PageArtist/PageArtist";
 import PageAlbum from "./components/PageAlbum/PageAlbum";
 import PageBrowseGenre from "./components/PageBrowseGenre/PageBrowseGenre";
+import PageSongs from "./components/PageSongs/PageSongs";
 
 function App() {
   // state variables for audio playback
@@ -254,8 +255,8 @@ function App() {
     }
 
     async function getUserPlaylist() {
-      const res = await fetchUserTracks();
-      setUserTracks(res);
+      const res = await fetchUserPlaylist();
+      setUserPlaylist(res);
     }
     getUserArtists();
     getUserAlbums();
@@ -297,6 +298,46 @@ function App() {
     setFilteredUserAlbums(filtered);
   }
 
+  async function filterUserTracks() {
+    const filtered = [];
+
+    userTracks.forEach(async (entry) => {
+      const artist = await fetchArtist(entry.artist);
+      const release = await artist.releases.filter(
+        (release) => release.id === entry.album
+      );
+      const track = await release[0].tracks.filter(
+        (track) => track.id === entry.track
+      );
+
+      let obj = { artist: [artist], release: release[0], track: track[0] };
+
+      filtered.push(obj);
+    });
+
+    setFilteredUserTracks(filtered);
+  }
+
+  async function filterUserPlaylist() {
+    const filtered = [];
+
+    userPlaylist.forEach(async (entry) => {
+      const artist = await fetchArtist(entry.artist);
+      const release = await artist.releases.filter(
+        (release) => release.id === entry.album
+      );
+      const track = await release[0].tracks.filter(
+        (track) => track.id === entry.track
+      );
+
+      let obj = { artist: [artist], release: release[0], track: track[0] };
+
+      filtered.push(obj);
+    });
+
+    setFilteredUserPlaylist(filtered);
+  }
+
   useEffect(() => {
     filterUserArtists();
   }, [userArtists]);
@@ -305,6 +346,15 @@ function App() {
     filterUserAlbums();
   }, [userAlbums]);
 
+  useEffect(() => {
+    filterUserTracks();
+  }, [userTracks]);
+
+  useEffect(() => {
+    filterUserPlaylist();
+  }, [userPlaylist]);
+
+  // fetch functions
   async function fetchUserArtists() {
     const res = await fetch("http://localhost:4999/userArtists");
     const data = await res.json();
@@ -344,7 +394,6 @@ function App() {
   async function getArtist(id) {
     let res = await fetchArtist(id);
     setCurrentArtist([res]);
-    console.log("get artist done");
   }
 
   async function fetchFeatured(genre) {
@@ -364,6 +413,25 @@ function App() {
     return featured;
   }
 
+  useEffect(() => {
+    const getArtists = async () => {
+      const artistsFromServer = await fetchArtists();
+      setArtists(artistsFromServer);
+    };
+
+    getArtists();
+  }, []);
+
+  useEffect(() => {
+    async function getFeatured() {
+      let res = await fetchFeatured("Pop");
+      setFeatured(res);
+    }
+
+    getFeatured();
+  }, []);
+
+  // audio playback functions and useEffects
   function loadTrack(artist, release, track) {
     setCurrentTrack({
       artist: artist[0].name,
@@ -404,28 +472,6 @@ function App() {
     }
   }
 
-  useEffect(() => {
-    audio.volume = volume;
-  }, [volume]);
-
-  useEffect(() => {
-    const getArtists = async () => {
-      const artistsFromServer = await fetchArtists();
-      setArtists(artistsFromServer);
-    };
-
-    getArtists();
-  }, []);
-
-  useEffect(() => {
-    async function getFeatured() {
-      let res = await fetchFeatured("Pop");
-      setFeatured(res);
-    }
-
-    getFeatured();
-  }, []);
-
   function togglePlay() {
     if (audio.src !== "") {
       audio.paused ? audio.play() : audio.pause();
@@ -437,12 +483,17 @@ function App() {
     setPlaying(false);
   };
 
+  useEffect(() => {
+    audio.volume = volume;
+  }, [volume]);
+
   // generate random artist cards
   const shuffled = artists.toSorted(() => 0.5 - Math.random());
   let selected = shuffled.slice(0, 3);
   const albumShuffled = artists.toSorted(() => 0.5 - Math.random());
   let albumSelected = albumShuffled.slice(0, 5);
 
+  // render main application
   return (
     <Router>
       <div className="app">
@@ -538,21 +589,34 @@ function App() {
             <Route
               path="/library/songs"
               element={
-                <PageAlbum
-                  currentArtist={currentArtist}
+                <PageSongs
+                  title="My Songs"
+                  image="photo-liked_songs.jpg"
+                  userTracks={filteredUserTracks}
                   getArtist={getArtist}
-                  currentRelease={currentRelease}
                   loadTrack={loadTrack}
                   setCurrentRelease={setCurrentRelease}
-                  addAlbum={addAlbum}
-                  removeAlbum={removeAlbum}
                   addTrack={addTrack}
                   removeTrack={removeTrack}
                 />
               }
             ></Route>
 
-            <Route path="library/playlist"></Route>
+            <Route
+              path="library/playlist"
+              element={
+                <PageSongs
+                  title="My Playlist"
+                  image="photo-my_playlist.jpg"
+                  userTracks={filteredUserPlaylist}
+                  getArtist={getArtist}
+                  loadTrack={loadTrack}
+                  setCurrentRelease={setCurrentRelease}
+                  addTrack={addTrack}
+                  removeTrack={removeTrack}
+                />
+              }
+            ></Route>
           </Routes>
         </div>
 
