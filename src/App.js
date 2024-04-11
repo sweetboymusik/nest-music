@@ -194,6 +194,7 @@ function App() {
   }
 
   async function removeTrack(type, artist, album, track) {
+    console.log(userTracks);
     const artistInfo = await fetchArtist(artist);
 
     artistInfo.releases.forEach((release) => {
@@ -223,6 +224,7 @@ function App() {
         method: "DELETE",
       });
 
+      console.log(userTracks.filter((item) => item.id !== newID));
       setUserTracks(userTracks.filter((item) => item.id !== newID));
     }
 
@@ -299,29 +301,12 @@ function App() {
   }
 
   async function filterUserTracks() {
-    const filtered = [];
-
-    userTracks.forEach(async (entry) => {
-      const artist = await fetchArtist(entry.artist);
-      const release = await artist.releases.filter(
-        (release) => release.id === entry.album
-      );
-      const track = await release[0].tracks.filter(
-        (track) => track.id === entry.track
-      );
-
-      let obj = { artist: [artist], release: release[0], track: track[0] };
-
-      filtered.push(obj);
-    });
-
+    const filtered = await getFilteredUserTracks();
     setFilteredUserTracks(filtered);
   }
 
-  async function filterUserPlaylist() {
-    const filtered = [];
-
-    userPlaylist.forEach(async (entry) => {
+  async function getFilteredUserTracks() {
+    let filtered = userTracks.map(async (entry) => {
       const artist = await fetchArtist(entry.artist);
       const release = await artist.releases.filter(
         (release) => release.id === entry.album
@@ -330,12 +315,31 @@ function App() {
         (track) => track.id === entry.track
       );
 
-      let obj = { artist: [artist], release: release[0], track: track[0] };
-
-      filtered.push(obj);
+      return { artist: [artist], release: release[0], track: track[0] };
     });
 
+    return Promise.all(filtered);
+  }
+
+  async function filterUserPlaylist() {
+    const filtered = await getFilteredPlaylist();
     setFilteredUserPlaylist(filtered);
+  }
+
+  async function getFilteredPlaylist() {
+    const filtered = userPlaylist.map(async (entry) => {
+      const artist = await fetchArtist(entry.artist);
+      const release = await artist.releases.filter(
+        (release) => release.id === entry.album
+      );
+      const track = await release[0].tracks.filter(
+        (track) => track.id === entry.track
+      );
+
+      return { artist: [artist], release: release[0], track: track[0] };
+    });
+
+    return Promise.all(filtered);
   }
 
   useEffect(() => {

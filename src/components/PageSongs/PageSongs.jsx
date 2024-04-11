@@ -12,6 +12,7 @@ function PageSongs({
   addTrack,
   removeTrack,
 }) {
+  useEffect(() => console.log("from songs page", userTracks), [userTracks]);
   return (
     <div className="page-album">
       <SongHeader title={title} tracks={userTracks.length} image={image} />

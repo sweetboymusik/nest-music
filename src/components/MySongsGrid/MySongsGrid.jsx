@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import SongCard from "../SongCard/SongCard";
 
 function MySongsGrid({
@@ -10,8 +10,6 @@ function MySongsGrid({
   addTrack,
   removeTrack,
 }) {
-  useEffect(() => console.log("rendering song grid"), [userTracks]);
-
   return (
     <div className="song-grid" style={{ width: width }}>
       {userTracks.map((track, index) => (

@@ -153,7 +153,7 @@
               "title": "Twilight Serenade",
               "length": "3:18",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -161,7 +161,7 @@
               "title": "Neon Dreams",
               "length": "3:06",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
           ]
@@ -606,7 +606,7 @@
               "id": "t0043",
               "title": "Shadowed Symphony",
               "length": "3:26",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
@@ -614,7 +614,7 @@
               "id": "t0044",
               "title": "Wilder's Echo",
               "length": "3:05",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track2.mp3"
             }
@@ -993,7 +993,7 @@
               "title": "Enigmatic Ensemble",
               "length": "3:41",
               "liked": false,
-              "added": true,
+              "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
             {
@@ -1832,7 +1832,7 @@
               "id": "t0131",
               "title": "Stardust Symphony",
               "length": "2:53",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -1840,7 +1840,7 @@
               "id": "t0132",
               "title": "Celestial Serenade",
               "length": "3:32",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -2729,50 +2729,6 @@
   ],
   "userArtists": [],
   "userAlbums": [],
-  "userTracks": [
-    {
-      "id": "70c7",
-      "artist": "a0022",
-      "album": "r0066",
-      "track": "t0131"
-    },
-    {
-      "id": "5da2",
-      "artist": "a0022",
-      "album": "r0066",
-      "track": "t0132"
-    },
-    {
-      "id": "ef77",
-      "artist": "a0008",
-      "album": "r0022",
-      "track": "t0043"
-    },
-    {
-      "id": "d0c5",
-      "artist": "a0008",
-      "album": "r0022",
-      "track": "t0044"
-    }
-  ],
-  "userPlaylist": [
-    {
-      "id": "7d92",
-      "artist": "a0012",
-      "album": "r0036",
-      "track": "t0071"
-    },
-    {
-      "id": "e09e",
-      "artist": "a0002",
-      "album": "r0006",
-      "track": "t0012"
-    },
-    {
-      "id": "2053",
-      "artist": "a0002",
-      "album": "r0006",
-      "track": "t0011"
-    }
-  ]
+  "userTracks": [],
+  "userPlaylist": []
 }
