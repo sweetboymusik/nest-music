@@ -42,9 +42,9 @@ function PageArtist({
             />
           ))}
           {currentArtist.map((artist, index) => (
-            <div key={index} className="artist-header-text">
+            <h1 key={index} className="artist-header-text">
               {artist.name}
-            </div>
+            </h1>
           ))}
         </div>
 
@@ -82,7 +82,8 @@ function PageArtist({
               width={"1000px"}
             />
           </div>
-          Discography
+          <h3>Discography</h3>
+          <hr className="home-divider" />
           <AlbumGrid
             artists={currentArtist}
             getArtist={getArtist}

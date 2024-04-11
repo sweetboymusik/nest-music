@@ -14,6 +14,7 @@ import PageArtist from "./components/PageArtist/PageArtist";
 import PageAlbum from "./components/PageAlbum/PageAlbum";
 import PageBrowseGenre from "./components/PageBrowseGenre/PageBrowseGenre";
 import PageSongs from "./components/PageSongs/PageSongs";
+import PagePlaylist from "./components/PagePlaylist/PagePlaylist";
 
 function App() {
   // state variables for audio playback
@@ -33,6 +34,14 @@ function App() {
     artist: "-",
     artwork: "album_placeholder.png",
   });
+  let [currentPlaylist, setCurrentPlaylist] = useState([]);
+  let [currentPlaylistInfo, setCurrentPlaylistInfo] = useState([
+    {
+      id: "p0005",
+      name: "Zen Zone",
+      photo: "photo-zen_zone.jpg",
+    },
+  ]);
 
   // state variables for user lists (liking/saving artists/albums/tracks)
   let [userArtists, setUserArtists] = useState([]);
@@ -43,6 +52,7 @@ function App() {
   let [filteredUserAlbums, setFilteredUserAlbums] = useState([]);
   let [filteredUserTracks, setFilteredUserTracks] = useState([]);
   let [filteredUserPlaylist, setFilteredUserPlaylist] = useState([]);
+  let [filteredCurrentPlaylist, setFilteredCurrentPlaylist] = useState([]);
 
   // functions for adding/removing from user lists
   async function addArtist(artist) {
@@ -194,6 +204,7 @@ function App() {
   }
 
   async function removeTrack(type, artist, album, track) {
+    console.log(userTracks);
     const artistInfo = await fetchArtist(artist);
 
     artistInfo.releases.forEach((release) => {
@@ -223,6 +234,7 @@ function App() {
         method: "DELETE",
       });
 
+      console.log(userTracks.filter((item) => item.id !== newID));
       setUserTracks(userTracks.filter((item) => item.id !== newID));
     }
 
@@ -264,6 +276,13 @@ function App() {
     getUserPlaylist();
   }, []);
 
+  async function getPlaylist(playlist) {
+    const res = await fetchPlaylist(playlist);
+    const info = await fetchPlaylistInfo(playlist);
+    setCurrentPlaylist(res);
+    setCurrentPlaylistInfo(info);
+  }
+
   // filter functions
   function filterArtists(genre) {
     let filtered = artists.filter((artist) => artist.genre === genre);
@@ -299,29 +318,12 @@ function App() {
   }
 
   async function filterUserTracks() {
-    const filtered = [];
-
-    userTracks.forEach(async (entry) => {
-      const artist = await fetchArtist(entry.artist);
-      const release = await artist.releases.filter(
-        (release) => release.id === entry.album
-      );
-      const track = await release[0].tracks.filter(
-        (track) => track.id === entry.track
-      );
-
-      let obj = { artist: [artist], release: release[0], track: track[0] };
-
-      filtered.push(obj);
-    });
-
+    const filtered = await getFilteredUserTracks();
     setFilteredUserTracks(filtered);
   }
 
-  async function filterUserPlaylist() {
-    const filtered = [];
-
-    userPlaylist.forEach(async (entry) => {
+  async function getFilteredUserTracks() {
+    let filtered = userTracks.map(async (entry) => {
       const artist = await fetchArtist(entry.artist);
       const release = await artist.releases.filter(
         (release) => release.id === entry.album
@@ -330,12 +332,52 @@ function App() {
         (track) => track.id === entry.track
       );
 
-      let obj = { artist: [artist], release: release[0], track: track[0] };
-
-      filtered.push(obj);
+      return { artist: [artist], release: release[0], track: track[0] };
     });
 
+    return Promise.all(filtered);
+  }
+
+  async function filterCurrentPlaylist() {
+    const filtered = await getFilteredCurrentPlaylist();
+    setFilteredCurrentPlaylist(filtered);
+  }
+
+  async function getFilteredCurrentPlaylist() {
+    let filtered = currentPlaylist.map(async (entry) => {
+      const artist = await fetchArtist(entry.artist);
+      const release = await artist.releases.filter(
+        (release) => release.id === entry.album
+      );
+      const track = await release[0].tracks.filter(
+        (track) => track.id === entry.track
+      );
+
+      return { artist: [artist], release: release[0], track: track[0] };
+    });
+
+    return Promise.all(filtered);
+  }
+
+  async function filterUserPlaylist() {
+    const filtered = await getFilteredPlaylist();
     setFilteredUserPlaylist(filtered);
+  }
+
+  async function getFilteredPlaylist() {
+    const filtered = userPlaylist.map(async (entry) => {
+      const artist = await fetchArtist(entry.artist);
+      const release = await artist.releases.filter(
+        (release) => release.id === entry.album
+      );
+      const track = await release[0].tracks.filter(
+        (track) => track.id === entry.track
+      );
+
+      return { artist: [artist], release: release[0], track: track[0] };
+    });
+
+    return Promise.all(filtered);
   }
 
   useEffect(() => {
@@ -353,6 +395,10 @@ function App() {
   useEffect(() => {
     filterUserPlaylist();
   }, [userPlaylist]);
+
+  useEffect(() => {
+    filterCurrentPlaylist();
+  }, [currentPlaylist]);
 
   // fetch functions
   async function fetchUserArtists() {
@@ -411,6 +457,23 @@ function App() {
     });
 
     return featured;
+  }
+
+  async function fetchPlaylist(playlistname) {
+    let name = playlistname.replace(/ /g, "");
+    let res = await fetch(`http://localhost:4999/Playlist${name}`);
+    let data = await res.json();
+    console.log(data);
+    return data;
+  }
+
+  async function fetchPlaylistInfo(playlistname) {
+    let name = playlistname.replace(/ /g, "");
+    let res = await fetch(`http://localhost:4999/playlists`);
+    let data = await res.json();
+    let result = data.filter((playlist) => playlist.name === playlistname);
+    console.log(result);
+    return result;
   }
 
   useEffect(() => {
@@ -513,6 +576,7 @@ function App() {
                   loadTrack={loadTrack}
                   addArtist={addArtist}
                   removeArtist={removeArtist}
+                  getPlaylist={getPlaylist}
                 />
               }
             />
@@ -609,6 +673,22 @@ function App() {
                   title="My Playlist"
                   image="photo-my_playlist.jpg"
                   userTracks={filteredUserPlaylist}
+                  getArtist={getArtist}
+                  loadTrack={loadTrack}
+                  setCurrentRelease={setCurrentRelease}
+                  addTrack={addTrack}
+                  removeTrack={removeTrack}
+                />
+              }
+            ></Route>
+
+            <Route
+              path="/playlists/:playlist"
+              element={
+                <PagePlaylist
+                  title={currentPlaylistInfo}
+                  image={currentPlaylistInfo}
+                  userTracks={filteredCurrentPlaylist}
                   getArtist={getArtist}
                   loadTrack={loadTrack}
                   setCurrentRelease={setCurrentRelease}

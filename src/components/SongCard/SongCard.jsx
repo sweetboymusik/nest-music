@@ -19,6 +19,7 @@ function SongCard({
   setCurrentRelease,
   addTrack,
   removeTrack,
+  onClick,
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
@@ -87,7 +88,10 @@ function SongCard({
         {liked ? (
           <button
             className="song-heart-btn"
-            onClick={() => {
+            onClick={(e) => {
+              if (onClick) {
+                onClick();
+              }
               setLiked(!liked);
               removeTrack("track", artist[0].id, release.id, track.id);
             }}
@@ -97,7 +101,7 @@ function SongCard({
         ) : (
           <button
             className="song-heart-btn"
-            onClick={() => {
+            onClick={(e) => {
               setLiked(!liked);
               addTrack("track", {
                 artist: artist[0].id,
