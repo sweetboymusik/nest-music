@@ -9,9 +9,9 @@ function UserAlbumGrid({
 }) {
   return (
     <div className="album-grid">
-      {userAlbums.map((album) => (
+      {userAlbums.map((album, i) => (
         <AlbumCard
-          key={album.release.id}
+          key={i}
           artist={album.artist}
           release={album.release}
           getArtist={getArtist}

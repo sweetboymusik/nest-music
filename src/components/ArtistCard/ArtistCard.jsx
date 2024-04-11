@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 function ArtistCard({ artist, imageUrl, getArtist, id }) {
   return (
     <Link
-      onClick={() => {
-        getArtist(id);
+      onClick={async () => {
+        await getArtist(id);
       }}
       to={`../../../artist/${artist}`}
     >

@@ -11,19 +11,20 @@ import PageHome from "./components/PageHome/PageHome";
 import PageArtists from "./components/PageArtists/PageArtists";
 import PageAlbums from "./components/PageAlbums/PageAlbums";
 import PageArtist from "./components/PageArtist/PageArtist";
-import SongSection from "./components/SongSection/SongSection";
 import PageAlbum from "./components/PageAlbum/PageAlbum";
-import FeaturedSongs from "./components/FeaturedSongs/FeaturedSongs";
 import PageBrowseGenre from "./components/PageBrowseGenre/PageBrowseGenre";
 
 function App() {
+  // state variables for audio playback
   let [audio, setAudio] = useState(document.createElement("audio"));
   let [playing, setPlaying] = useState(!audio.paused);
   let [volume, setVolume] = useState(1);
   let [position, setPosition] = useState();
 
+  // state variables for catalog
   let [artists, setArtists] = useState([]);
   let [featured, setFeatured] = useState([]);
+  let [filteredArtists, setFilteredArtists] = useState([]);
   let [currentArtist, setCurrentArtist] = useState([]);
   let [currentRelease, setCurrentRelease] = useState();
   let [currentTrack, setCurrentTrack] = useState({
@@ -31,44 +32,18 @@ function App() {
     artist: "-",
     artwork: "album_placeholder.png",
   });
-  let [filteredArtists, setFilteredArtists] = useState([]);
 
+  // state variables for user lists (liking/saving artists/albums/tracks)
   let [userArtists, setUserArtists] = useState([]);
   let [userAlbums, setUserAlbums] = useState([]);
   let [userTracks, setUserTracks] = useState([]);
-
+  let [userPlaylist, setUserPlaylist] = useState([]);
   let [filteredUserArtists, setFilteredUserArtists] = useState([]);
   let [filteredUserAlbums, setFilteredUserAlbums] = useState([]);
+  let [filteredUserTracks, setFilteredUserTracks] = useState([]);
+  let [filteredUserPlaylist, setFilteredUserPlaylist] = useState([]);
 
-  useEffect(() => {
-    async function getUserArtists() {
-      const res = await fetchUserArtists();
-      setUserArtists(res);
-    }
-
-    async function getUserAlbums() {
-      const res = await fetchUserAlbums();
-      setUserAlbums(res);
-    }
-
-    async function getUserTracks() {
-      const res = await fetchUserTracks();
-      setUserTracks(res);
-    }
-
-    getUserArtists();
-    getUserAlbums();
-    getUserTracks();
-  }, []);
-
-  useEffect(() => {
-    filterUserArtists();
-  }, [userArtists]);
-
-  useEffect(() => {
-    filterUserAlbums();
-  }, [userAlbums]);
-
+  // functions for adding/removing from user lists
   async function addArtist(artist) {
     const artistInfo = await fetchArtist(artist.artist);
     artistInfo.liked = true;
@@ -120,6 +95,7 @@ function App() {
         release.liked = true;
       }
     });
+
     await fetch(`http://localhost:4999/artists/${album.artist}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -146,6 +122,7 @@ function App() {
         release.liked = false;
       }
     });
+
     await fetch(`http://localhost:4999/artists/${artist}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
@@ -164,24 +141,129 @@ function App() {
     setUserAlbums(userAlbums.filter((item) => item.id !== newID));
   }
 
-  async function fetchUserArtists() {
-    const res = await fetch("http://localhost:4999/userArtists");
-    const data = await res.json();
-    return data;
+  async function addTrack(type, track) {
+    const artistInfo = await fetchArtist(track.artist);
+
+    artistInfo.releases.forEach((release) => {
+      if (release.id === track.album) {
+        release.tracks.forEach((trk) => {
+          if (trk.id === track.track) {
+            if (type === "track") {
+              trk.liked = true;
+            }
+
+            if (type === "playlist") {
+              trk.added = true;
+            }
+          }
+        });
+      }
+    });
+
+    await fetch(`http://localhost:4999/artists/${track.artist}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(artistInfo),
+    });
+
+    let newData = await fetchArtists();
+    setArtists(newData);
+
+    if (type === "track") {
+      const res = await fetch(`http://localhost:4999/userTracks`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(track),
+      });
+
+      const data = await res.json();
+      setUserTracks([...userTracks, data]);
+    }
+
+    if (type === "playlist") {
+      const res = await fetch(`http://localhost:4999/userPlaylist`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(track),
+      });
+
+      const data = await res.json();
+      setUserPlaylist([...userPlaylist, data]);
+    }
   }
 
-  async function fetchUserAlbums() {
-    const res = await fetch("http://localhost:4999/userAlbums");
-    const data = await res.json();
-    return data;
+  async function removeTrack(type, artist, album, track) {
+    const artistInfo = await fetchArtist(artist);
+
+    artistInfo.releases.forEach((release) => {
+      if (release.id === album) {
+        release.tracks.forEach((trk) => {
+          if (trk.id === track) {
+            if (type === "track") trk.liked = false;
+            if (type === "playlist") trk.added = false;
+          }
+        });
+      }
+    });
+
+    await fetch(`http://localhost:4999/artists/${artist}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(artistInfo),
+    });
+
+    let newData = await fetchArtists();
+    setArtists(newData);
+
+    if (type === "track") {
+      let newID = userTracks.filter((entry) => entry.track === track)[0].id;
+
+      await fetch(`http://localhost:4999/userTracks/${newID}`, {
+        method: "DELETE",
+      });
+
+      setUserTracks(userTracks.filter((item) => item.id !== newID));
+    }
+
+    if (type === "playlist") {
+      let newID = userPlaylist.filter((entry) => entry.track === track)[0].id;
+
+      await fetch(`http://localhost:4999/userPlaylist/${newID}`, {
+        method: "DELETE",
+      });
+
+      setUserPlaylist(userPlaylist.filter((item) => item.id !== newID));
+    }
   }
 
-  async function fetchUserTracks() {
-    const res = await fetch("http://localhost:4999/userTracks");
-    const data = await res.json();
-    return data;
-  }
+  // useEffects for user lists
+  useEffect(() => {
+    async function getUserArtists() {
+      const res = await fetchUserArtists();
+      setUserArtists(res);
+    }
 
+    async function getUserAlbums() {
+      const res = await fetchUserAlbums();
+      setUserAlbums(res);
+    }
+
+    async function getUserTracks() {
+      const res = await fetchUserTracks();
+      setUserTracks(res);
+    }
+
+    async function getUserPlaylist() {
+      const res = await fetchUserTracks();
+      setUserTracks(res);
+    }
+    getUserArtists();
+    getUserAlbums();
+    getUserTracks();
+    getUserPlaylist();
+  }, []);
+
+  // filter functions
   function filterArtists(genre) {
     let filtered = artists.filter((artist) => artist.genre === genre);
     setFilteredArtists(filtered);
@@ -215,6 +297,38 @@ function App() {
     setFilteredUserAlbums(filtered);
   }
 
+  useEffect(() => {
+    filterUserArtists();
+  }, [userArtists]);
+
+  useEffect(() => {
+    filterUserAlbums();
+  }, [userAlbums]);
+
+  async function fetchUserArtists() {
+    const res = await fetch("http://localhost:4999/userArtists");
+    const data = await res.json();
+    return data;
+  }
+
+  async function fetchUserAlbums() {
+    const res = await fetch("http://localhost:4999/userAlbums");
+    const data = await res.json();
+    return data;
+  }
+
+  async function fetchUserTracks() {
+    const res = await fetch("http://localhost:4999/userTracks");
+    const data = await res.json();
+    return data;
+  }
+
+  async function fetchUserPlaylist() {
+    const res = await fetch("http://localhost:4999/userPlaylist");
+    const data = await res.json();
+    return data;
+  }
+
   async function fetchArtists() {
     let res = await fetch("http://localhost:4999/artists");
     let data = await res.json();
@@ -230,6 +344,7 @@ function App() {
   async function getArtist(id) {
     let res = await fetchArtist(id);
     setCurrentArtist([res]);
+    console.log("get artist done");
   }
 
   async function fetchFeatured(genre) {
@@ -393,6 +508,8 @@ function App() {
                   setCurrentRelease={setCurrentRelease}
                   addAlbum={addAlbum}
                   removeAlbum={removeAlbum}
+                  addTrack={addTrack}
+                  removeTrack={removeTrack}
                 />
               }
             ></Route>
@@ -421,12 +538,16 @@ function App() {
             <Route
               path="/library/songs"
               element={
-                <PageBrowseGenre
-                  artists={artists}
+                <PageAlbum
+                  currentArtist={currentArtist}
                   getArtist={getArtist}
-                  setCurrentRelease={setCurrentRelease}
+                  currentRelease={currentRelease}
                   loadTrack={loadTrack}
-                  featured={featured}
+                  setCurrentRelease={setCurrentRelease}
+                  addAlbum={addAlbum}
+                  removeAlbum={removeAlbum}
+                  addTrack={addTrack}
+                  removeTrack={removeTrack}
                 />
               }
             ></Route>

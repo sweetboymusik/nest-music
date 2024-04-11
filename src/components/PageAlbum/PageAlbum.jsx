@@ -10,6 +10,8 @@ function PageAlbum({
   setCurrentRelease,
   addAlbum,
   removeAlbum,
+  addTrack,
+  removeTrack,
 }) {
   return (
     <div className="page-album">
@@ -25,6 +27,8 @@ function PageAlbum({
         loadTrack={loadTrack}
         getArtist={getArtist}
         setCurrentRelease={setCurrentRelease}
+        addTrack={addTrack}
+        removeTrack={removeTrack}
       />
     </div>
   );

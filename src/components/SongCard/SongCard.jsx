@@ -1,9 +1,14 @@
 import "./SongCard.css";
+import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import { FaPlus, FaHeart, FaRegHeart } from "react-icons/fa";
-import tempImage from "../../assets/images/other/album_placeholder.png";
+import {
+  FaPlus,
+  FaHeart,
+  FaHeartBroken,
+  FaRegHeart,
+  FaMinus,
+} from "react-icons/fa";
 
 function SongCard({
   artist,
@@ -12,9 +17,20 @@ function SongCard({
   loadTrack,
   getArtist,
   setCurrentRelease,
+  addTrack,
+  removeTrack,
 }) {
   const [isHovered, setIsHovered] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
+
+  let [liked, setLiked] = useState();
+  let [added, setAdded] = useState(track.added);
+  let [canRender, setCanRender] = useState(false);
+
+  useEffect(() => {
+    setLiked(track.liked);
+    setAdded(track.added);
+  }, [track]);
 
   return (
     <div className="song-card">
@@ -67,7 +83,57 @@ function SongCard({
       </div>
       <div className="song-icons">
         <span className="song-text-time">{track.length}</span>
-        <button
+
+        {liked ? (
+          <button
+            className="song-heart-btn"
+            onClick={() => {
+              setLiked(!liked);
+              removeTrack("track", artist[0].id, release.id, track.id);
+            }}
+          >
+            <FaHeartBroken className="song-icon" />
+          </button>
+        ) : (
+          <button
+            className="song-heart-btn"
+            onClick={() => {
+              setLiked(!liked);
+              addTrack("track", {
+                artist: artist[0].id,
+                album: release.id,
+                track: track.id,
+              });
+            }}
+          >
+            <FaHeart className="song-icon" />
+          </button>
+        )}
+        {added ? (
+          <button
+            onClick={() => {
+              setAdded(!added);
+              removeTrack("playlist", artist[0].id, release.id, track.id);
+            }}
+          >
+            <FaMinus className="song-icon" />
+          </button>
+        ) : (
+          <button
+            onClick={() => {
+              setAdded(!added);
+              addTrack("playlist", {
+                artist: artist[0].id,
+                album: release.id,
+                track: track.id,
+              });
+            }}
+          >
+            <FaPlus className="song-icon" />
+          </button>
+        )}
+
+        {/* <button
           className="song-heart-btn"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -83,7 +149,7 @@ function SongCard({
         </button>
         <button>
           <FaPlus className="song-icon" />
-        </button>
+        </button> */}
       </div>
     </div>
   );

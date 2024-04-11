@@ -8,6 +8,8 @@ function SongGrid({
   loadTrack,
   getArtist,
   setCurrentRelease,
+  addTrack,
+  removeTrack,
 }) {
   return (
     <div className="song-grid" style={{ width: width }}>
@@ -24,6 +26,8 @@ function SongGrid({
                 loadTrack={loadTrack}
                 getArtist={getArtist}
                 setCurrentRelease={setCurrentRelease}
+                addTrack={addTrack}
+                removeTrack={removeTrack}
               />
             ))
         )

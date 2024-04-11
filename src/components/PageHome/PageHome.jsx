@@ -5,24 +5,15 @@ import PlaylistGrid from "../PlaylistGrid/PlaylistGrid";
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 
 function PageHome({
-  artists,
   shuffled,
   albumShuffled,
   getArtist,
   setCurrentRelease,
   loadTrack,
   addArtist,
-  removeArtist,
 }) {
   return (
     <div className="home-page">
-      <button
-        onClick={() => {
-          addArtist({ artist: "a0001" });
-        }}
-      >
-        add
-      </button>
       <div className="home-section">
         <h1>Featured Artists</h1>
         <hr className="home-divider" />
