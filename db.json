@@ -18,7 +18,7 @@
               "id": "t0001",
               "title": "Soul's Embrace",
               "length": "3:15",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
@@ -2288,86 +2288,66 @@
   ],
   "userArtists": [],
   "userAlbums": [],
-  "userTracks": [
-    {
-      "id": "5be4",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
-    },
-    {
-      "id": "ef19",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
-    }
-  ],
-  "userPlaylist": [
-    {
-      "id": "e8ff",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
-    }
-  ],
+  "userTracks": [],
+  "userPlaylist": [],
   "PlaylistRoadtripMix": [
     {
       "id": "X0001",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0027",
+      "album": "r0080",
+      "track": "t0159"
     },
     {
       "id": "X0002",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0015",
+      "album": "r0044",
+      "track": "t0087"
     },
     {
       "id": "X0003",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0002",
+      "album": "r0004",
+      "track": "t0008"
     }
   ],
   "PlaylistOfficeBeats": [
     {
       "id": "O0001",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0009",
+      "album": "r0025",
+      "track": "t0050"
     },
     {
       "id": "O0002",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0003",
+      "album": "r0008",
+      "track": "t0015"
     },
     {
       "id": "O0003",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0017",
+      "album": "r0051",
+      "track": "t0102"
     }
   ],
   "PlaylistZenZone": [
     {
       "id": "z0001",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0010",
+      "album": "r0029",
+      "track": "t0058"
     },
     {
       "id": "z0002",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0005",
+      "album": "r0015",
+      "track": "t0029"
     },
     {
       "id": "z0003",
-      "artist": "a0001",
-      "album": "r0001",
-      "track": "t0001"
+      "artist": "a0019",
+      "album": "r0055",
+      "track": "t0110"
     }
   ]
 }
