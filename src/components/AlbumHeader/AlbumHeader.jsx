@@ -10,7 +10,6 @@ function AlbumHeader({
   addAlbum,
   removeAlbum,
   getArtist,
-  setCurrentRelease,
 }) {
   const isMounted = useRef(false);
 

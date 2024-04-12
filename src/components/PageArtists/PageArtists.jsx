@@ -1,3 +1,5 @@
+// renders a grid of artists
+
 import ArtistGrid from "../ArtistGrid/ArtistGrid";
 
 function PageArtists({ artists, getArtist }) {

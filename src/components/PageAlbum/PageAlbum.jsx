@@ -1,3 +1,5 @@
+// renders the album page, including the album header and song grid components
+
 import "./PageAlbum.css";
 import AlbumHeader from "../AlbumHeader/AlbumHeader";
 import SongGrid from "../SongGrid/SongGrid";

@@ -1,4 +1,5 @@
-import React from "react";
+// renders a grid of the user's albums using the UserAlbumGrid component
+
 import UserAlbumGrid from "../UserAlbumsGrid/UserAlbumGrid";
 
 function PageAlbums({ userAlbums, getArtist, setCurrentRelease }) {

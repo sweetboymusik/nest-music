@@ -1,5 +1,3 @@
-import { FaHeart, FaPlus } from "react-icons/fa6";
-
 function SongHeader({ title, tracks, image }) {
   return (
     <div className="AlbumHeader">

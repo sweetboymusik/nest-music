@@ -1,16 +1,15 @@
-import { useState, useEffect, useRef } from "react";
-import AlbumGrid from "../AlbumGrid/AlbumGrid";
-import SongGrid from "../SongGrid/SongGrid";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
+// renders the artist page, including the artist header and album grid
 
 import "./PageArtist.css";
+
+import { useState, useEffect, useRef } from "react";
+import AlbumGrid from "../AlbumGrid/AlbumGrid";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 function PageArtist({
   currentArtist,
   getArtist,
   setCurrentRelease,
-  currentRelease,
-  loadTrack,
   addArtist,
   removeArtist,
 }) {
