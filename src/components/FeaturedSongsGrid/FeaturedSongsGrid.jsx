@@ -5,6 +5,8 @@ function FeaturedSongsGrid({
   loadTrack,
   getArtist,
   setCurrentRelease,
+  addTrack,
+  removeTrack,
 }) {
   return (
     <div>
@@ -17,6 +19,8 @@ function FeaturedSongsGrid({
           loadTrack={loadTrack}
           getArtist={getArtist}
           setCurrentRelease={setCurrentRelease}
+          addTrack={addTrack}
+          removeTrack={removeTrack}
         />
       ))}
     </div>

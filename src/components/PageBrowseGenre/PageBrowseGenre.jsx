@@ -10,6 +10,8 @@ function PageBrowseGenre({
   setCurrentRelease,
   loadTrack,
   featured,
+  addTrack,
+  removeTrack,
 }) {
   return (
     <div className="page-browse-genre">
@@ -27,6 +29,8 @@ function PageBrowseGenre({
           loadTrack={loadTrack}
           getArtist={getArtist}
           setCurrentRelease={setCurrentRelease}
+          addTrack={addTrack}
+          removeTrack={removeTrack}
         />
       </div>
       <AlbumGrid

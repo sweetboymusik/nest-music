@@ -626,6 +626,8 @@ function App() {
                   setCurrentRelease={setCurrentRelease}
                   loadTrack={loadTrack}
                   featured={featured}
+                  addTrack={addTrack}
+                  removeTrack={removeTrack}
                 />
               }
             ></Route>
