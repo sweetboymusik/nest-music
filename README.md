@@ -1,8 +1,11 @@
-**Melodic Ingenuity: NEST/MUSIC's Evolution**
+# **Melodic Ingenuity: NEST/MUSIC's Evolution**
 
 **_Sprint 2 Requirement, Winter Semester, AY 2023-24_**  
 _Submitted by: Elliott Butt, Zachary Hulan, Joseph Flores_
 
+## Demo Video
+
+## Features
 In our latest project, NEST/MUSIC, we set out to reimagine the music streaming experience by combining the best features of Spotify, Apple Music, and YouTube Music with our own unique enhancements. Here's an overview of the exciting features we've implemented:
 
 1. **Persistent Playback**: Enjoy uninterrupted music playback while navigating the site, with playback persisting until manually stopped. Details of the song playing are also displayed for easy reference.
