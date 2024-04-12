@@ -700,7 +700,7 @@ function App() {
           </Routes>
         </div>
 
-        <Player
+        <Player 
           playing={playing}
           volume={volume}
           changeVolume={changeVolume}
