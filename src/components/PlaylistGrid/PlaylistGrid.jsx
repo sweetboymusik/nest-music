@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import PlaylistCard from "../PlaylistCard/PlaylistCard";
 import "./PlaylistGrid.css";
 

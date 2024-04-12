@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect, useRef } from "react";
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 import SongGrid from "../SongGrid/SongGrid";

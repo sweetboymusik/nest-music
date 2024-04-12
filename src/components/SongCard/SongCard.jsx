@@ -2,13 +2,7 @@ import "./SongCard.css";
 import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
-import {
-  FaPlus,
-  FaHeart,
-  FaHeartBroken,
-  FaRegHeart,
-  FaMinus,
-} from "react-icons/fa";
+import { FaPlus, FaHeart, FaHeartBroken, FaMinus } from "react-icons/fa";
 
 function SongCard({
   artist,
@@ -136,24 +130,6 @@ function SongCard({
             <FaPlus className="song-icon" />
           </button>
         )}
-
-        {/* <button
-          className="song-heart-btn"
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-          onClick={() => setIsLiked(!isLiked)}
-        >
-          {isLiked ? (
-            <FaHeart className="song-icon liked" />
-          ) : isHovered ? (
-            <FaHeart className="song-icon" />
-          ) : (
-            <FaRegHeart className="song-icon" />
-          )}
-        </button>
-        <button>
-          <FaPlus className="song-icon" />
-        </button> */}
       </div>
     </div>
   );
