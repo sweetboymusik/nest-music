@@ -26,6 +26,7 @@ For future development, it's important to note the following restrictions:
 
 1. **Forward and Rewind Buttons**: The forward and rewind buttons are currently non-functional and will be addressed in future updates.
 2. **Audio Files Uploaded**: Currently set up one audio file to play with any play button, just to show the play function is working, and to test the volume and playbar indicator.
+3. **Play Button Functionality**: Future enhancement include replacing the image with a play icon to improve user experience.
 
 During the Winter Semester, the proponents incorporated insights gathered from their studies, along with information sourced from the internet. This included utilizing Figma from the UI/UX Design course, which played a crucial role in organizing the project's flow. Furthermore, they employed React, as well as JavaScript, HTML, and CSS coding to implement various features. Additionally, the team devised a comprehensive database containing a wide array of images and tracks, meticulously curated to test the project's functionality thoroughly.
 
