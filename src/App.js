@@ -1,3 +1,8 @@
+// FINAL SPRINT (Winter Semester, S.Y. 2023-2024)
+// Project: NEST/MUSIC (A Music Streaming Platform)
+// Submitted by: Elliott Butt, Zachary Hulan, Joseph Flores
+// Date: 12 April 2024
+
 import "./App.css";
 import testSound from "./assets/tracks/album1track1.mp3";
 
@@ -378,6 +383,7 @@ function App() {
     return Promise.all(filtered);
   }
 
+  // useEffects for filtered lists
   useEffect(() => {
     filterUserArtists();
   }, [userArtists]);
@@ -560,6 +566,7 @@ function App() {
 
         <div className="content-container">
           <Routes>
+            {/* Add the following routes to the app */}
             <Route
               path="/home"
               element={
@@ -696,6 +703,7 @@ function App() {
           </Routes>
         </div>
 
+        {/* Add the following Player component to the app */}
         <Player
           playing={playing}
           volume={volume}
