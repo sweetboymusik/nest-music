@@ -15,7 +15,7 @@ function PageHome({
 }) {
   return (
     <div className="home-page">
-      <div className="home-section">
+      <section className="home-section">
         <h1>Featured Artists</h1>
         <hr className="home-divider" />
         <ArtistGrid
@@ -24,15 +24,15 @@ function PageHome({
           setCurrentRelease={setCurrentRelease}
           addArtist={addArtist}
         />
-      </div>
+      </section>
 
-      <div className="home-section">
+      <section className="home-section">
         <h1>Playlists</h1>
         <hr className="home-divider" />
         <PlaylistGrid getPlaylist={getPlaylist} />
-      </div>
+      </section>
 
-      <div className="home-section">
+      <section className="home-section">
         <h1>Featured Albums</h1>
         <hr className="home-divider" />
         <AlbumGrid
@@ -41,7 +41,7 @@ function PageHome({
           setCurrentRelease={setCurrentRelease}
           loadTrack={loadTrack}
         />
-      </div>
+      </section>
     </div>
   );
 }
