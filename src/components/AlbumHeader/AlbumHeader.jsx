@@ -48,6 +48,7 @@ function AlbumHeader({
                   key={index}
                   className="AlbumHeaderImg"
                   src={require(`../../assets/images/artwork/${release.artwork}`)}
+                  alt={`${release.title} Header Album Artwork`}
                 ></img>
               )
           )

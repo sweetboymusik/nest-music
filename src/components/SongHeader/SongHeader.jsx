@@ -5,6 +5,7 @@ function SongHeader({ title, tracks, image }) {
       <img
         className="AlbumHeaderImg"
         src={require(`../../assets/images/playlists/${image}`)}
+        alt={`${title} Header Album Artwork`}
       ></img>
 
       <div className="AlbumHeaderContent">

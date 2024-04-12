@@ -5,7 +5,7 @@ function PlayerInfo({ info }) {
     <div className="player-info">
       <img
         src={require(`../../assets/images/artwork/${info.artwork}`)}
-        alt=""
+        alt="Player Info Artwork"
       />
 
       <div className="player-info-text">
