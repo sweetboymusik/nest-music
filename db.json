@@ -916,7 +916,7 @@
               "id": "t0066",
               "title": "Jazz's Joy",
               "length": "3:43",
-              "liked": false,
+              "liked": true,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -1530,7 +1530,7 @@
               "id": "t0109",
               "title": "Golden Skies",
               "length": "2:31",
-              "liked": false,
+              "liked": true,
               "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
@@ -1555,7 +1555,7 @@
               "id": "t0111",
               "title": "Fireside Tales",
               "length": "2:33",
-              "liked": false,
+              "liked": true,
               "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
@@ -1580,7 +1580,7 @@
               "id": "t0113",
               "title": "Autumn's Melody",
               "length": "2:35",
-              "liked": false,
+              "liked": true,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -2176,7 +2176,7 @@
               "id": "t0156",
               "title": "Shadow's Symphony",
               "length": "3:45",
-              "liked": false,
+              "liked": true,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -2271,19 +2271,29 @@
   ],
   "playlists": [
     {
-      "id": "p0003",
+      "id": "p0001",
       "name": "Roadtrip Mix",
       "photo": "photo-roadtrip_mix.jpg"
     },
     {
-      "id": "p0004",
+      "id": "p0002",
       "name": "Office Beats",
       "photo": "photo-office_beats.jpg"
     },
     {
-      "id": "p0005",
+      "id": "p0003",
       "name": "Zen Zone",
       "photo": "photo-zen_zone.jpg"
+    },
+    {
+      "id": "p0004",
+      "name": "Weekend Jam",
+      "photo": "photo-weekend_jam.jpg"
+    },
+    {
+      "id": "p0005",
+      "name": "Monday Blues",
+      "photo": "photo-monday_blues.jpg"
     }
   ],
   "userArtists": [],
@@ -2384,6 +2394,70 @@
       "artist": "a0006",
       "album": "r0017",
       "track": "t0033"
+    }
+  ],
+  "PlaylistWeekendJam": [
+    {
+      "id": "w0001",
+      "artist": "a0019",
+      "album": "r0056",
+      "track": "t0111"
+    },
+    {
+      "id": "w0002",
+      "artist": "a0026",
+      "album": "r0078",
+      "track": "t0156"
+    },
+    {
+      "id": "w0003",
+      "artist": "a0011",
+      "album": "r0033",
+      "track": "t0066"
+    },
+    {
+      "id": "w0004",
+      "artist": "a0019",
+      "album": "r0055",
+      "track": "t0109"
+    },
+    {
+      "id": "w0005",
+      "artist": "a0019",
+      "album": "r0057",
+      "track": "t0113"
+    }
+  ],
+  "PlaylistMondayBlues": [
+    {
+      "id": "m0001",
+      "artist": "a0025",
+      "album": "r0073",
+      "track": "t0146"
+    },
+    {
+      "id": "m0002",
+      "artist": "a0025",
+      "album": "r0074",
+      "track": "t0147"
+    },
+    {
+      "id": "m0003",
+      "artist": "a0022",
+      "album": "r0064",
+      "track": "t0127"
+    },
+    {
+      "id": "m0004",
+      "artist": "a0001",
+      "album": "r0003",
+      "track": "t0005"
+    },
+    {
+      "id": "m0005",
+      "artist": "a0020",
+      "album": "r0058",
+      "track": "t0116"
     }
   ]
 }
