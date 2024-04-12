@@ -1,7 +1,7 @@
 // FINAL SPRINT (Winter Semester, S.Y. 2023-2024)
-// Project: NEST/MUSIC (A Music Streaming Platform)
-// Submitted by: Elliott Butt, Zachary Hulan, Joseph Flores
-// Date: 12 April 2024
+// Project Name: NEST/MUSIC (A Music Streaming Platform)
+// Proponents: Elliott Butt, Zachary Hulan, Joseph Flores
+// Date of Submission: 12 April 2024
 
 import "./App.css";
 import testSound from "./assets/tracks/album1track1.mp3";
