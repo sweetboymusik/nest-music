@@ -1,68 +1,57 @@
 import "./GenreGrid.css";
 import GenreCard from "../GenreCard/GenreCard";
-import artworkRB from "../../assets/images/genres/artwork-r&b.jpg";
-import artworkPop from "../../assets/images/genres/artwork-pop.jpg";
-import artworkRock from "../../assets/images/genres/artwork-rock.jpg";
-import artworkJazz from "../../assets/images/genres/artwork-jazz.jpg";
-import artworkCountry from "../../assets/images/genres/artwork-country.jpg";
-import artworkElectronic from "../../assets/images/genres/artwork-electronic.jpg";
-import artworkFolk from "../../assets/images/genres/artwork-folk.jpg";
-import artworkClassical from "../../assets/images/genres/artwork-classical.jpg";
-import artworkAlternative from "../../assets/images/genres/artwork-alternative.jpg";
-import artworkMore from "../../assets/images/genres/artwork-more.png";
 
 function GenreGrid({ filterArtists }) {
   return (
     <div className="genre-grid">
-      {/* Initial setup just to check if grid is working */}
       <GenreCard
         genre="R&B"
-        imageUrl={artworkRB}
+        imageUrl={require("../../assets/images/genres/artwork-r&b.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Pop"
-        imageUrl={artworkPop}
+        imageUrl={require("../../assets/images/genres/artwork-pop.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Rock"
-        imageUrl={artworkRock}
+        imageUrl={require("../../assets/images/genres/artwork-rock.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Jazz"
-        imageUrl={artworkJazz}
+        imageUrl={require("../../assets/images/genres/artwork-jazz.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Country"
-        imageUrl={artworkCountry}
+        imageUrl={require("../../assets/images/genres/artwork-country.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Electronic"
-        imageUrl={artworkElectronic}
+        imageUrl={require("../../assets/images/genres/artwork-electronic.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Folk"
-        imageUrl={artworkFolk}
+        imageUrl={require("../../assets/images/genres/artwork-folk.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Classical"
-        imageUrl={artworkClassical}
+        imageUrl={require("../../assets/images/genres/artwork-classical.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="Alternative"
-        imageUrl={artworkAlternative}
+        imageUrl={require("../../assets/images/genres/artwork-alternative.jpg")}
         filterArtists={filterArtists}
       />
       <GenreCard
         genre="More..."
-        imageUrl={artworkMore}
+        imageUrl={require("../../assets/images/genres/artwork-more.jpg")}
         filterArtists={filterArtists}
       />
     </div>
