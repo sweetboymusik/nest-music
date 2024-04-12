@@ -14,7 +14,7 @@ function AlbumCard({ artist, release, getArtist, setCurrentRelease }) {
       >
         <img
           src={require(`../../assets/images/artwork/${release.artwork}`)}
-          alt="Album"
+          alt={`${release.name} Album Artwork`}
           className="AlbumCard-Image"
         />
       </Link>
