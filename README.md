@@ -22,8 +22,8 @@ In our latest project, NEST/MUSIC, we set out to reimagine the music streaming e
 
 For future development, it's important to note the following restrictions:
 
-1. **Updating Liked Songs and My Playlist Libraries**: Both the Liked Songs and My Playlist libraries show liked and added songs, respectively, but they don't update the page in real time when the user clicks any of the two buttons available in the song card. The user needs to refresh the page to see the updated listing under the two library pages.
-2. **Forward and Rewind Buttons**: The forward and rewind buttons are currently non-functional and will be addressed in future updates.
+1. **Forward and Rewind Buttons**: The forward and rewind buttons are currently non-functional and will be addressed in future updates.
+2. **Audio Files Uploaded**: Currently set up one audio file to play with any play button, just to show the play function is working, and to test the volume and playbar indicator.
 
 During the Winter Semester, the proponents incorporated insights gathered from their studies, along with information sourced from the internet. This included utilizing Figma from the UI/UX Design course, which played a crucial role in organizing the project's flow. Furthermore, they employed React, as well as JavaScript, HTML, and CSS coding to implement various features. Additionally, the team devised a comprehensive database containing a wide array of images and tracks, meticulously curated to test the project's functionality thoroughly.
 
