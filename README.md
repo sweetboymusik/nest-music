@@ -7,11 +7,7 @@ _Submitted by: Elliott Butt, Zachary Hulan, Joseph Flores_
 
 ## Demo Video
 
-
-
 https://github.com/sweetboymusik/nest-music/assets/150147436/14938601-e0ea-426a-8130-c473cab07a71
-
-
 
 ## Features
 
@@ -39,3 +35,11 @@ Thank you.
 
 Link to the Figma file here (was too large for upload to GitHub):
 [https://www.figma.com/file/R9mdhvyb1cRj0b0pMqFXCB/Final-Sprint%2C-Winter-2024?type=design&node-id=0%3A1&mode=design&t=FX48QxzCRRivWmFd-1]
+
+Contributions:
+
+Elliott oversaw the overall creation of the page, from facilitating the design to the initial setup of the React project and the creation of different components. He set up the routes and the main functionality of the site, troubleshooted all errors, and identified solutions to bugs and problems.
+
+Joseph managed the creation and continuous updating of the database and helped set up the necessary components. He also initialized other minor requirements such as project descriptions and video recordings.
+
+Zach facilitated the testing of the project and helped with the components as well.
