@@ -7,6 +7,12 @@ _Submitted by: Elliott Butt, Zachary Hulan, Joseph Flores_
 
 ## Demo Video
 
+
+
+https://github.com/sweetboymusik/nest-music/assets/150147436/14938601-e0ea-426a-8130-c473cab07a71
+
+
+
 ## Features
 
 In our latest project, NEST/MUSIC, we set out to reimagine the music streaming experience by combining the best features of Spotify, Apple Music, and YouTube Music with our own unique enhancements. Here's an overview of the exciting features we've implemented:
