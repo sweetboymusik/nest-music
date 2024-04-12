@@ -1,3 +1,5 @@
+![image](https://raw.githubusercontent.com/sweetboymusik/nest-music/main/public/logo.png)
+
 # **Melodic Ingenuity: NEST/MUSIC's Evolution**
 
 **_Sprint 2 Requirement, Winter Semester, AY 2023-24_**  
