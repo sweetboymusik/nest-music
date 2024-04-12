@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 import SongGrid from "../SongGrid/SongGrid";
+import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 import "./PageArtist.css";
 
@@ -41,47 +41,42 @@ function PageArtist({
               alt="artist image"
             />
           ))}
-          {currentArtist.map((artist, index) => (
-            <h1 key={index} className="artist-header-text">
-              {artist.name}
-            </h1>
-          ))}
+
+          <div className="artist-header-info">
+            {currentArtist.map((artist, index) => (
+              <h1 key={index} className="artist-header-text">
+                {artist.name}
+              </h1>
+            ))}
+            {currentArtist.map((artist, index) => (
+              <span key={index}>
+                {liked ? (
+                  <button
+                    className="artist-button"
+                    onClick={() => {
+                      setLiked(!liked);
+                      removeArtist(currentArtist[0].id);
+                    }}
+                  >
+                    <FaHeart className="artist-icon artist-liked" />
+                  </button>
+                ) : (
+                  <button
+                    className="artist-button"
+                    onClick={() => {
+                      setLiked(!liked);
+                      addArtist({ artist: currentArtist[0].id });
+                    }}
+                  >
+                    <FaRegHeart className="artist-icon artist-unliked" />
+                  </button>
+                )}
+              </span>
+            ))}
+          </div>
         </div>
 
-        {currentArtist.map((artist, index) => (
-          <span key={index}>
-            {liked ? (
-              <button
-                onClick={() => {
-                  setLiked(!liked);
-                  removeArtist(currentArtist[0].id);
-                }}
-              >
-                UNLIKE
-              </button>
-            ) : (
-              <button
-                onClick={() => {
-                  setLiked(!liked);
-                  addArtist({ artist: currentArtist[0].id });
-                }}
-              >
-                LIKE
-              </button>
-            )}
-          </span>
-        ))}
-
         <div className="artist-body">
-          <div>
-            Top Songs
-            <SongGrid
-              currentArtist={currentArtist}
-              currentRelease={currentRelease}
-              loadTrack={loadTrack}
-              width={"1000px"}
-            />
-          </div>
           <h3>Discography</h3>
           <hr className="home-divider" />
           <AlbumGrid

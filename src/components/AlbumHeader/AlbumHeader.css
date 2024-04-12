@@ -40,18 +40,20 @@
 
 .AlbumHeaderIcons {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
   font-size: 24px;
 }
 
 .AlbumHeader-Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   background: none;
   font-size: 24px;
   cursor: pointer;
-}
-
-.AlbumHeader-Heart-Empty {
 }
 
 .AlbumHeader-Heart-Full {

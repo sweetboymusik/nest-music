@@ -20,7 +20,7 @@ function App() {
   // state variables for audio playback
   let [audio, setAudio] = useState(document.createElement("audio"));
   let [playing, setPlaying] = useState(!audio.paused);
-  let [volume, setVolume] = useState(1);
+  let [volume, setVolume] = useState(0.5);
   let [position, setPosition] = useState();
 
   // state variables for catalog
@@ -700,7 +700,7 @@ function App() {
           </Routes>
         </div>
 
-        <Player 
+        <Player
           playing={playing}
           volume={volume}
           changeVolume={changeVolume}
