@@ -1,5 +1,4 @@
 import "./Player.css";
-import { useState } from "react";
 
 import PlayerControls from "../PlayerControls/PlayerControls";
 import PlayerVolume from "../PlayerVolume/PlayerVolume";
