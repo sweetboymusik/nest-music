@@ -4,7 +4,7 @@ import logo from "../../assets/images/other/logo.png";
 function NavLogo() {
   return (
     <div className="logo">
-      <img src={logo} alt="" />
+      <img src={logo} alt="nav logo" />
       <div className="logo-text">
         <h1>
           NEST/ <br />
