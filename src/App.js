@@ -204,7 +204,6 @@ function App() {
   }
 
   async function removeTrack(type, artist, album, track) {
-    console.log(userTracks);
     const artistInfo = await fetchArtist(artist);
 
     artistInfo.releases.forEach((release) => {
@@ -234,7 +233,6 @@ function App() {
         method: "DELETE",
       });
 
-      console.log(userTracks.filter((item) => item.id !== newID));
       setUserTracks(userTracks.filter((item) => item.id !== newID));
     }
 
@@ -463,7 +461,6 @@ function App() {
     let name = playlistname.replace(/ /g, "");
     let res = await fetch(`http://localhost:4999/Playlist${name}`);
     let data = await res.json();
-    console.log(data);
     return data;
   }
 
@@ -472,7 +469,6 @@ function App() {
     let res = await fetch(`http://localhost:4999/playlists`);
     let data = await res.json();
     let result = data.filter((playlist) => playlist.name === playlistname);
-    console.log(result);
     return result;
   }
 
