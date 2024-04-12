@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import ArtistCard from "../ArtistCard/ArtistCard";
 import "./ArtistGrid.css";
 

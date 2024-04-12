@@ -1,5 +1,4 @@
 import "./ArtistCard.css";
-import React from "react";
 import { Link } from "react-router-dom";
 
 function ArtistCard({ artist, imageUrl, getArtist, id }) {

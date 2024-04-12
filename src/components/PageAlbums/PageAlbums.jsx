@@ -1,5 +1,4 @@
 import React from "react";
-import AlbumGrid from "../AlbumGrid/AlbumGrid";
 import UserAlbumGrid from "../UserAlbumsGrid/UserAlbumGrid";
 
 function PageAlbums({ userAlbums, getArtist, setCurrentRelease }) {

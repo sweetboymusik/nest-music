@@ -3,11 +3,8 @@ import "./NavBar.css";
 import NavItem from "../NavItem/NavItem.jsx";
 import NavLogo from "../NavLogo/NavLogo";
 
-import { FaHouseChimney } from "react-icons/fa6";
-import { FaUser } from "react-icons/fa6";
-import { FaRecordVinyl } from "react-icons/fa";
-import { FaMusic } from "react-icons/fa";
-import { FaHeadphones } from "react-icons/fa";
+import { FaHouseChimney, FaUser } from "react-icons/fa6";
+import { FaRecordVinyl, FaMusic, FaHeadphones } from "react-icons/fa";
 import { BsFillGrid1X2Fill } from "react-icons/bs";
 
 function NavBar({ filterUserArtists }) {
