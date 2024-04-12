@@ -1,5 +1,6 @@
 .app {
   display: flex;
+  /* align-items: center; */
 }
 
 .content-container {
@@ -8,10 +9,26 @@
   overflow: scroll;
   padding: 32px 48px;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
+  scrollbar-track-color: blue;
 }
 
 .content-container p {
   font-size: 100px;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 15px;
+  color: #ddd;
+}
+
+::-webkit-scrollbar-corner {
+  width: 15px;
+  color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  color: blue;
 }

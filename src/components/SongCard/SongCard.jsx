@@ -2,7 +2,7 @@ import "./SongCard.css";
 import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
-import { FaPlus, FaHeart, FaHeartBroken, FaMinus } from "react-icons/fa";
+import { FaPlus, FaHeart, FaRegHeart, FaMinus } from "react-icons/fa";
 
 function SongCard({
   artist,
@@ -90,7 +90,7 @@ function SongCard({
               removeTrack("track", artist[0].id, release.id, track.id);
             }}
           >
-            <FaHeartBroken className="song-icon" />
+            <FaHeart className="song-icon song-liked" />
           </button>
         ) : (
           <button
@@ -104,7 +104,7 @@ function SongCard({
               });
             }}
           >
-            <FaHeart className="song-icon" />
+            <FaRegHeart className="song-icon" />
           </button>
         )}
         {added ? (

@@ -1,7 +1,6 @@
 .album-grid {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: flex-start;
   gap: 16px;
+  width: 100%;
 }

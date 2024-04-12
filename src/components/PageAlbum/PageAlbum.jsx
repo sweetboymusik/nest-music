@@ -24,6 +24,7 @@ function PageAlbum({
         setCurrentRelease={setCurrentRelease}
       />
       <SongGrid
+        width={"100%"}
         currentArtist={currentArtist}
         currentRelease={currentRelease}
         loadTrack={loadTrack}

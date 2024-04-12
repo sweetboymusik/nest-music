@@ -1,7 +1,12 @@
 import "./App.css";
 import testSound from "./assets/tracks/album1track1.mp3";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  redirect,
+} from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import NavBar from "./components/NavBar/NavBar";
@@ -565,7 +570,7 @@ function App() {
         <div className="content-container">
           <Routes>
             <Route
-              path="/home"
+              path="/"
               element={
                 <PageHome
                   getArtist={getArtist}
@@ -608,6 +613,9 @@ function App() {
                   setCurrentRelease={setCurrentRelease}
                   addArtist={addArtist}
                   removeArtist={removeArtist}
+                  addTrack={addTrack}
+                  removeTrack={removeTrack}
+                  loadTrack={loadTrack}
                 />
               }
             ></Route>

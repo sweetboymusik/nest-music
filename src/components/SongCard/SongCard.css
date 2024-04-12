@@ -67,3 +67,7 @@
   height: 32px;
   cursor: pointer;
 }
+
+.song-liked {
+  color: #f1bc00;
+}

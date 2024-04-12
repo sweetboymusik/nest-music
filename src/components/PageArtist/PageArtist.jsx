@@ -4,6 +4,7 @@ import SongGrid from "../SongGrid/SongGrid";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 import "./PageArtist.css";
+import FeaturedArtistSongs from "../FeaturedArtistSongs/FeaturedArtistSongs";
 
 function PageArtist({
   currentArtist,
@@ -11,8 +12,10 @@ function PageArtist({
   setCurrentRelease,
   currentRelease,
   loadTrack,
-  addArtist,
   removeArtist,
+  addArtist,
+  addTrack,
+  removeTrack,
 }) {
   const isMounted = useRef(false);
 
@@ -75,8 +78,22 @@ function PageArtist({
           </div>
         </div>
 
+        <div className="artist-featured-songs-section">
+          <div className="artist-featured-left">
+            <span>Featured Songs</span>
+          </div>
+          <FeaturedArtistSongs
+            artist={currentArtist}
+            loadTrack={loadTrack}
+            getArtist={getArtist}
+            setCurrentRelease={setCurrentRelease}
+            addTrack={addTrack}
+            removeTrack={removeTrack}
+          />
+        </div>
+
         <div className="artist-body">
-          <h3>Discography</h3>
+          <h2>Discography</h2>
           <hr className="home-divider" />
           <AlbumGrid
             artists={currentArtist}

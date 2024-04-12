@@ -24,19 +24,22 @@
 }
 
 .artist-header-info {
+  position: absolute;
   width: 100%;
   display: flex;
   gap: 32px;
+  bottom: 0;
+  background-color: #2a2925aa;
+  padding: 16px;
 }
 
 .artist-header-text {
   font-size: 60px;
-  color: #2a2925;
+  color: #ddd;
 }
 
 .artist-body {
   width: 100%;
-  font-size: 40px;
 }
 
 .artist-button {
@@ -44,8 +47,7 @@
   background: none;
   cursor: pointer;
   font-size: 60px;
-
-  color: #2a2925;
+  color: #ddd;
 }
 
 .artist-icon {
@@ -54,4 +56,25 @@
 
 .artist-liked {
   color: #f1bc00;
+}
+
+.artist-featured-songs {
+  width: 100%;
+}
+
+.artist-featured-songs-section {
+  display: flex;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.artist-featured-left {
+  background-color: #2a2925;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eee;
+  padding: 16px;
+  width: 240px;
+  font-size: 24pt;
 }

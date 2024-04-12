@@ -25,4 +25,13 @@ nav h2 {
 
 nav hr {
   width: 100%;
+  border: none;
+  height: 2px;
+  background-color: #7f7f7f;
+}
+
+.nav-active {
+  color: #f1bc00;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
 }
