@@ -6,7 +6,7 @@ import { IoPlayBack, IoPlayForward } from "react-icons/io5";
 
 function PlayerControls({ playing, togglePlay, changePosition, currentTrack }) {
   return (
-    <div className="player-controls">
+    <div data-testid="21343" className="player-controls">
       <div className="player-buttons">
         <button>
           <IoPlayBack className="player-seek seek-start" />

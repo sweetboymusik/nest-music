@@ -14,7 +14,7 @@ function Player({
   currentTrack,
 }) {
   return (
-    <footer data-testid="21343" className="player">
+    <footer className="player">
       <PlayerInfo info={currentTrack} />
       <PlayerControls
         playing={playing}
