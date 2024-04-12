@@ -1,3 +1,8 @@
+// FINAL SPRINT (Winter Semester, S.Y. 2023-2024)
+// Project Name: NEST/MUSIC (A Music Streaming Platform)
+// Proponents: Elliott Butt, Zachary Hulan, Joseph Flores
+// Date of Submission: 12 April 2024
+
 import "./App.css";
 import testSound from "./assets/tracks/album1track1.mp3";
 
@@ -209,7 +214,6 @@ function App() {
   }
 
   async function removeTrack(type, artist, album, track) {
-    console.log(userTracks);
     const artistInfo = await fetchArtist(artist);
 
     artistInfo.releases.forEach((release) => {
@@ -239,7 +243,6 @@ function App() {
         method: "DELETE",
       });
 
-      console.log(userTracks.filter((item) => item.id !== newID));
       setUserTracks(userTracks.filter((item) => item.id !== newID));
     }
 
@@ -385,6 +388,7 @@ function App() {
     return Promise.all(filtered);
   }
 
+  // useEffects for filtered lists
   useEffect(() => {
     filterUserArtists();
   }, [userArtists]);
@@ -468,7 +472,6 @@ function App() {
     let name = playlistname.replace(/ /g, "");
     let res = await fetch(`http://localhost:4999/Playlist${name}`);
     let data = await res.json();
-    console.log(data);
     return data;
   }
 
@@ -477,7 +480,6 @@ function App() {
     let res = await fetch(`http://localhost:4999/playlists`);
     let data = await res.json();
     let result = data.filter((playlist) => playlist.name === playlistname);
-    console.log(result);
     return result;
   }
 
@@ -569,6 +571,7 @@ function App() {
 
         <div className="content-container">
           <Routes>
+            {/* Add the following routes to the app */}
             <Route
               path="/"
               element={
@@ -708,6 +711,7 @@ function App() {
           </Routes>
         </div>
 
+        {/* Add the following Player component to the app */}
         <Player
           playing={playing}
           volume={volume}

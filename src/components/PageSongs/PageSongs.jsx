@@ -1,3 +1,5 @@
+// renders a page with a list of songs, including a header and a grid of songs
+
 import "./PageSongs.css";
 import MySongsGrid from "../MySongsGrid/MySongsGrid";
 import SongHeader from "../SongHeader/SongHeader";

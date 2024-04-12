@@ -1,5 +1,6 @@
+// renders a grid of the user's albums using the UserAlbumGrid component
+
 import "./PageAlbums.css";
-import React from "react";
 import UserAlbumGrid from "../UserAlbumsGrid/UserAlbumGrid";
 import EmptyListCard from "../EmptyListCard/EmptyListCard";
 

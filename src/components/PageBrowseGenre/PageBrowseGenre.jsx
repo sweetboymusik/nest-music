@@ -1,3 +1,5 @@
+// renders a genre browsing page, including an album grid and featured songs
+
 import "./PageBrowseGenre.css";
 import AlbumGrid from "../AlbumGrid/AlbumGrid";
 import FeaturedSongs from "../FeaturedSongs/FeaturedSongs";

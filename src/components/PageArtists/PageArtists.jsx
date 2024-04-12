@@ -1,3 +1,5 @@
+// renders a grid of artists
+
 import "./PageArtists.css";
 import ArtistGrid from "../ArtistGrid/ArtistGrid";
 import EmptyListCard from "../EmptyListCard/EmptyListCard";

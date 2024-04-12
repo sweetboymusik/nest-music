@@ -10,7 +10,6 @@ function AlbumHeader({
   addAlbum,
   removeAlbum,
   getArtist,
-  setCurrentRelease,
 }) {
   const isMounted = useRef(false);
 
@@ -19,12 +18,6 @@ function AlbumHeader({
 
   useEffect(() => {
     if (isMounted.current) {
-      console.log(
-        "artist on album page",
-        currentArtist[0].releases.filter(
-          (release) => release.id === currentRelease
-        )[0].liked
-      );
       setLiked(
         currentArtist[0].releases.filter(
           (release) => release.id === currentRelease

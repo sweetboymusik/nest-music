@@ -1,3 +1,5 @@
+// serves as the main page of the application which displays featured artists, playlists, and albums in separate sections using the ArtistGrid, PlaylistGrid, and AlbumGrid components
+
 import "./PageHome.css";
 
 import ArtistGrid from "../ArtistGrid/ArtistGrid";

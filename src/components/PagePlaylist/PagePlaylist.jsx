@@ -1,4 +1,5 @@
-import { useState, useEffect, useRef } from "react";
+// renders a playlist page, including a song header and a grid of songs
+
 import MySongsGrid from "../MySongsGrid/MySongsGrid";
 import SongHeader from "../SongHeader/SongHeader";
 
@@ -12,12 +13,8 @@ function PagePlaylist({
   addTrack,
   removeTrack,
 }) {
-  useEffect(() => {
-    console.log("from Playlist Page", userTracks);
-  }, [userTracks]);
-
   return (
-    <div className="page-album">
+    <div>
       <SongHeader
         title={title[0].name}
         tracks={userTracks.length}
