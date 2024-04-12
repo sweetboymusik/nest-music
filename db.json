@@ -916,7 +916,7 @@
               "id": "t0066",
               "title": "Jazz's Joy",
               "length": "3:43",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }
@@ -1530,7 +1530,7 @@
               "id": "t0109",
               "title": "Golden Skies",
               "length": "2:31",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album1track1.mp3"
             },
@@ -1555,7 +1555,7 @@
               "id": "t0111",
               "title": "Fireside Tales",
               "length": "2:33",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album2track1.mp3"
             },
@@ -1580,7 +1580,7 @@
               "id": "t0113",
               "title": "Autumn's Melody",
               "length": "2:35",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track1.mp3"
             },
@@ -2176,7 +2176,7 @@
               "id": "t0156",
               "title": "Shadow's Symphony",
               "length": "3:45",
-              "liked": true,
+              "liked": false,
               "added": false,
               "link": "./src/assets/tracks/album3track2.mp3"
             }

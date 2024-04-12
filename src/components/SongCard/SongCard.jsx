@@ -15,12 +15,8 @@ function SongCard({
   removeTrack,
   onClick,
 }) {
-  const [isHovered, setIsHovered] = useState(false);
-  const [isLiked, setIsLiked] = useState(false);
-
   let [liked, setLiked] = useState();
   let [added, setAdded] = useState(track.added);
-  let [canRender, setCanRender] = useState(false);
 
   useEffect(() => {
     setLiked(track.liked);

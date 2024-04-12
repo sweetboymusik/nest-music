@@ -11,6 +11,7 @@ function Player({
   changePosition,
   togglePlay,
   currentTrack,
+  position,
 }) {
   return (
     <footer className="player">
@@ -20,6 +21,7 @@ function Player({
         togglePlay={togglePlay}
         changePosition={changePosition}
         currentTrack={currentTrack}
+        position={position}
       />
       <PlayerVolume volume={volume} changeVolume={changeVolume} />
     </footer>

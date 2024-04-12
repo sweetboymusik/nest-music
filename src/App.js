@@ -25,6 +25,7 @@ import PageAlbum from "./components/PageAlbum/PageAlbum";
 import PageBrowseGenre from "./components/PageBrowseGenre/PageBrowseGenre";
 import PageSongs from "./components/PageSongs/PageSongs";
 import PagePlaylist from "./components/PagePlaylist/PagePlaylist";
+import { FaDove } from "react-icons/fa6";
 
 function App() {
   // state variables for audio playback
@@ -36,6 +37,8 @@ function App() {
   // state variables for catalog
   let [artists, setArtists] = useState([]);
   let [featured, setFeatured] = useState([]);
+  let [artistShuffled, setArtistShuffled] = useState([]);
+  let [albumShuffled, setAlbumShuffled] = useState([]);
   let [filteredArtists, setFilteredArtists] = useState([]);
   let [currentArtist, setCurrentArtist] = useState([]);
   let [currentRelease, setCurrentRelease] = useState();
@@ -199,6 +202,7 @@ function App() {
 
       const data = await res.json();
       setUserTracks([...userTracks, data]);
+      console.log(artists);
     }
 
     if (type === "playlist") {
@@ -399,11 +403,8 @@ function App() {
 
   useEffect(() => {
     filterUserTracks();
-  }, [userTracks]);
-
-  useEffect(() => {
     filterUserPlaylist();
-  }, [userPlaylist]);
+  }, [userTracks, userPlaylist]);
 
   useEffect(() => {
     filterCurrentPlaylist();
@@ -532,13 +533,23 @@ function App() {
 
   function changePosition(e) {
     if (e.target.classList.contains("pos-btn-start")) {
-      audio.currentTime = 0;
-      setPosition(audio.currentTime);
+      if (audio.src !== "") {
+        audio.currentTime = 0;
+        setPosition(audio.currentTime);
+      }
     }
 
     if (e.target.classList.contains("pos-btn-end")) {
-      audio.currentTime = audio.duration - 1;
-      setPosition(audio.currentTime);
+      if (audio.src !== "") {
+        audio.currentTime = audio.duration - 1;
+        setPosition(audio.currentTime);
+      }
+    }
+
+    if (e.target.classList.contains("position-base")) {
+      if (audio.src !== "") {
+        audio.currentTime = audio.duration * (e.target.value / 100);
+      }
     }
   }
 
@@ -557,11 +568,23 @@ function App() {
     audio.volume = volume;
   }, [volume]);
 
+  useEffect(() => {
+    setInterval(() => {
+      document.querySelector(".position-base").value =
+        (audio.currentTime / audio.duration) * 100;
+    }, 10);
+  }, []);
+
   // generate random artist cards
-  const shuffled = artists.toSorted(() => 0.5 - Math.random());
-  let selected = shuffled.slice(0, 3);
-  const albumShuffled = artists.toSorted(() => 0.5 - Math.random());
-  let albumSelected = albumShuffled.slice(0, 5);
+  useEffect(() => {
+    const shuffled = artists.toSorted(() => 0.5 - Math.random());
+    let selected = shuffled.slice(0, 3);
+    const albumShuffled = artists.toSorted(() => 0.5 - Math.random());
+    let albumSelected = albumShuffled.slice(0, 5);
+
+    setArtistShuffled(selected);
+    setAlbumShuffled(albumSelected);
+  }, [artists]);
 
   // render main application
   return (
@@ -578,8 +601,8 @@ function App() {
                 <PageHome
                   getArtist={getArtist}
                   artists={artists}
-                  shuffled={selected}
-                  albumShuffled={albumSelected}
+                  shuffled={artistShuffled}
+                  albumShuffled={albumShuffled}
                   setCurrentRelease={setCurrentRelease}
                   loadTrack={loadTrack}
                   addArtist={addArtist}

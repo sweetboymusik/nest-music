@@ -1,10 +1,15 @@
 import "./PlayerControls.css";
-import PlayerPositionButtons from "../PlayerPositionButtons/PlayerPositionButtons";
 
 import { FaPlay, FaPause } from "react-icons/fa";
 import { IoPlayBack, IoPlayForward } from "react-icons/io5";
 
-function PlayerControls({ playing, togglePlay, changePosition, currentTrack }) {
+function PlayerControls({
+  playing,
+  togglePlay,
+  changePosition,
+  currentTrack,
+  position,
+}) {
   return (
     <div data-testid="21343" className="player-controls">
       <div className="player-buttons">
@@ -29,9 +34,20 @@ function PlayerControls({ playing, togglePlay, changePosition, currentTrack }) {
         <button onClick={changePosition} className="pos-btn-start">
           0:00
         </button>
-        <PlayerPositionButtons changePosition={changePosition} />
+
+        <div className="position-slider">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value={position}
+            className="position-base"
+            onChange={changePosition}
+          />
+        </div>
+
         <button onClick={changePosition} className="pos-btn-end">
-          {currentTrack.length}
+          {currentTrack.length || "0:00"}
         </button>
       </div>
     </div>
