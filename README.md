@@ -39,8 +39,10 @@ Link to the Figma file here (was too large for upload to GitHub):
 
 Contributions:
 
-Elliott oversaw the overall creation of the page, from facilitating the design to the initial setup of the React project and the creation of different components. He set up the routes and the main functionality of the site, troubleshooted all errors, and identified solutions to bugs and problems.
+Below are the individual contribution summaries for each team member. Although we had specific responsibilities, we collaborated daily during the sprint through Teams sessions.
 
-Joseph managed the creation and continuous updating of the database and helped set up the necessary components. He also initialized other minor requirements such as project descriptions and video recordings.
+Elliott oversaw the overall creation of the site, from facilitating the design to the initial setup of the React project and the creation of different components. He set up the routes and the main functionality of the site, troubleshooted errors, and identified solutions to bugs and problems.
+
+Joseph managed the creation and continuous updating of the database and helped set up the necessary components. He also initialized other requirements such as project descriptions and video recordings.
 
 Zach facilitated the testing of the project and helped with the components as well.
